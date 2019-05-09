@@ -1,0 +1,10 @@
+<div class="help-content-wrap"><h3 id="how-to-play-jackpot">How to Play &quot;Jackpot&quot;</h3>
+<p>The SportyBet 12 Jackpot Competition consists of predicting the results of 12 matches, which are selected by SportyBet, every week.</p>
+<p>To take part and have a chance to win the jackpot, you must get registered and have at least KES 50 in your account. If you correctly predict all 12 match results, you win the Super Jackpot prize! Consolation prizes are awarded also for correctly predicting 11 or 10 match results.</p>
+<h3 id="how-to-take-part">How to Take Part</h3>
+<p>Make your selections – On the SportyBet 12 Jackpot competition entry page, make your predictions for each one of the listed matches (Home win, Draw, Away win). Stake amount of each combination is KES 50. You can make more than 1 prediction for one match. This will increase the stake amount by KES 50 for every each additional combination formed by your selections.</p>
+<p>Check and place bets – Make sure to check all of the selections before you click on the &quot;Place Bet&quot; button. Once submitted, the bets cannot be cancelled, amended or refunded. You may place bets until 17:00 Saturday at Kenya time. The countdown to the competition’s closure time is clearly shown on the competition entry page.</p>
+<p>Check the results – on Monday Afternoon at Kenya Time, all match results and prizes will be published in the &quot;Previous Results&quot; on &quot;Jackpot&quot; page.</p>
+<h3 id="jackpot-rush">Jackpot Rush</h3>
+<p>By choosing the “Jackpot Rush” option, a random selection of one prediction per match will be automatically selected with a fixed stake of KES 50. Further predictions may be added to the random selection. This will increase the cost of the entry by KES 50 for every additional combination.</p>
+</div>

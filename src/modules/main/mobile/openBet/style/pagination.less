@@ -1,0 +1,56 @@
+@import 'base/styles/icon.less';
+@import 'base/styles/variable.less';
+
+.m-sportBets {
+	.m-pagination-wrapper {
+		position: absolute;
+		bottom: 30/@rem;
+		left: 0;
+		right: 0;
+
+		ul {
+			width: 100%;
+			text-align: center;
+		}
+
+		li {
+			display: inline-block;
+			height: 32/@rem;
+			line-height: 32/@rem;
+			font-size: 10/@rem;
+			color: @white;
+			font-weight: bold;
+		}
+
+		.m-total {
+			font-weight: normal;
+		}
+
+		.m-icon-prev,
+		.m-icon-next {
+			&:before {
+				width: 32/@rem;
+				height: 32/@rem;
+				line-height: 32/@rem;
+				display: inline-block;
+				text-align: center;
+				font-size: 10/@rem !important;
+				font-weight: bold;
+			}
+		}
+
+		.m-icon-next {
+			.m-icon-arrow--right();
+			margin-left: 32/@rem;
+		}
+
+		.m-icon-prev {
+			.m-icon-back();
+			margin-right: 32/@rem;
+		}
+
+		.is-disabled {
+			opacity: 0.4;
+		}
+	}
+}

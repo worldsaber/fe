@@ -1,0 +1,28 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+.m-dp-tips {
+	border-top: 2px solid @fogGrayBorder;
+	padding-top: 18px;
+	box-sizing: border-box;
+	color: @dark;
+
+	.f-title {
+		line-height: 16px;
+		font-size: 14px;
+		.m-icon-light2();
+		margin-bottom: 10px;
+
+		&:before {
+			font-size: 18px;
+			line-height: 1;
+			color: @green;
+			margin-right: 6px;
+		}
+	}
+
+	.l-item {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}

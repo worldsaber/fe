@@ -1,0 +1,40 @@
+@import './variable.less';
+
+.ellipsis() {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.hide() {
+	display: none;
+}
+
+.show() {
+	display: block;
+}
+
+.clearfix() {
+	&:after {
+		content: ".";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+}
+
+.arrow-to-right{
+	&:after{
+		content: '';
+		position: absolute;
+		right:0;
+		top:50%;
+		margin-top: -4/@rem;
+		width: 6/@rem;
+		height: 6/@rem;
+		border-right: 2/@rem solid @darkGray;
+		border-bottom: 2/@rem solid @darkGray;
+		transform: rotate(-45deg);
+	}
+}

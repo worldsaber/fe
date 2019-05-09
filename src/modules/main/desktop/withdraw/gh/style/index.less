@@ -1,0 +1,195 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+@import 'components/login/style/buttonMixin.less';
+
+.m-wd-gh {
+	padding: 31px 65px 41px;
+	box-sizing: border-box;
+
+	color: @dark;
+	background: @white;
+
+	margin-left: 21px;
+
+	.m-title {
+		line-height: 22px;
+		font-size: 16px;
+		font-weight: bold;
+		color: @dark;
+
+		padding-bottom: 13px;
+		box-sizing: border-box;
+		border-bottom: 2px solid @fogGrayBorder;
+	}
+
+	.f-flex {
+		width: 100%;
+		display: table;
+
+		display: flex;
+
+		display: grid;
+	}
+
+	.f-flex-item {
+		flex: 1;
+		min-width: 1%;
+	}
+
+	.f-count {
+		counter-reset: index;
+	}
+
+	.f-count-item {
+		&::before {
+			counter-increment: index;
+			content: counter(index)'.';
+		}
+	}
+
+	.f-line {
+		display: block;
+
+		.f-line-item {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.f-label {
+			display: inline-block;
+			vertical-align: top;
+			height: 40px;
+			line-height: 40px;
+			text-align: right;
+			width: 106px;
+			padding-right: 16px;
+			box-sizing: border-box;
+			font-size: 14px;
+			font-weight: 500;
+			color: @dark;
+		}
+
+		.m-input-wrapper {
+			height: 38px;
+			width: 200px;
+
+			border: 1px solid @grayBorder;
+			border-radius: 2px;
+
+			.m-input-com {
+				display: inline-block;
+				width: 100%;
+			}
+
+			.m-input-com,
+			.m-input {
+				width: ~'calc(100% - 2px)';
+				height: ~'calc(100% - 2px)';
+    			margin: 1px;
+			}
+
+			.m-input {
+				border: none !important;
+				padding-right: 28px !important;
+			}
+
+			.m-input-icon--clickable {
+				display: inline-block;
+				height: 36px;
+				line-height: 36px;
+				margin-top: 1px;
+
+				color: @midGray;
+				&:hover {
+					color: @darkGray;
+				}
+			}
+
+			&.m-input-wrapper--active {
+				border: 1px solid @green !important;
+
+				.m-input-icon--clickable {
+					&:hover {
+						color: @green !important;
+					}
+				}
+			}
+
+			&.m-input-wrapper--error {
+				border: 1px solid @red !important;
+
+				.m-input-icon--clickable {
+					&:hover {
+						color: @red !important;
+					}
+				}
+			}
+		}
+
+		.m-fix-input,
+		.m-input-wrapper {
+			.m-input {
+				font-size: 14px;
+				font-weight: 500;
+			}
+		}
+
+		.f-error {
+			p {
+				color: @red;
+				font-size: 12px;
+			}
+		}
+
+		.af-button {
+			.button();
+			border-radius: 2px;
+			height: 40px;
+			width: 170px;
+		}
+
+		.af-button--primary {
+			.button--primary();
+		}
+
+		.is-disabled {
+			.disabled();
+		}
+	}
+}
+
+.m-dialog--tips {
+	width: 512px;
+
+	.m-pop-header {
+		&>span {
+			font-size: 20px;
+			line-height: 24px;
+			color: @dark;
+			font-weight: bold;
+			padding: 24px 24px 0;
+
+			.m-icon--error();
+			&:before {
+				margin-right: 8px;
+				line-height: 1;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+
+		.m-icon-close {
+			right: 20px;
+		}
+	}
+
+	.m-pop-main {
+		&>p {
+			padding: 0 24px;
+		}
+	}
+
+	.m-btn-wrapper {
+		margin-top: 64px;
+	}
+}

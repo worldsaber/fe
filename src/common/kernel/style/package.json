@@ -1,0 +1,5 @@
+{
+  "name": "style",
+  "description": "base css v1",
+  "main": "desktop/base.less"
+}

@@ -1,0 +1,4 @@
+[{
+    "script": "./modules/bingo/mobile/index.js",
+    "template": "./modules/bingo/mobile/index.ftl"
+}]

@@ -1,0 +1,248 @@
+@import 'base/style/variable.less';
+@import 'base/style/sportIcon.less';
+@import 'base/style/mixin.less';
+@import 'base/style/icon.less';
+
+.m-eventview {
+	.m-side-bar {
+		display: inline-block;
+		vertical-align: top;
+		width: 150px;
+		background: @dark;
+		position: relative;
+
+		.m-side-mask {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: transparent;
+			z-index: 100;
+
+			&:not(.on) {
+				display: none;
+			}
+		}
+
+		.m-item {
+			color: @white;
+
+			font-size: 14px;
+
+			height: 44px;
+			line-height: 44px;
+
+			padding: 0 6px 0 8px;
+			box-sizing: border-box;
+
+			position: relative;
+			z-index: 888;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		.m-item--active {
+			background: @midGreen;
+			color: @black;
+
+			.m-icon-arrow--right {
+				&:before {
+					color: @black;
+				}
+			}
+		}
+
+		.m-item-on {
+			background: fadeout(@midGreen, 40%);
+			color: @black;
+
+			.m-icon-arrow--right {
+				&:before {
+					color: @black;
+				}
+			}
+		}
+
+		.m-sport {
+			text-transform: capitalize;
+			overflow: hidden;
+		}
+
+		// .m-icon-arrow--right {
+		// 	float: right;
+        //
+		// 	.m-icon-arrow--right();
+		// 	&:before {
+		// 		display: inline-block;
+		// 		vertical-align: middle;
+		// 		color: @midGreen;
+		// 	}
+		// }
+
+		.m-icon-sport {
+			&:before {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 6px;
+				font-size: 20px;
+			}
+		}
+
+		.m-sider-dialog {
+			position: absolute;
+			background: @blueBlack;
+			color: @white;
+			top: 0;
+			left: 100%;
+			width: 468px;
+			border-left: 2px solid @midGreen;
+			max-height: 450px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+
+			.m-error-wrapper {
+				height: 280px;
+			}
+		}
+
+		.m-list-title {
+			text-transform: capitalize;
+			font-size: 14px;
+			font-weight: bold;
+			height: 30px;
+			line-height: 30px;
+			padding-left: 10px;
+			box-sizing: border-box;
+			color: @lightGray;
+			margin-top: 10px;
+		}
+
+		.m-list-category {
+			background: fadeout(@lightGray, 95%);
+			width: 100%;
+			padding: 0 10px;
+			box-sizing: border-box;
+			font-size: 12px;
+			line-height: 25px;
+			color: @midGray;
+			.ellipsis();
+		}
+
+		.m-list {
+			padding: 0 10px;
+			box-sizing: border-box;
+			border-bottom: solid 1px fadeout(@dimBlack, 85%);
+
+			&:last-of-type {
+				border-bottom: none;
+			}
+
+			.m-item-time {
+				line-height: 14px;
+				font-size: 10px;
+				font-weight: 500;
+				color: @darkGray;
+				padding-top: 6px;
+				box-sizing: border-box;
+			}
+
+			.m-info-wrapper {
+				width: 100%;
+				display: table;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding-bottom: 12px;
+				box-sizing: border-box;
+
+				> div {
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+
+			.m-item-name {
+				line-height: 16px;
+				font-size: 12px;
+				font-weight: 500;
+				color: @fogGray;
+				min-width: 1%;
+				max-width: ~"calc(100% - 90px)";
+				flex: 1;
+			}
+
+			.m-item-score {
+				font-size: 12px;
+				line-height: 16px;
+				text-align: right;
+				color: @green;
+				max-width: 90px;
+
+				> div {
+					display: inline-block;
+					vertical-align: middle;
+
+					> span {
+						margin-right: 10px;
+
+						&:last-of-type,
+						&:only-of-type {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+
+			.m-icon-more {
+				display: inline-block;
+				vertical-align: middle;
+				text-align: right;
+				line-height: 16px;
+				.m-icon-arrow--right();
+
+				&:before {
+					color: @green;
+					font-size: 14px;
+				}
+			}
+
+			&:hover {
+				background: @midGreen;
+				color: @black;
+
+				.m-icon-more:before {
+					color: @black;
+				}
+
+				.m-item-time,
+				.m-item-name,
+				.m-item-score {
+					color: @black;
+				}
+			}
+
+			&:active {
+				background: @darkGreen;
+
+				.m-icon-more:before {
+					color: @black;
+				}
+
+				.m-item-time,
+				.m-item-name,
+				.m-item-score {
+					color: @black;
+				}
+			}
+		}
+
+		.m-list-active {
+			.m-item-name {
+				color: @green;
+			}
+		}
+	}
+}

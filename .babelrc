@@ -1,0 +1,9 @@
+{
+  "presets": [["env", {
+		"targets" : {
+			"browsers":  ["> 1%", "last 2 versions", "iOS >= 8", "Android >= 4", "Explorer >= 8", "Firefox >= 43", "Chrome >= 45"]
+		},
+		"modules": false
+	}], "react", "stage-2"],
+  "plugins": ["syntax-dynamic-import"]
+}

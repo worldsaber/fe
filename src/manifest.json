@@ -1,0 +1,33 @@
+{
+	"name": "SportyBet",
+	"short_name": "SportyBet",
+	"description": "betting",
+	"lang": "en",
+	"icons": [
+		{
+			"src": "logo/96x96.png",
+			"type": "image/png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "logo/144x144.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "logo/196x196.png",
+			"type": "image/png",
+			"sizes": "196x196"
+		},
+		{
+			"src": "logo/512x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": __startWapUrl__,
+	"display": "standalone",
+	"orientation": "portrait",
+	"theme_color": "#0D9737",
+	"background_color": "#0D9737"
+}

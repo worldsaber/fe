@@ -1,0 +1,28 @@
+@import 'base/styles/variable.less';
+@import './buttonMixin.less';
+.m-cashout {
+
+	.m-bet-tips {
+		padding: 10/@rem 16/@rem 6px;
+		box-sizing: border-box;
+
+		> p {
+			font-size: 12/@rem;
+			color: @dark;
+			line-height: 16/@rem;
+		}
+		.af-button--primary{
+			.button--primary();
+		}
+		.m-btn-wrapper {
+			padding: 15/@rem 16/@rem 0 !important;
+			display: block !important;
+			text-align: center;
+		}
+
+		.af-button {
+			min-width: 40%;
+			display: inline-block !important;
+		}
+	}
+}

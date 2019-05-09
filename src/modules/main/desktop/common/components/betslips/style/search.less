@@ -1,0 +1,76 @@
+@import 'base/style/variable.less';
+
+@import './button.less';
+@import './input.less';
+
+.m-betslips {
+	.m-betslip-search {
+		background: @white;
+		padding: 18px 11px;
+		box-sizing: border-box;
+
+		.m-text-main {
+			color: @black;
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+		.m-opt-wrapper {
+			font-size: 0;
+			margin: 14px 0 12px;
+
+			.m-input-wrapper,
+			.af-button {
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			.m-input-wrapper {
+				width: 142px;
+				height: 38px;
+			}
+
+			.m-input {
+				height: 100%;
+				line-height: 100%;
+				text-align: left;
+				padding-left: 10px;
+			}
+
+			.af-button {
+				width: 53px;
+				margin-left: 8px;
+				border-radius: 2px;
+			}
+		}
+
+		.m-text-tips {
+			font-size: 12px;
+			line-height: 16px;
+			color: @midGray;
+		}
+
+		.m-error-wrap {
+			display: block;
+			.m-error {
+				padding: 7px 5px;
+				display: table;
+				display: flex;
+				align-items: center;
+			}
+
+			.m-icon--error {
+				max-width: 20px;
+				display: table-cell;
+			}
+
+			.m-text-info {
+				display: table-cell;
+				min-width: 1%;
+				flex: 1;
+				max-width: ~"calc(100% - 20px)";
+				line-height: 12px;
+			}
+		}
+	}
+}

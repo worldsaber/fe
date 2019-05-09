@@ -1,0 +1,5 @@
+{
+	"name": "kernel",
+	"description": "core for ftl",
+	"main": "ftl/desktop.ftl"
+}

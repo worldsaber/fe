@@ -1,0 +1,53 @@
+@import 'base/styles/variable.less';
+@import './variable.less';
+
+.es-dialog.m-join-confirm {
+	border-radius: 10/@rem;
+	padding-top: 30/@rem;
+
+	.es-dialog-head {
+		padding: 0 25/@rem 16/@rem;
+		box-sizing: border-box;
+
+		h1 {
+			line-height: 28/@rem;
+			font-size: 24/@rem;
+			font-weight: bold;
+			color: @darkBlack;
+		}
+	}
+
+	.es-dialog-main {
+		padding: 0 25/@rem;
+		box-sizing: border-box;
+		line-height: 19/@rem;
+		font-size: 16/@rem;
+		font-weight: 500;
+		color: @dark;
+	}
+
+	.es-dialog-footer {
+		padding: 24/@rem 25/@rem 27/@rem;
+	}
+
+	.es-dialog-btn {
+		height: 40/@rem;
+		line-height: 40/@rem;
+		font-size: 16/@rem;
+		font-weight: 500;
+
+		&:first-of-type {
+			color: @purple;
+			width: auto;
+			padding-right: 48/@rem;
+			box-sizing: border-box;
+		}
+
+		&:nth-of-type(2) {
+			background: @purple;
+			color: @white;
+			border-radius: 20/@rem;
+			width: 155/@rem;
+		}
+	}
+}

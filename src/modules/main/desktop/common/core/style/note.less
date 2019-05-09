@@ -1,0 +1,51 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+.s-header {
+	.m-note {
+		background: @grayRed;
+		position: relative;
+
+		> p {
+			position: relative;
+			max-width: 1000px;
+			min-width: 1000px;
+			margin: 0 auto;
+
+			font-size: 0;
+			padding: 10px 0 10px 30px;
+			box-sizing: border-box;
+		}
+
+		.m-icon-tips {
+			.m-icon--error();
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate3d(0, -50%, 0);
+
+			&:before {
+				color: @midYellow;
+				font-size: 14px;
+			}
+		}
+
+		.t-main {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 18px;
+			font-size: 13px;
+			font-weight: 500;
+			color: @white;
+		}
+
+		.m-more {
+			margin-left: 6px;
+			color: @midYellow;
+			font-size: 12px;
+			line-height: 14px;
+			vertical-align: middle;
+		}
+	}
+}

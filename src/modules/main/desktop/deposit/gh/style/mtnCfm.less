@@ -1,0 +1,143 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+@grayBorderColor: #d8d8d8;
+
+.m-dialog-wrapper.m-dp-pop--mtn {
+	width: 512px;
+	padding-top: 20px;
+	box-sizing: border-box;
+
+	.m-pop-header {
+		z-index: 222;
+	}
+
+	.m-steps {
+		width: 100%;
+		padding: 10px 20px 22px 18px;
+		box-sizing: border-box;
+		position: relative;
+	}
+
+	.m-b-green {
+		width: 6px;
+		height: 0;
+		position: absolute;
+		top: 33px;
+		left: 26px;
+		background: @green;
+
+		transition: height 0.2s;
+	}
+
+	.m-s-item {
+		position: relative;
+		width: 100%;
+		padding-left: 32px;
+		box-sizing: border-box;
+		padding-bottom: 20px;
+	}
+
+	.m-circle {
+		position: absolute;
+		top: 0;
+		left: 1px;
+		width: 18px;
+		height: 18px;
+		border: 2px solid @grayBorderColor;
+		background: @white;
+		border-radius: 50%;
+		z-index: 22;
+
+		&.m-checked {
+			width: 24px;
+			height: 24px;
+			background: @green;
+			border: none;
+			.m-icon-success();
+			text-align: center;
+			line-height: 24px;
+			left: 0;
+
+			&:before {
+				font-size: 12px;
+				line-height: 1;
+				color: @white;
+			}
+		}
+	}
+
+	.m-b-gray {
+		position: absolute;
+		top: 11px;
+		bottom: 0;
+		height: 100%;
+		left: 8px;
+		border: 3px solid @grayBorderColor;
+	}
+
+	.m-t-black {
+		color: @dark;
+	}
+
+	.m-t-bold {
+		line-height: 23px;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.m-t-normal {
+		font-size: 12px;
+		line-height: 13px;
+	}
+
+	.f-flex {
+		width: 100%;
+		display: table;
+
+		display: flex;
+
+		display: grid;
+	}
+
+	.f-flex-item {
+		flex: 1;
+		min-width: 1%;
+	}
+
+	.f-count {
+		counter-reset: index;
+	}
+
+	.f-count-item {
+		margin-bottom: 6px;
+		&::before {
+			counter-increment: index;
+			content: counter(index)'.';
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		grid-template-columns: 15px 1fr;
+		align-items: flex-start;
+
+		&::before,
+		> span {
+			display: table-cell;
+			vertical-align: top;
+		}
+
+		&::before {
+			width: 15px;
+		}
+	}
+
+	.m-t-green {
+		color: @green;
+	}
+
+	.m-transaction {
+		cursor: pointer;
+	}
+}

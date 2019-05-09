@@ -1,0 +1,90 @@
+@import 'base/styles/variable.less';
+
+.es-dialog.m-wd-pop-cfm {
+	padding-top: 16/@rem;
+	box-sizing: border-box;
+
+	.es-dialog-main {
+		padding: 0;
+	}
+
+	.f-main {
+		padding: 0 16/@rem;
+		box-sizing: border-box;
+		font-size: 12/@rem;
+		color: @dark;
+	}
+
+	.t-c {
+		text-align: center;
+	}
+
+	.f-line {
+		width: 100%;
+		display: table;
+
+		display: flex;
+
+		display: grid;
+
+		grid-template-columns: 135/@rem 1fr;
+		align-self: center;
+
+		height: 20/@rem;
+		line-height: 20/@rem;
+	}
+
+	.i-label,
+	.i-value {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.i-label {
+		width: 135/@rem;
+		color: @darkGray;
+	}
+
+	.i-value {
+		flex: 1;
+		min-width: 1%;
+		text-align: right;
+		padding-left: 5/@rem;
+		box-sizing: border-box;
+	}
+
+	.t-s {
+		line-height: 14/@rem;
+	}
+
+	.t-b {
+		line-height: 1;
+		font-size: 24/@rem;
+		margin: 8/@rem 0 24/@rem;;
+	}
+
+	.f-btn-wrapper {
+		width: 100%;
+		font-size: 0;
+		margin-top: 18/@rem;
+	}
+
+	.af-button {
+		font-size: 16/@rem;
+		height: 48/@rem;
+		font-weight: bold;
+		border: none;
+		border-radius: 0;
+		vertical-align: bottom;
+	}
+
+	.af-button--primary {
+		background-color: @green;
+		min-width: 74%;
+	}
+
+	.af-button--info {
+		width: 26%;
+		background-color: @darkGreen;
+	}
+}

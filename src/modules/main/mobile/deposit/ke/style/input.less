@@ -1,0 +1,132 @@
+@import '~base/styles/variable.less';
+@import '~base/styles/icon.less';
+
+.m-uc-wrapper {
+
+	.m-input-wrapper {
+		width: 100%;
+		
+		.m-input {
+			border: 1px solid @grayBorder;
+			border-radius: 2/@rem;
+			font-size: 12/@rem;
+			height: 48/@rem;
+			line-height: 32/@rem;
+			padding: 8/@rem 9/@rem;
+		}
+		.m-input-com{
+			display: block;
+			position: static;
+		}
+		.m-input-icon {
+			right: 8/@rem; 
+			width: 20/@rem;
+			.m-icon-close();
+			&::before{
+				position: absolute;
+				top:50%;
+				right:0;
+				transform: translate(0, -50%);
+				width: 20/@rem;
+				height: 20/@rem;
+				line-height:20/@rem;
+				text-align: center;
+				font-size:12/@rem;
+				background: @fogGray;
+				color:@dark;
+				border-radius: 20/@rem;
+			}
+			& + .m-input{
+				padding-right: 28/@rem;
+			}
+			&.m-input-icon--clickable {
+				&:hover {
+					color: @green;
+	
+					& + .m-input {
+						border-color: @green;
+					}
+				}
+			}
+		}
+
+		.m-input-text--icon{
+			width:45/@rem;
+			padding-right:10/@rem;
+			font-size: 14/@rem;
+			text-align: left;
+			justify-content: flex-end;
+			color: @linkBlue;
+			box-sizing: border-box;
+			&+.m-input {
+				padding-right: 45/@rem;
+		}
+		}
+
+		&.m-input-wrapper--error {
+			.m-input {
+				border-color: @red !important;
+			}
+
+			.m-input-prepend {
+				border-color: @red !important;
+			}
+		}
+
+		&.m-input-wrapper--active {
+			.m-input {
+				border-color: @green;
+			}
+		}
+
+		&:nth-of-type(2) {
+			&.m-input-wrapper--active {
+				.m-input {
+					border-color: @green;
+				}
+			}
+		}
+	}
+
+	.m-input-group--prepend {
+		padding:4/@rem 6/@rem;
+		border: 1px solid @green!important;
+		border-radius: 2/@rem;
+		box-sizing: border-box;
+
+		.m-input-prepend, .m-input {
+			border: none !important;
+		}
+		.m-input-prepend{
+			padding:0 7/@rem 0 0;
+			font-size: 16/@rem;
+		}
+		&.m-input-wrapper--active {
+			border: 1px solid @green!important;
+		}
+		&.m-input-wrapper--error {
+			border:1px solid @red!important;
+			input.m-input {
+				border:none!important;
+			}
+		}
+		.m-input-icon{
+			right:13/@rem;
+			& + .m-input{
+				padding-right: 10/@rem;
+			}
+			&.m-input-icon--show + .m-input{
+				padding-right: 28/@rem;
+			}
+		}
+		.m-input {
+			height:38/@rem;
+			box-sizing: border-box;
+			padding:3/@rem 31/@rem 3/@rem 10/@rem;
+			line-height: 38/@rem;
+			background: #fbfbfb;
+			border-radius: 2/@rem;
+			border:none!important;
+		}
+	}
+}

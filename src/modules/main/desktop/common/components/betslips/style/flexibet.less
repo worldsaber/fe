@@ -1,0 +1,274 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+.m-flexibet {
+	border-top: 1px solid @midGray;
+	border-bottom: 1px solid @midGray;
+	width: 100%;
+	padding: 10px 10px 0;
+	box-sizing: border-box;
+	background: @white;
+
+	.m-flexi-desc {
+		> span {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 14px;
+			color: @dark;
+		}
+	}
+
+	.m-icon-flexibet {
+		// line-height: 1;
+		// font-family: Hermes;
+		// font-size: 14px;
+		font-weight: bold;
+		// color: @white;
+		// text-shadow: 0 1px 0 fadeout(@black, 50%);
+		//
+		// .m-icon-flexi(@lightGreen);
+		//
+		// margin-right: 4px;
+		// transform: scaleX(0.75);
+		.m-icon-flexi();
+		color: @lightGreen;
+	}
+
+	.m-icon--tips {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 2px;
+		.m-icon-tips();
+		color: @darkGray;
+
+		&:before {
+			font-size: 12px;
+		}
+	}
+
+	.m-flexi-tips {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+
+		.m-pop {
+			position: absolute;
+			top: -10px;
+			left: 0;
+			transform: translate3d(-35%, -100%, 0);
+			width: 157px;
+			padding: 8px;
+			box-sizing: border-box;
+			background: @dark;
+ 			box-shadow: 0 2px 4px 0 fadeout(@black, 81%);
+
+			&:before {
+				content: '';
+				display: block;
+				width: 10px;
+				height: 10px;
+				position: absolute;
+				background: @dark;
+				box-shadow: 2px 2px 2px -1px fadeout(@black, 92%), 2px 2px 2px -1px fadeout(@black, 92%);
+				border-top-color: transparent;
+				border-left-color: transparent;
+				left: 40%;
+				bottom: -3px;
+				transform: translate3d(-50%,0,0) rotate(45deg);
+			}
+		}
+
+		.m-pop-title {
+			// height: 12px;
+			color: @white;
+			// background: @blueBlack;
+			display: inline-block;
+
+			> span {
+				line-height: 19px;
+				font-family: Hermes;
+				font-size: 12px;
+				font-weight: bold;
+			}
+		}
+
+		// .m-bg-green {
+		// 	.m-icon-flexi(@lightGreen);
+		// 	text-shadow: 0 1px 0 fadeout(@black, 84%);
+		// 	margin-right: 6px;
+		//
+		// 	&:after {
+		// 		border-top: 6px solid @lightGreen;
+		// 		border-bottom: 6px solid transparent;
+		// 	}
+		// }
+
+		.m-pop-main {
+			margin-top: 6px;
+			font-size: 12px;
+			line-height: 14px;
+			color: @white;
+			letter-spacing: -0.2px;
+		}
+
+		.m-icon-close {
+			position: absolute;
+			right: 4px;
+    		top: 2px;
+			cursor: pointer;
+
+			.m-icon-close();
+
+			&:before {
+				color: @darkGray;
+				font-size: 13px;
+			}
+		}
+	}
+
+	.m-popOver-wrapper {
+		transform: translate3d(-90%, 0, 0);
+		width: 230px !important;
+
+		.m-popOver {
+			>p {
+				line-height: 14px;
+				color: @dark;
+			}
+		}
+		.m-popOver-arrow.m-popOver-arrow--top {
+			right: 7%;
+			left: auto;
+		}
+	}
+
+	.m-flexi-help {
+		height: 30px;
+		display: table;
+		display: flex;
+		align-items: center;
+		width: 100%;
+
+		p {
+			font-size: 10px;
+			line-height: 12px;
+			color: @dark;
+			display: table-cell;
+			flex: 1 1 auto;
+			min-width: 1%;
+			vertical-align: middle;
+		}
+
+		.m-t-light {
+			color: @green;
+			font-weight: bold;
+		}
+	}
+
+	.m-flexi-switch {
+		text-align: right;
+		font-size: 0;
+
+		.m-t,
+		.m-btn {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.m-t {
+			color: @dark;
+			line-height: 24px;
+		    padding: 0px 4px;
+		    box-sizing: border-box;
+			text-align: center;
+		}
+
+		.m-t-light {
+			background: @grassGreen;
+		}
+
+		.m-btn {
+			width: 22px;
+			height: 22px;
+			border-radius: 2px;
+			background: @white;
+			border: solid 1px @green;
+
+			text-align: center;
+			cursor: pointer;
+
+			&:before {
+				line-height: 24px;
+				color: @green;
+			}
+		}
+
+		.m-btn--disabled {
+			background: @dimBlack;
+			border: solid 1px @dimBlack;
+
+			&:before {
+				color: @midGray;
+			}
+		}
+
+		.m-btn-sub {
+			.m-icon-arrow-down2();
+		}
+
+		.m-btn-add {
+			.m-icon-arrow-up2();
+			&:before {
+				transform: translate3d(0, -1px, 0);
+				display: inline-block;
+			}
+		}
+
+		.m-current {
+			font-size: 14px;
+			margin: 0 2px;
+			min-width: 22px;
+		}
+
+		.m-max {
+			font-size: 12px;
+			margin-left: 7px;
+			min-width: 32px;
+		}
+	}
+
+	.m-flexi-note {
+		height: 38px;
+		width: 100%;
+		font-size: 10px;
+		line-height: 11px;
+		text-align: right;
+		padding-top: 7px;
+		box-sizing: border-box;
+		letter-spacing: -0.2px;
+
+		.m-t-tips {
+			color: @darkGray;
+		}
+
+		.m-t-err {
+			color: @red;
+		}
+	}
+}
+
+.m-betslips--green {
+	.m-flexibet {
+		background: @greenGray;
+	}
+
+	.m-error-wrap {
+		background: @greenGray;
+	}
+
+	.m-coins {
+		background: @greenGray;
+	}
+}

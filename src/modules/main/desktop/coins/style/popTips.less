@@ -1,0 +1,104 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+.m-coins-tips {
+	width: 400px;
+	padding: 0 25px 16px;
+	box-sizing: border-box;
+
+	.m-pop-header {
+		margin: 13px 0 30px;
+		font-weight: bold;
+		line-height: 22px;
+ 		font-size: 16px;
+		color: @dark;
+
+		width: 100%;
+		display: table;
+		display: flex;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+		justify-content: space-between;
+
+		> span {
+			display: table-cell;
+			vertical-align: middle;
+			flex: 1;
+			min-width: 1%;
+		}
+	}
+
+	.m-icon-close {
+		.m-icon-close();
+		display: inline-block;
+		cursor: pointer;
+		text-align: right;
+		transform: translate3d(10px,0,0);
+
+		&:before {
+			font-size: 12px;
+			line-height: 1;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	.m-pop-main {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.f-count {
+		counter-reset: index;
+	}
+
+	.f-count-item {
+		&::before {
+			counter-increment: index;
+			content: counter(index)'. ';
+		}
+	}
+
+	.m-l-top,
+	.m-l-mid {
+		li {
+			margin-bottom: 15px;
+		}
+	}
+
+	.m-btn-wrapper {
+		text-align: right;
+	}
+
+	.m-btn {
+		margin-top: 15px;
+		width: 85px;
+		height: 32px;
+		border-radius: 2px;
+		color: @white;
+		background-color: @green;
+		font-weight: 600;
+		font-size: 12px;
+		cursor: pointer;
+		outline: none;
+		border: none;
+
+		&:hover {
+			background: @midGreen;
+		}
+
+		&:active {
+			background: @lightGreen;
+		}
+	}
+}
+
+.m-coins-popTips.es-dialog {
+	border: none;
+
+	.es-dialog-main {
+		padding: 0 !important;
+		box-sizing: border-box;
+	}
+}

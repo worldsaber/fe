@@ -1,0 +1,136 @@
+[{
+    "script": "./modules/main/mobile/login/index.js",
+    "template": "./modules/main/mobile/login/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/collectGifts/index.js",
+	"template": "./modules/main/mobile/activity/collectGifts/index.ftl"
+}, {
+    "script": "./modules/main/mobile/appRegSucc/index.js",
+    "template": "./modules/main/mobile/appRegSucc/index.ftl"
+}, {
+    "script": "./modules/main/mobile/forgetPassword/index.js",
+    "template": "./modules/main/mobile/forgetPassword/index.ftl"
+}, {
+    "script": "./modules/main/mobile/index/index.js",
+    "template": "./modules/main/mobile/index/index.ftl"
+}, {
+    "script": "./modules/main/mobile/liveTracker/index.js",
+    "template": "./modules/main/mobile/liveTracker/index.ftl"
+}, {
+    "script": "./modules/main/mobile/liveBetting/index.js",
+    "template": "./modules/main/mobile/liveBetting/index.ftl"
+}, {
+    "script": "./modules/main/mobile/preMatch/index.js",
+    "template": "./modules/main/mobile/preMatch/index.ftl"
+}, {
+	"script": "./modules/main/mobile/bestOdds/index.js",
+	"template": "./modules/main/mobile/bestOdds/index.ftl"
+}, {
+    "script": "./modules/main/mobile/demo/index.js",
+    "template": "./modules/main/mobile/demo/index.ftl"
+}, {
+    "script": "./modules/main/mobile/page50x/index.js",
+    "template": "./modules/main/mobile/page50x/index.ftl"
+}, {
+    "script": "./modules/main/mobile/page40x/index.js",
+    "template": "./modules/main/mobile/page40x/index.ftl"
+},{
+    "script": "./modules/main/mobile/deposit/ng/index.js",
+    "template": "./modules/main/mobile/deposit/ng/index.ftl"
+}, {
+    "script": "./modules/main/mobile/deposit/ke/index.js",
+    "template": "./modules/main/mobile/deposit/ke/index.ftl"
+}, {
+    "script": "./modules/main/mobile/deposit/gh/index.js",
+    "template": "./modules/main/mobile/deposit/gh/index.ftl"
+}, {
+    "script": "./modules/main/mobile/withdraw/ng/index.js",
+    "template": "./modules/main/mobile/withdraw/ng/index.ftl"
+}, {
+    "script": "./modules/main/mobile/withdraw/ke/index.js",
+    "template": "./modules/main/mobile/withdraw/ke/index.ftl"
+}, {
+    "script": "./modules/main/mobile/withdraw/gh/index.js",
+    "template": "./modules/main/mobile/withdraw/gh/index.ftl"
+},{
+    "script": "./modules/main/mobile/transaction/index.js",
+    "template": "./modules/main/mobile/transaction/index.ftl"
+}, {
+    "script": "./modules/main/mobile/sportyCoins/index.js",
+    "template": "./modules/main/mobile/sportyCoins/index.ftl"
+}, {
+    "script": "./modules/main/mobile/order/index.js",
+    "template": "./modules/main/mobile/order/index.ftl"
+}, {
+    "script": "./modules/main/mobile/gifts/index.js",
+    "template": "./modules/main/mobile/gifts/index.ftl"
+}, {
+    "script": "./modules/main/mobile/myAccount/index.js",
+    "template": "./modules/main/mobile/myAccount/index.ftl"
+}, {
+    "script": "./modules/main/mobile/me/index.js",
+    "template": "./modules/main/mobile/me/index.ftl"
+}, {
+    "script": "./modules/main/mobile/virtual/index.js",
+    "template": "./modules/main/mobile/virtual/index.ftl"
+}, {
+    "script": "./modules/main/mobile/promotions/index.js",
+    "template": "./modules/main/mobile/promotions/index.ftl"
+}, {
+    "script": "./modules/main/mobile/jackpot/index.js",
+    "template": "./modules/main/mobile/jackpot/index.ftl"
+}, {
+    "script": "./modules/main/mobile/cashout/index.js",
+    "template": "./modules/main/mobile/cashout/index.ftl"
+}, {
+    "script": "./modules/main/mobile/customerService/index.js",
+    "template": "./modules/main/mobile/customerService/index.ftl"
+}, {
+    "script": "./modules/main/mobile/liveResult/index.js",
+    "template": "./modules/main/mobile/liveResult/index.ftl"
+}, {
+    "script": "./modules/main/mobile/help/index.js",
+    "template": "./modules/main/mobile/help/index.ftl"
+}, {
+    "script": "./modules/main/mobile/statistics/index.js",
+    "template": "./modules/main/mobile/statistics/index.ftl"
+}, {
+    "script": "./modules/main/mobile/sportsMenu/index.js",
+    "template": "./modules/main/mobile/sportsMenu/index.ftl"
+}, {
+    "script": "./modules/main/mobile/redeem/index.js",
+    "template": "./modules/main/mobile/redeem/index.ftl"
+},{
+	"script": "./modules/main/mobile/manualCheck/ke/index.js",
+    "template": "./modules/main/mobile/manualCheck/ke/index.ftl"
+},{
+	"script": "./modules/main/mobile/manualCheck/gh/index.js",
+    "template": "./modules/main/mobile/manualCheck/gh/index.ftl"
+},{
+	"script": "./modules/main/mobile/search/index.js",
+    "template": "./modules/main/mobile/search/index.ftl"
+}, {
+	"script": "./modules/main/mobile/shop/index.js",
+    "template": "./modules/main/mobile/shop/index.ftl"
+}, {
+	"script": "./modules/main/mobile/openBet/index.js",
+	"template": "./modules/main/mobile/openBet/index.ftl"
+}, {
+	"script": "./modules/main/mobile/dicebattle/index.js",
+	"template": "./modules/main/mobile/dicebattle/index.ftl"
+}, {
+	"script": "./modules/main/mobile/luckyPoker/index.js",
+	"template": "./modules/main/mobile/luckyPoker/index.ftl"
+}, {
+	"script": "./modules/main/mobile/games/index.js",
+    "template": "./modules/main/mobile/games/index.ftl"
+}, {
+	"script": "./modules/main/mobile/grayListUpload/index.js",
+	"template": "./modules/main/mobile/grayListUpload/index.ftl"
+}, {
+	"script": "./modules/main/mobile/message/index.js",
+	"template": "./modules/main/mobile/message/index.ftl"
+}, {
+	"script": "./modules/main/mobile/commentDetails/index.js",
+	"template": "./modules/main/mobile/commentDetails/index.ftl"
+}]

@@ -1,0 +1,25 @@
+@import 'base/styles/variable.less';
+
+.m-dp-gh-tips {
+	width: 100%;
+
+	padding: 23/@rem 16/@rem;
+	box-sizing: border-box;
+
+	.l-item {
+    	grid-template-columns: 16/@rem 1fr;
+    	align-items: flex-start;
+
+		color: @darkGray;
+		padding-bottom: 5/@rem;
+		box-sizing: border-box;
+
+		&::before {
+			font-size: 12/@rem;
+			line-height: 16/@rem;
+			display: table-cell;
+			vertical-align: top;
+			width: 16/@rem;
+		}
+	}
+}

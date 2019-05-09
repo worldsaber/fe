@@ -1,0 +1,60 @@
+@import 'base/styles/variable.less';
+@import 'base/styles/icon.less';
+
+
+.m-search--history {
+	.m-title {
+		grid-template-columns: 1fr 1fr;
+		padding: 32/@rem 15/@rem 17/@rem;
+		box-sizing: border-box;
+	}
+
+	.m-l-left,
+	.m-l-right {
+		flex: 1;
+		min-width: 50%;
+	}
+
+	.m-l-right {
+		text-align: right;
+		line-height: 14/@rem;
+		font-size: 12/@rem;
+		color: @linkBlue;
+	}
+
+	.m-l-left {
+		line-height: 16/@rem;
+		font-size: 14/@rem;
+		color: @dark;
+	}
+
+	.m-list {
+		width: 100%;
+		padding: 0 12/@rem;
+		box-sizing: border-box;
+
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+
+
+		.m-l-item {
+			display: inline-block;
+			vertical-align: top;
+			padding: 7/@rem 15/@rem;
+			box-sizing: border-box;
+			margin: 4/@rem 3/@rem;
+			border-radius: 2/@rem;
+			background-color: @thinGreen;
+
+			line-height: 14/@rem;
+			font-size: 12/@rem;
+			color: @darkGreen;
+
+			max-width: 100%;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+	}
+}

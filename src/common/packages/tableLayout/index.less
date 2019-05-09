@@ -1,0 +1,16 @@
+.m-table {
+	display: block;
+	width: 100%;
+
+	.m-table-row {
+		display: table;
+		display: flex;
+		width: 100%;
+	}
+
+	.m-table-cell {
+		display: table-cell;
+		flex: 1 1 auto;
+		min-width: 1%; // FF-fix what the hell?!
+	}
+}

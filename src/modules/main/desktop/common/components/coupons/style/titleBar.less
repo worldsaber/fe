@@ -1,0 +1,66 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+.m-coupon-wrapper {
+	overflow: visible !important;
+
+	.m-coupon-title {
+		height: 28px;
+		// overflow: hidden;
+		cursor: pointer;
+		position: relative;
+
+		.m-label,
+		.m-value {
+			display: inline-block;
+			vertical-align: top !important;
+			height: 100%;
+			font-size: 12px !important;
+			line-height: 28px;
+		}
+
+		.m-value {
+			float: right;
+			text-align: right;
+		}
+
+		.m-text--gray {
+			color: @darkGray;
+		}
+
+		.m-text--green {
+			color: @green;
+		}
+
+		.m-text,
+		.m-icon-pack,
+		.m-icon-unpack {
+			display: inline-block;
+			vertical-align: top;
+		    line-height: 28px;
+		    height: 28px;
+		}
+
+		.m-icon-pack {
+			// margin-top: 3px;
+
+			.m-icon-arrow-down2();
+			color: @green;
+
+			&:before {
+				font-size: 10px;
+			}
+		}
+
+		.m-icon-unpack {
+			// margin-top: -3px;
+
+			.m-icon-arrow-up2();
+			color: @green;
+
+			&:before {
+				font-size: 10px;
+			}
+		}
+	}
+}

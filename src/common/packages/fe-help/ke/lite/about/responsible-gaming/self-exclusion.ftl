@@ -1,0 +1,3 @@
+<div class="help-content-wrap"><h3 id="self-exclusion">Self-Exclusion</h3>
+<p>SportyBet provide Self-Exclusion option that allows players to temporarily close their account for a specified period. During this period, players will not be able to bet or play games, although players can still login to withdraw any remaining balance. However, please be noted that players can’t re-open the account during this period. We suggest players to consider this option or seek support from our customer service to help dealing with this problem.</p>
+</div>

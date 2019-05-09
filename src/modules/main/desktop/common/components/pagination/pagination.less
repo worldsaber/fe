@@ -1,0 +1,41 @@
+@import 'base/style/icon.less';
+@import 'base/style/variable.less';
+
+.pagination {
+	margin: 10px auto;
+	text-align: center;
+	
+	.pageNum {
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		color:@dark;
+		margin:0 5px;
+		cursor: pointer;
+	}
+	.icon-next,.icon-prev{
+		margin: 0!important;
+		.m-icon-arrow--right();
+		&:before{
+			font-size: 12px;
+			color:@dark;
+			font-weight: bold;
+		}
+		font-size: 0;
+	}
+	.icon-prev{
+		transform-origin: 50% 50%;
+		transform: rotate(-180deg);
+	}
+	.icon-disabled{
+		&::before{
+			color: @dimBlack;
+		}
+		cursor: default;
+	}
+	.selected{
+		background:@dimBlack;
+		border-radius: 2px;
+		cursor:default;
+	}
+}

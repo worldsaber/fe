@@ -1,0 +1,23 @@
+@import 'base/style/icon.less';
+@import 'base/style/variable.less';
+
+@keyframes loading {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.m-loading(@width: 36px, @height:36px, @fontSize: 14px) {
+	.m-icon-loading();
+
+	&:before {
+		width: @width;
+		height: @height;
+		display: table-cell;
+		font-size: @fontSize;
+		text-align: center;
+		color: @darkGray;
+		vertical-align: middle;
+		animation: loading 1.5s infinite linear;
+	}
+}

@@ -1,0 +1,86 @@
+/******************************************************************************************
+ * 基础通用样式
+ */
+/* 让高度真正100％ */
+html{ height:100%; }
+body{
+    min-height: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body,button,input,select,textarea{
+	font:12px/1.5 Helvetica, Verdana, Menlo, "Gill Sans", arial, simsun;
+}
+input,select,textarea{
+	font-size:100%;
+}
+
+/* 让链接在 hover 状态下显示下划线 */
+a:hover {
+	text-decoration:underline;
+}
+
+/* 默认不显示下划线，保持页面简洁 */
+ins,a {
+	text-decoration:none;
+}
+
+/*唯一元素noScript*/
+//
+// 唯一元素noScript
+// html代码
+// <noscript><div id="noScript">
+//	<div>
+//		<h2>请开启浏览器的Javascript功能</h2>
+//		<p>亲，没它我们玩不转啊！求您了，开启Javascript吧！<br/>不知道怎么开启Javascript？那就请<a href="..">猛击这里</a>！</p>
+//	</div>
+// </div></noscript>
+//
+#noScript{
+	position:fixed;
+	_position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:999;
+	background-color:#ccc;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+
+	div{
+		background-color:#222;
+		padding:10px;
+		border:1px solid #000;
+		position:absolute;
+		width:350px;
+		margin-left:-175px;
+		left:50%;
+		top:30%;
+		_top:150px;
+		border-radius:12px;
+		transform:all 0.3s ease-out;
+		&:hover{
+			transform:cale(1.5);
+		}
+	}
+
+	h2{
+		font-size:18px;
+		font-weight:700;
+		color:#fff;
+	}
+
+	p{
+		margin:8px 0 0;
+		color:#fff;
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+	a{
+		color:#fff;
+		text-decoration:underline;
+	}
+}

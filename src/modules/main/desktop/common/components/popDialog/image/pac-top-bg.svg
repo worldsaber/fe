@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="280px" height="170px" viewBox="0 0 280 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Pop/Package-Bg@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="3.20640479%" y1="-32.7337254%" x2="3.20640479%" y2="94.0079725%" id="linearGradient-1">
+            <stop stop-color="#1EC868" offset="0%"></stop>
+            <stop stop-color="#097D2C" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="280" height="360" rx="10"></rect>
+        <radialGradient cx="50%" cy="56.0207146%" fx="50%" fy="56.0207146%" r="98.2244033%" gradientTransform="translate(0.500000,0.560207),scale(0.992630,1.000000),rotate(80.312262),translate(-0.500000,-0.560207)" id="radialGradient-4">
+            <stop stop-color="#FCFF32" stop-opacity="0.84021173" offset="0%"></stop>
+            <stop stop-color="#3497DA" stop-opacity="0.443812274" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="红包优化" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pop-Package" transform="translate(-40.000000, -140.000000)">
+            <g id="Gifts-Pop-Package-bg" transform="translate(40.000000, 140.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Rectangle-5" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <path d="M139.8179,102.592989 L118.618776,-67 L161.017023,-67 L139.8179,102.592989 Z M143.109649,103.29087 L204.01102,-56.4032374 L241.44645,-36.498466 L143.109649,103.29087 Z M146.685276,106.494104 L273.448402,-8.14574338 L297.767038,26.5848676 L146.685276,106.494104 Z M147.723407,109.697439 L313.468753,67.9881439 L318.635799,110.070361 L147.723407,109.697439 Z M147.372724,113.042558 L313.298505,154.028163 L298.104332,193.610337 L147.372724,113.042558 Z M144.580054,116.948086 L273.813933,228.795256 L242.305895,257.165221 L144.580054,116.948086 Z M141.499381,118.316115 L203.097058,277.742936 L161.95822,288 L141.499381,118.316115 Z M138.136418,118.316115 L117.67758,288 L76.5387416,277.742936 L138.136418,118.316115 Z M135.055745,116.948086 L37.3299047,257.165221 L5.82186665,228.795256 L135.055745,116.948086 Z M132.263076,113.042558 L-18.4685331,193.610337 L-33.662706,154.028163 L132.263076,113.042558 Z M131.912392,109.697439 L-39,110.070361 L-33.8329534,67.9881439 L131.912392,109.697439 Z M132.950523,106.494104 L-18.1312382,26.5848676 L6.18739734,-8.14574338 L132.950523,106.494104 Z M136.52615,103.29087 L38.1893492,-36.498466 L75.6247796,-56.4032374 L136.52615,103.29087 Z" id="Triangle" fill="url(#radialGradient-4)" opacity="0.140000001" mask="url(#mask-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

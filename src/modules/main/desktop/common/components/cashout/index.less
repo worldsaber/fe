@@ -1,0 +1,34 @@
+@import 'base/style/variable.less';
+
+@import './style/title.less';
+@import './style/detail.less';
+@import './style/list.less';
+@import './style/fold.less';
+@import './style/error.less';
+@import './style/betMoney.less';
+@import './style/betTips.less';
+@import './style/pagination.less';
+@import './style/comfirm.less';
+
+.m-cashout {
+
+	&.m-cashout-fix {
+		margin-bottom: -5px;
+	}
+
+	.m-cashout-item {
+		background: @white;
+		padding: 8px 0;
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	.m-cashout-list {
+		border-radius: 2px;
+		margin-top: 6px;
+
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+}

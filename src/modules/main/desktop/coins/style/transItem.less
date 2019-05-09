@@ -1,0 +1,158 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+@import './pageDefaultMixin.less';
+
+.m-coins--trans {
+	.m-error-wrapper {
+		margin-top: 25%;
+		.m-error-wrapper();
+	}
+
+	.m-coins-nav  {
+		text-align: center;
+
+		.f-item {
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 16px;
+			color: @dark;
+		}
+	}
+
+	.m-coins--header {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 24px;
+		color: @dark;
+		text-align: center;
+		position: relative;
+		margin-bottom: 25px;
+	}
+
+	.m-icon-close {
+		.m-icon-close();
+		position: absolute;
+		top: -4px;
+		right: 0;
+		cursor: pointer;
+
+		&:before {
+			font-size: 12px;
+			line-height: 1;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	.m-list-wrapper {
+		max-height: 350px;
+		overflow: scroll;
+		margin-top: 6px;
+	}
+}
+
+.m-coins-trans--item {
+	padding: 16px;
+	box-sizing: border-box;
+	border-bottom: 1px solid @fogGrayBorder;
+	font-size: 0;
+
+	&:first-of-type {
+		padding-top: 10px;
+	}
+
+	.m-l-left,
+	.m-l-right {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.m-l-left {
+		width: 67%;
+	}
+
+	.m-l-right {
+		width: 32%;
+		text-align: right;
+	}
+
+	.m-time {
+		line-height: 14px;
+		font-size: 12px;
+		color: @darkGray;
+	}
+
+	.m-desc {
+		line-height: 18px;
+		font-size: 16px;
+		color: @blueBlack;
+		margin-top: 5px;
+	}
+
+	.m-bet {
+		margin-top: 8px;
+		line-height: 12px;
+		font-size: 10px;
+
+		> a {
+			color: @linkBlue;
+
+			&:hover,
+			&:visited {
+				color: @linkBlue;
+				text-decoration: none;
+			}
+		}
+
+		.m-icon-more {
+			transform: translate3d(6px, 3px, 0);
+			display: inline-block;
+
+			.m-icon-arrow--right();
+			&::before {
+				font-size: 12px;
+				line-height: 1;
+			}
+		}
+	}
+
+	.m-value {
+		line-height: 20px;
+		font-size: 18px;
+		font-weight: bold;
+
+		&.m-icon-right {
+			.m-icon-success();
+			display: inline-block;
+			vertical-align: middle;
+
+			&:before {
+				font-size: 14px;
+				line-height: 1;
+			}
+		}
+	}
+
+	.m-t-bblack {
+		color: @blueBlack;
+	}
+
+	.m-t-dyellow {
+		color: @darkYellow;
+	}
+
+	.m-t-green {
+		color: @green;
+	}
+}
+
+
+.es-dialog.m-coins-popTrans {
+	width: 400px !important;
+	min-height: 500px;
+
+	padding: 10px 5px;
+	box-sizing: border-box;
+
+
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152" height="60" viewBox="0 0 152 60">
+    <defs>
+        <rect id="a" width="152" height="60" rx="4"/>
+        <path id="c" d="M54.891 13.775c-21.49 0-38.908 18.982-38.908 42.391 0 23.41 17.418 42.392 38.908 42.392 21.48 0 38.908-18.982 38.908-42.392 0-23.41-17.427-42.391-38.908-42.391zm10 58.807c-2.046 1.645-4.518 2.887-7.456 3.14v5.229h-5.138v-5.31c-3.14-.404-5.4-1.42-7.305-3.086-2.523-2.191-3.293-4.532-3.79-7.469l7.732-2.058c0 2.765 2.624 5.933 6.535 5.933 2.33 0 5.117-1.242 5.086-4.548-.02-2.705-2.644-4.642-5.481-5.338-2.939-.717-8.876-2.92-10.517-4.885-1.652-1.953-2.108-4.73-2.108-7.96 0-2.776 1.135-5.58 2.979-7.275 1.793-1.65 3.89-2.71 6.87-3.107v-4.46h5.137v4.444c2.816.33 5.137 1.297 6.92 2.953 2.219 2.075 3.343 4.736 3.343 6.336l-7.72 1.976c0-2.075-2.858-4.636-4.803-4.636-2.523 0-4.519.773-4.519 4.211 0 2.473 1.723 3.28 4.712 4.322 5.025 1.745 8.835 4.013 10.588 5.973 1.742 1.97 2.614 4.449 2.614 7.446 0 3.704-1.267 6.205-3.678 8.17z"/>
+        <filter id="d" width="112.9%" height="111.8%" x="-6.4%" y="-5.9%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="4.5"/>
+            <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.917647059 0 0 0 0 0.674509804 0 0 0 0 0.0196078431 0 0 0 0.5 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="152" height="60" fill="#FEF3C0" rx="4"/>
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <g fill-rule="nonzero" mask="url(#b)">
+            <g transform="rotate(-30 41.509 -95.42)">
+                <use fill="#FBDC60" fill-rule="evenodd" xlink:href="#c"/>
+                <use fill="#000" filter="url(#d)" xlink:href="#c"/>
+            </g>
+        </g>
+    </g>
+</svg>

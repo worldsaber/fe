@@ -1,0 +1,79 @@
+@import 'base/style/variable.less';
+@import 'base/style/logoLoading.less';
+@import 'base/style/icon.less';
+
+.m-error-wrapper() {
+	background: @white;
+	display: table;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	> div {
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.m-icon-loading {
+		.m-icon-logo();
+		display: block;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		color: @white;
+		background: @lightGray;
+		border-radius: 50%;
+		margin-bottom: 10px;
+		animation: logoLoading 1s infinite cubic-bezier(0.4, 0, 1, 1) alternate;
+
+		&:before {
+			font-size: 32px;
+		}
+	}
+
+	.m-text-msg {
+		color: @darkGray;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.m-error-msg {
+		display: block;
+		font-size: 14px;
+		line-height: 19px;
+		color: @darkGray;
+		margin: 4px 0 18px;
+	}
+
+	.m-btn {
+		width: 65px;
+		height: 32px;
+		line-height: 32px;
+		font-size: 12px;
+		border-radius: 2px;
+		background: @green;
+		color: @white;
+		cursor: pointer;
+
+		&:hover {
+			background: @midGreen;
+		}
+
+		&:active {
+			background: @lightGreen;
+		}
+	}
+
+	.m-empty {
+		.m-icon-empty();
+
+		&:before {
+			font-size: 36px;
+			line-height: 1;
+			display: block;
+			margin-bottom: 20px;
+		}
+	}
+}

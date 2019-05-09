@@ -1,0 +1,123 @@
+@import 'base/styles/variable.less';
+
+.input() {
+	.m-input-wrapper {
+		width: 100%;
+
+		.m-input {
+			border: 1px solid @grayBorder;
+			border-radius: 2px;
+			font-size: 14px;
+			height: 100%;
+			padding-left: 18px;
+		}
+
+		.m-input-icon:before {
+			line-height: 16px;
+		}
+
+		&.m-input-wrapper--active {
+			.m-input {
+				border-color: @green;
+			}
+
+			.m-input-prepend {
+				border-color: @green;
+			}
+
+			.m-input-icon--clickable {
+				&:hover {
+					color: @green !important;
+
+					& + .m-input {
+						border-color: @green !important;
+					}
+				}
+			}
+		}
+
+		&.m-input-wrapper--error {
+			.m-input {
+				border-color: @red !important;
+			}
+
+			.m-input-prepend {
+				border-color: @red !important;
+			}
+
+			.m-input-icon--clickable {
+				&:hover {
+					color: @red !important;
+
+					& + .m-input {
+						border-color: @red !important;
+					}
+				}
+			}
+		}
+
+		.m-input-icon--clickable {
+			&:hover {
+				color: @darkGray !important;
+
+				& + .m-input {
+					border-color: @grayBorder !important;
+				}
+			}
+		}
+	}
+
+	.m-input-group--prepend {
+
+		&.m-input-wrapper--error {
+			.m-input {
+				border-left: none !important;
+			}
+		}
+
+		.m-input-prepend {
+			border-color: @grayBorder;
+			border-radius: 2px 0 0 2px;
+			padding-left: 18px;
+		}
+
+		.m-input {
+			border-left: none !important;
+			border-radius: 0 2px 2px 0;
+			padding-left: 0;
+		}
+
+		&.m-input-wrapper--active {
+			.m-input-prepend {
+				border-color: @green;
+			}
+		}
+	}
+
+	.m-input-group--append {
+		.m-input {
+			border-right: none !important;
+			border-radius: 2px 0 0 2px;
+		}
+
+		.m-input-append {
+			border-color: @grayBorder;
+		}
+	}
+
+	.m-input-wrapper--active {
+		&.m-input-group--append {
+			.m-input-append {
+				border-color: @green;
+			}
+		}
+	}
+
+	.m-input-wrapper--error {
+		&.m-input-group--append {
+			.m-input-append {
+				border-color: @red;
+			}
+		}
+	}
+}

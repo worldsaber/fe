@@ -1,0 +1,60 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+@import './pageDefaultMixin.less';
+
+.m-sportycoins {
+	padding: 0 65px 59px;
+	box-sizing: border-box;
+	min-height: 500px;
+
+	color: @dark;
+	background: @white;
+
+	margin-left: 21px;
+
+	.f-flex,
+	.f-alg-side {
+		width: 100%;
+		display: table;
+		display: flex;
+		display: grid;
+	}
+
+	.f-alg-side {
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+		justify-content: space-between;
+
+		.f-alg-side-item {
+			display: table-cell;
+			vertical-align: middle;
+			flex: 1;
+			min-width: 1%;
+
+			&:last-of-type {
+				text-align: right;
+			}
+		}
+	}
+
+	.f-flex-item {
+		flex: 1;
+		min-width: 1%;
+	}
+
+	.f-count {
+		counter-reset: index;
+	}
+
+	.f-count-item {
+		&::before {
+			counter-increment: index;
+			content: counter(index)'.';
+		}
+	}
+
+	.m-error-wrapper {
+		height: 364px;
+		.m-error-wrapper();
+	}
+}

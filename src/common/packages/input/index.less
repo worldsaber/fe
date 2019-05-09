@@ -1,0 +1,217 @@
+@import 'iconfont/iconfont-mixin.less';
+@activeColor: #4a90e2;
+@errorColor: #f1828f;
+@defaultColor: #d1cccc;
+@defaultTextColor: #bbb;
+@mainTextColor: #4a4a4a;
+@disabledColor: #f3f3f3;
+@disableTextColor: #ccc;
+@white: #fff;
+
+.m-input-wrapper {
+	position: relative;
+	font-size: 14px;
+	display: inline-block;
+	line-height: normal;
+	outline: none;
+
+	.m-input {
+		appearance: none;
+		background-color: @white;
+		color: @mainTextColor;
+		display: inline-block;
+		font-size: inherit;
+		width: 100%;
+		max-width: 100%;
+		height: 36px;
+		line-height: 1;
+		outline: none;
+		border: none;
+		padding: 3px 10px;
+		box-sizing: border-box;
+		transition: border-color 0.2s cubic-bezier(.645,.045,.355,1);
+
+		&::placeholder {
+			color: @defaultTextColor;
+		}
+	}
+	.m-input-com{
+		position: relative;
+	}
+	.m-input-icon {
+		position: absolute;
+		width: 35px;
+		height: 100%;
+		right: 0;
+		top: 0;
+		text-align: center;
+		color: @defaultTextColor;
+		transition: all 0.3s;
+
+		visibility: hidden;
+
+		// &:after {
+		// 	content: '';
+		// 	height: 100%;
+		// 	width: 0;
+		// 	display: inline-block;
+		// 	vertical-align: middle;
+		// }
+
+		&:before {
+			content: '\e602';
+			.iconfont();
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		& + .m-input {
+			padding-right: 35px;
+		}
+
+		&.m-input-icon--clickable {
+			&:hover {
+				cursor: pointer;
+				color: @activeColor;
+
+				& + .m-input {
+					border-color: @activeColor;
+				}
+			}
+		}
+
+		&.m-input-icon--show {
+			visibility: visible;
+		}
+	}
+
+	.m-input-text--icon {
+		position: absolute;
+		width: 42px;
+		height: 100%;
+		right: 0;
+		top: 0;
+		text-align: center;
+		color: @defaultTextColor;
+		transition: all 0.3s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		// visibility: hidden;
+
+		& + .m-input {
+			padding-right: 42px;
+		}
+
+		// &.m-input-text--show {
+		// 	visibility: visible;
+		// }
+	}
+
+	&.m-input-wrapper--active {
+		border: none !important;
+
+		.m-input {
+			border: 1px solid @activeColor;
+		}
+	}
+
+	&.m-input-wrapper--disabled {
+		.m-input,
+		.m-input-append,
+		.m-input-prepend {
+			background-color: @disabledColor;
+			border-color: @defaultColor;
+			color: @disableTextColor;
+			cursor: not-allowed;
+		}
+
+		.m-input {
+			&::placeholder {
+				color: @disableTextColor;
+			}
+		}
+	}
+
+	&.m-input-wrapper--error {
+		border: none !important;
+
+		.m-input {
+			border: 1px solid @errorColor !important;
+		}
+	}
+
+	&.m-input-wrapper--large {
+		font-size: 16px;
+
+		& .m-input {
+			height: 42px;
+		}
+	}
+
+	&.m-input-wrapper--small {
+		font-size: 13px;
+
+		& .m-input {
+			height: 30px;
+		}
+	}
+}
+
+.m-input-group {
+	line-height: normal;
+	display: inline-table;
+	width: 100%;
+	border-collapse: separate;
+
+	& > .m-input {
+		vertical-align: middle;
+		display: table-cell;
+	}
+
+	.m-input-append,
+	.m-input-prepend {
+		background-color: @white;
+		color: @mainTextColor;
+		vertical-align: middle;
+		display: table-cell;
+		position: relative;
+		border: 1px solid @defaultColor;
+		border-radius: 4px;
+		padding: 0 10px;
+		width: 1px;
+		white-space: nowrap;
+
+		& .m-input {
+			font-size: inherit;
+		}
+	}
+
+	&.m-input-group--prepend {
+		.m-input-prepend {
+			border-right: 0;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		.m-input {
+			border: 1px solid @defaultColor;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
+
+	&.m-input-group--append {
+		.m-input-append {
+			border-left: 0;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+
+		.m-input {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+}

@@ -1,0 +1,3 @@
+<div class="help-content-wrap"><h3 id="responsible-gambling">Responsible Gambling</h3>
+<p>SportyBet is committed to Responsible Gaming. We are dedicated to make gaming as an enjoyable leisure activity and provide an enjoyable betting experience to all involved parties. The majority of players enjoy the entertainment and gaming services we provided but for some people gaming may stop being a harmless leisure activity and become a problem. SportyBet has a series of measures for responsible betting which allow customers to limit their spending and it is a mature way of ensuring all involved parties stay in control.</p>
+</div>

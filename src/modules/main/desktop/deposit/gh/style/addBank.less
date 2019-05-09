@@ -1,0 +1,47 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+@import 'base/style/popoverTips.less';
+@import 'components/login/style/buttonMixin.less';
+@import '../style/addBankMixin.less';
+
+.m-bank {
+	padding-top: 28px;
+	box-sizing: border-box;
+
+	.addBank();
+
+	.f-line {
+		&:nth-of-type(1) {
+			margin-bottom: 32px;
+		}
+	}
+
+	.m-pop-tips {
+		.f-pop-over-top(@white, @darkGray);
+		width: 260px;
+		padding: 35px 15px 15px;
+		font-size: 12px;
+		line-height: 14px;
+		color: @dark;
+
+		.m-icon-close {
+			position: absolute;
+			right: 10px;
+    		top: 10px;
+			cursor: pointer;
+
+			.m-icon-close();
+
+			&:before {
+				font-size: 12px;
+				line-height: 1;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

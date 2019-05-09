@@ -1,0 +1,92 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+@import 'components/login/style/button.less';
+@import 'components/login/style/input.less';
+@import 'components/betslips/style/popDialog.less';
+
+@import './phone.less';
+@import './code.less';
+@import './sms.less';
+@import './success.less';
+
+.m-page-wrapper {
+	.m-page-header {
+		height: 73px;
+		background: @red;
+
+		> div {
+			width: 1000px;
+			min-width: 1000px;
+			margin: 0 auto;
+		}
+
+		.m-image-wrapper {
+			display: inline-block;
+			height: 100%;
+			width: 207px;
+			padding: 20px 16px;
+			box-sizing: border-box;
+			.m-image-wrapper();
+		}
+	}
+
+	.m-page-container {
+		background: @lightGray url(../../changePassword/image/forgotPasswordBg2.png) no-repeat left top;
+		background-size: cover;
+		width: 100%;
+		padding-bottom: 60px;
+		box-sizing: border-box;
+
+		> div {
+			width: 880px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+	}
+
+	.m-page-title {
+		font-size: 26px;
+		color: @dark;
+		line-height: 33px;
+		padding: 28px 0 32px;
+
+		.m-icon-user {
+			.m-icon-account();
+
+			&:before {
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 23px;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.m-page-main {
+		border-radius: 2px;
+		width: 880px;
+		height: 444px;
+		background: @lighterGray;
+	}
+
+	.m-steps {
+		padding: 35px 0;
+		border-bottom: 1px solid @fogGrayBorder;
+		background: @white;
+	}
+
+	.m-opt-wrapper,
+	.m-page-opt {
+		position: relative;
+
+		.m-error-tips {
+			position: absolute;
+			top: 50px;
+			font-size: 12px;
+			line-height: 14px;
+			color: @red;
+		}
+	}
+}

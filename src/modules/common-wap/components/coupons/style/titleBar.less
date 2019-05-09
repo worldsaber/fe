@@ -1,0 +1,51 @@
+@import 'base/styles/variable.less';
+@import 'base/styles/icon.less';
+
+.m-coupon-wrapper {
+	position: relative;
+	text-align: left;
+	.m-coupon-title {
+		height: 28/@rem;
+		overflow: hidden;
+		.m-label,
+		.m-value {
+			display: inline-block;
+			vertical-align: top !important;
+			height: 100%;
+			font-size: 14/@rem !important;
+			line-height: 28/@rem;
+		}
+
+		.m-label--green {
+			color: @green;
+		}
+
+		.m-value {
+			float: right;
+			text-align: right;
+			color: @dark;
+		}
+
+		.m-text--green {
+			color: @green;
+		}
+
+		.m-text,
+		.m-icon-pack,
+		.m-icon-unpack {
+			display: inline-block;
+			vertical-align: top;
+		    line-height: 28/@rem;
+		    height: 28/@rem;
+		}
+
+		.m-icon-pack {
+			color: @darkGray;
+			.m-icon-arrow--right();
+			&:before {
+				font-weight: bold;
+				font-size: 12/@rem;
+			}
+		}
+	}
+}

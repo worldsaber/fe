@@ -1,0 +1,263 @@
+@import 'base/styles/variable.less';
+@import 'base/styles/icon.less';
+
+/* 优惠券图形变量 */
+@giftValHeight: 73/@rem;
+@giftDescHeight: 41/@rem;
+
+.es-dialog.m-gift-pop {
+	padding-top: 0;
+	width: auto!important;
+	margin: 0!important;
+	transform: translate(-50%, -50%);
+	background-color: transparent!important;
+	top: 50%;
+	left: 50%;
+	box-shadow: none;
+
+	.es-dialog-body {
+		background-color: transparent;
+		.es-dialog-main {
+			padding: 0;
+			background-color: transparent;
+			overflow: initial;
+		}
+	}
+}
+
+.m-gift-pop{
+	overflow: visible;
+}
+
+.m-gift-wrapper {
+	width: 280/@rem;
+	// height: 365/@rem;
+	border-radius: 10/@rem;
+	background: url(../image/dis-top-bg.svg) no-repeat;
+	background-size: 100%;
+	box-shadow: 0 0 24px 0 rgba(0,0,0,0.25), 0 0 24px 0 rgba(112,76,76,0.25);
+	position: relative;
+
+	.m-pop-bg {
+		position: absolute;
+		top: -3/@rem;
+		left: 67/@rem;
+		width: 59/@rem;
+		height: 41/@rem;
+
+		>img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.m-pop-header {
+		width: 100%;
+		position: absolute;
+		top: 100%;
+		right: 37%;
+		.m-icon-close {
+		    position: absolute;
+		    right: 14/@rem;
+			top: 14/@rem;
+			color: @white;
+			width: 40/@rem;
+			height: 40/@rem;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 40/@rem;
+			background: @dark;
+			display: block;
+			.m-icon-close();
+			z-index: 222;
+
+			&:before {
+				font-size: 10/@rem;
+			}
+		}
+	}
+	
+	.m-pop-main {
+		padding-top: 40/@rem;
+		box-sizing: border-box;
+		text-align: center;
+		position: relative;
+		.m-coupon-type{
+			font-size: 14/@rem;
+			line-height: 1.13;
+			text-align: center;
+			color: @darkGreen;
+			margin-top: -12/@rem;
+		}
+		.m-coupons-info {
+			width: 93%;
+			position: relative;
+			display: inline-block;
+			border-radius: 5/@rem;
+			top: -15/@rem;
+		}
+
+		.m-icon-left,
+		.m-icon-right {
+			position: absolute;
+			z-index: 222;
+			top: @giftValHeight;
+			transform: translate3d(0, -50%, 0);
+			> div {
+				background: @midGreen;
+				width: 5/@rem;
+				height: 10/@rem;
+			}
+		}
+
+		.m-icon-left {
+			left: 0;
+
+			> div {
+				border-radius: 0 5/@rem 5/@rem 0;
+			}
+		}
+
+		.m-icon-right {
+			right: -1px;
+
+			> div {
+				border-radius: 5/@rem 0 0 5/@rem;
+			}
+		}
+
+		.m-coupon--green {
+			background: url(../image/cash-card-bg.svg) no-repeat;
+			background-size: 108%;
+			background-position: bottom;
+		}
+
+		.m-coupon--yellow {
+			background: url(../image/dis-card-bg.svg) no-repeat;
+			background-size: 108%;
+			background-position: bottom;
+		}
+
+		.m-coupon--mix {
+			background: url(../image/pac-card-bg.svg) no-repeat;
+			background-size: 108%;
+			background-position: bottom;
+		}
+
+		.m-coupons-title {
+			width: 93%;
+			overflow: hidden;
+			height: @giftValHeight;
+			padding: 34/@rem 10/@rem 6/@rem;
+			box-sizing: border-box;
+			text-align: right;
+			color: @white;
+
+			.m-value {
+				font-size: 28/@rem;
+				line-height: 38/@rem;
+				font-weight: bold;
+			}
+
+			.m-lable {
+				margin-top: 5/@rem;
+				font-size: 12/@rem;
+				line-height: 16/@rem;
+				margin-right: 2/@rem;
+				font-weight: 500;
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			.m-desc {
+				display: block;
+				width: 100%;
+				font-size: 14/@rem;
+				line-height: 19/@rem;
+				font-weight: bold;
+				float: right;
+			}
+		}
+
+		.m-coupons-detail {
+			width: 93%;
+			height: @giftDescHeight;
+			font-size: 14/@rem;
+			line-height: 100/@rem;
+			text-align: right;
+			color: fadeout(@white, 20%);
+			padding-right: 10/@rem;
+			box-sizing: border-box;
+
+		}
+
+		.m-coupons-use {
+			color: @white;
+			opacity: 0.6;
+			text-align: right;
+			padding-right: 30/@rem;
+			position: relative;
+		}
+	}
+	.m-gifts-desc-wrapper {
+		width: 280/@rem;
+		position: relative;
+		margin-top: -15/@rem;
+		border-bottom-left-radius: 10/@rem;
+		border-bottom-right-radius: 10/@rem;
+		background-image: linear-gradient(to bottom, #38e080, #32ce62);
+		box-shadow: 0 -3px 12px 0 rgba(9, 107, 39, 0.3);
+		color: @darkGreen;
+		line-height: 1.5;
+		.m-gifts-desc{
+			padding: 20/@rem;
+			.title {
+				font-size: 16/@rem;
+				font-weight: bold;
+				line-height: 1;
+				text-align: center;
+				margin-bottom: 14/@rem;
+			}
+		}
+		.m-btn-wrapper {
+			text-align: center;
+			padding-bottom: 18/@rem;
+		}
+
+		.af-button--text {
+			border: 1px solid @dark;
+			height: 42/@rem;
+			border-radius: 2/@rem;
+			font-size: 16/@rem;
+			line-height: 19/@rem;
+			font-weight: bold;
+			color: @dark;
+
+			&:hover,
+			&:active {
+				background: @lightGreen;
+				border-color: @lightGreen;
+				color: @dark;
+			}
+		}
+		.m-btn-gift{
+			width: 90/@rem;
+			margin-right: 14/@rem;
+			color: #096b27;
+		}
+		.m-btn-bet{
+			width: 120/@rem;
+			background-color: #096b27;
+			border-color: #096b27;
+			color: #FFF;
+			&:hover{
+				color: #FFF;
+			}
+		}
+
+	}
+}
+.m-cash-wrapper {
+	background: url(../image/cash-top-bg.svg) no-repeat;
+	background-size: 100%;
+}

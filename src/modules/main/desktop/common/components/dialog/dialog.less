@@ -1,0 +1,80 @@
+
+  // pc 弹窗默认样式
+  .es-dialog {
+	  .es-dialog-head {
+		  height:37px;
+		  padding: 8px 15px 0;
+		  h1{
+			  display:block;
+			  line-height:37px;
+			  text-align:left;
+			  font-weight:700;
+			  padding:0 0 0 .5em;
+			  margin:0;
+			  font-size: 14px;
+			  color: #353A45;
+			  font-weight: 700;
+		  }
+		  .es-dialog-close {
+			  font-family: "Microsoft YaHei",arial,simsun,SimHei;
+			  position: absolute;
+			  font-size: 20px;
+			  font-weight: normal;
+			  top: 1px;
+			  right: 12px;
+			  color: #999;
+			  background: none;
+			  em {
+				  font-style: normal;
+				  cursor: default;
+				  font-size: 1.06666667rem;
+				  color: #353A45;
+				  font-family: 'dialog-font';
+			  }
+		  }
+	  }
+	  .es-dialog-body {
+		  min-height: 50px;
+		  background:#fff;
+		  padding:0;
+		  margin:0;
+		  .es-dialog-main {
+			  background:#fff;
+			  min-height:50px;
+			  _height:50px;
+			  padding:15px;
+			  overflow:auto;
+			  color: #353A45;
+		  }
+	  }
+	  .es-dialog-footer {
+		  padding: 8px 5px;
+		  text-align: right;
+		  .es-dialog-btn {
+			  box-sizing: border-box;
+			  min-width: 85px;
+			  font: 12px 16px/2 "Microsoft YaHei",arial,simsun,SimHei;
+			  border-radius: 2px;
+			  border-width: 0px;
+			  background: #0D9737;
+			  color: #fff;
+			  &:hover{
+				background: #32CE62;
+			  }
+			  &:active{
+				background: #33EA6A;
+			  }
+		  }
+		  .es-dialog-focus-btn {
+			background: #0D9737;
+			color: #fff;
+			border-width: 0px;
+			&:hover{
+			background: #32CE62;
+			}
+			&:active{
+			background: #33EA6A;
+			}
+		  }
+	  }
+	}

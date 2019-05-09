@@ -1,0 +1,62 @@
+@import 'base/styles/variable.less';
+@import 'base/styles/icon.less';
+
+.es-dialog.m-act-pop {
+	padding-top: 0;
+	width: auto!important;
+	margin-top: -16/@rem !important;
+    margin-left: 0 !important;
+	transform: translate(-50%, -50%);
+	background-color: transparent!important;
+	top: 50%;
+	left: 50%;
+	box-shadow: none;
+	overflow: initial;
+
+	.es-dialog-body {
+		background-color: transparent;
+		.es-dialog-main {
+			padding: 0;
+			background-color: transparent;
+			overflow: initial;
+		}
+	}
+}
+
+.m-act-wrapper {
+	background: transparent;
+	overflow: hidden;
+	width: 280/@rem;
+
+	.m-icon-close {
+		position: absolute;
+		left: 50%;
+		bottom: -56/@rem;
+		transform: translate(-50%);
+		background-color: rgba(255, 255, 255, 0.1);
+		border-radius: 20/@rem;
+		width: 40/@rem;
+		height: 40/@rem;
+		text-align: center;
+		line-height: 40/@rem;
+		color: @white;
+
+		.m-icon-close();
+
+		&:before {
+			font-size: 18/@rem;
+		}
+	}
+
+	.m-act-main {
+		margin-top: 16/@rem;
+		width: 280/@rem;
+		max-height: 380/@rem;
+		display: block;
+
+		>img {
+			width: 100%;
+			// height: 100%;
+		}
+	}
+}

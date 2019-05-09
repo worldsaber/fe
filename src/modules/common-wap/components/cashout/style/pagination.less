@@ -1,0 +1,46 @@
+@import 'base/styles/icon.less';
+@import 'base/styles/variable.less';
+
+.m-cashout {
+	.m-pagination-wrapper {
+
+		ul {
+			width: 100%;
+			text-align: center;
+		}
+
+		li {
+			display: inline-block;
+			height: 32px;
+			line-height: 32px;
+			font-size: 10px;
+			color: @white;
+			font-weight: bold;
+		}
+
+		.m-total {
+			font-weight: normal;
+		}
+
+		.m-icon-prev,
+		.m-icon-next {
+			&:before {
+				width: 32px;
+				height: 32px;
+				line-height: 32px;
+				display: inline-block;
+				text-align: center;
+				font-size: 10px !important;
+				font-weight: bold;
+			}
+		}
+
+		.m-icon-next {
+			.m-icon-arrow--right();
+		}
+
+		.m-icon-prev {
+			.m-icon-back();
+		}
+	}
+}

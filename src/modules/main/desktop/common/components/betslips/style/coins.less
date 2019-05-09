@@ -1,0 +1,91 @@
+@import 'base/style/variable.less';
+
+.m-betslips {
+	.m-coins {
+		margin-top: -12px;
+		padding: 0 7px 6px;
+		box-sizing: border-box;
+
+		> ul {
+			padding: 6px 8px;
+			box-sizing: border-box;
+			background: @grassGreen;
+			position: relative;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: -3px;
+				right: 10%;
+				width: 6px;
+				height: 6px;
+				background: @grassGreen;
+				transform: rotate(45deg);
+			}
+		}
+
+		.m-c-item {
+			font-size: 10px;
+			line-height: 14px;
+			font-weight: 500;
+			color: @dark;
+			cursor: pointer;
+
+			&:first-of-type {
+				margin-bottom: 6px;
+			}
+		}
+
+		.t-c-green {
+			color: @green;
+			font-weight: bold;
+		}
+
+		.i-check {
+			position: relative;
+			width: 14px;
+			height: 14px;
+			display: inline-block;
+			vertical-align: middle;
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				width: 12px;
+				height: 12px;
+				border: 1px solid @darkGray;
+				background: @white;
+				border-radius: 50%;
+				z-index: 1;
+			}
+
+			&.is-checked {
+				&:after {
+					content: '';
+					display: block;
+
+					position: absolute;
+					top: 4px;
+					left: 4px;
+
+					z-index: 2;
+					width: 6px;
+					height: 6px;
+					background: @white;
+					border-radius: 50%;
+				}
+
+				&:before{
+					border: none;
+					background: @green;
+					width: 14px;
+					height: 14px;
+				}
+			}
+		}
+	}
+}

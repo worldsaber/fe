@@ -1,0 +1,44 @@
+@import 'base/styles/variable.less';
+
+.button() {
+	border: none !important;
+	font-size: 16/@rem;
+}
+
+.button--primary() {
+	background: @green;
+	color: @white;
+
+	&:hover {
+		background: @midGreen;
+	}
+
+	&:active {
+		background: @lightGreen;
+	}
+}
+
+.button--info() {
+	background: @drakBlue !important;
+	color: @white !important;
+
+	&:hover {
+		background: @midBlue !important;
+	}
+
+	&:active {
+		background: @lightBlue !important;
+	}
+}
+
+
+.disabled() {
+	background: @midGray !important;
+	color: @darkGray !important;
+
+	&:hover,
+	&:active {
+		background: @midGray !important;
+		color: @darkGray !important;
+	}
+}

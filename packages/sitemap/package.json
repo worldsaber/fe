@@ -1,0 +1,13 @@
+{
+  "name": "@sportybet/sitemap",
+  "description": "Create our sitemap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "pretty": "^2.0.0"
+  },
+  "scripts": {
+  	"build": "node index.js"
+  }
+}

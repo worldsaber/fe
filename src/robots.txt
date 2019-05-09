@@ -1,0 +1,12 @@
+User-agent: *
+# wap
+Disallow: /ke/m/independent_login
+Disallow: /ng/m/independent_login
+Disallow: /gh/m/independent_login
+
+# pc
+Disallow: /ke/login
+Disallow: /ng/login
+Disallow: /gh/login
+
+Sitemap: https://www.sportybet.com/sitemap_sportybet.xml

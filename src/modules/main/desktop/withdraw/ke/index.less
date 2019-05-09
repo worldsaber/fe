@@ -1,0 +1,155 @@
+@import 'base/style/mixin.less';
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+@import './style/button.less';
+@import './style/input.less';
+@import './style/dialog.less';
+
+.m-uc-wrapper {
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	
+	.m-btn-wrapper{
+		width:204px;
+		line-height: 38px;
+	}
+	.m-input-wrapper{
+		width: 300px;
+	}
+
+	.m-error-infos{
+		position: absolute;
+		font-size: 12px;
+		line-height: 30px;
+		color: @red;
+	}
+}
+
+.m-fm-tip{
+	font-size: 22px;
+	margin:35px 20px 20px;
+	font-weight: 500;
+}
+
+.m-fm-wrap{
+	padding:34px 0 55px 34px;
+}
+
+.m-fm-row{
+	font-size:20px;
+	line-height: 40px;
+	padding: 10px 0;
+	.clearfix();
+}
+
+.m-fm-left {
+	float: left;
+	width: 160px;
+}
+
+.m-fm-right{
+	float:left;
+}
+
+.m-fm-input-wrap{
+	border:1px solid @darkGray;
+}
+
+.m-fm-b-des{
+	font-size:14px;
+	line-height: 36px;
+	padding-left:47px;
+	position: relative;
+}
+
+.m-picon-arrow{
+	position: absolute;
+	top:6px;
+	left: 31px;
+	width:0;
+	height:0;
+	overflow: hidden;
+	border-width: 22px 22px 0;
+	border-color: @green transparent transparent;
+	border-style:solid;
+	transform-origin: left top;
+	transform: rotate(135deg);
+}
+.m-icon--light{
+	.m-icon-light();
+	&::before{
+		position: absolute;
+		top:9px;
+		left:3px;
+		font-size:13px;
+		line-height: 14px;
+		color:@white;
+	}
+}
+.m-icon--safe{
+	.m-icon-safe();
+	&:before{
+		font-size: 23px;
+	}
+}
+.m-icon--page{
+	.m-icon-page();
+	&:before{
+		font-size: 21px;
+	}
+}
+
+.m-icon--page,
+.m-icon--safe{
+	margin-right:10px;
+	
+}
+
+.m-icon-aright{
+	.m-icon-arrow--right();
+	&::before {
+		color:@linkBlue;
+		font-size:12px;
+		font-weight: bold;
+		margin-left:6px;
+	}
+}
+
+.m-fm-sucwrap{
+	padding:110px 0 0 253px;
+	h2{
+		font-size:26px;
+		position: relative;
+		margin-bottom: 24px;
+		font-weight: bold;
+		.m-icon-success();
+		&::before{
+			width:35px;
+			height:35px;
+			line-height: 35px;
+			left:-52px;
+			border-radius: 35px;
+			font-size:26px;
+			font-weight:bold;
+			color:#fff;
+			text-align: center;
+			position: absolute;
+			background: @green;
+		}
+	}
+	.m-fm-row{
+		padding:4px 0;
+	}
+	.m-fm-left{
+		width:165px;
+	}
+
+	a.m-fm-link{
+		font-size:14px;
+		text-decoration: none!important;
+		&:link, &:visited, &{
+			color:@linkBlue;
+		}
+		color:@linkBlue;
+	}
+}

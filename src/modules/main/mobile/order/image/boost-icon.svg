@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="11px" viewBox="0 0 16 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/36_Boost Copy@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Boost指针-Copy" transform="translate(-34.000000, -16.000000)">
+            <g id="Ic_Boost_black" transform="translate(34.000000, 15.000000)">
+                <g id="Group" transform="translate(0.000000, 1.043478)">
+                    <path d="M11.262247,2.24333266 C14.054406,3.46469274 16,6.20572896 16,9.39130435 L13.8614308,9.39130435 C13.7751602,7.24590161 12.6294867,5.36677423 10.9219621,4.24065743 L11.262247,2.24333266 Z M8.57758745,1.58530185 L7.65433579,3.14534169 C7.50419838,3.13545697 7.35269872,3.13043478 7.2,3.13043478 C3.60741162,3.13043478 0.678543544,5.91038263 0.538569196,9.39130435 L6.66133815e-16,9.39130435 C6.42988061e-16,5.06907587 3.581722,1.56521739 8,1.56521739 C8.19422344,1.56521739 8.38683032,1.57198825 8.57758745,1.58530185 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                    <path d="M10.7103663,0 L9.26266634,9.03270617 C9.08803301,10.1182582 8.08776638,10.6987408 6.99656641,10.3177061 L6.64833309,10.1956559 C5.57159979,9.81859031 5.18099981,8.75189151 5.77309979,7.81319657 L10.7103663,0 Z" id="Path" fill="#F2AF00"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

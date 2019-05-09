@@ -1,0 +1,37 @@
+@import 'base/style/variable.less';
+
+.m-cashout {
+
+	.m-cashout-title {
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 16px;
+		padding: 0 10px;
+		box-sizing: border-box;
+		text-transform: capitalize;
+		display: table;
+		display: flex;
+		display: grid;
+
+		align-items: center;
+		grid-template-columns: 1fr 60px;
+
+		.m-label,
+		.m-desc {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.m-label {
+			color: @black;
+			flex: 1;
+			min-width: 1%;
+		}
+
+		.m-desc {
+			color: @green;
+			text-align: right;
+			with: 60px;
+		}
+	}
+}

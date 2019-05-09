@@ -1,0 +1,251 @@
+@import 'base/style/mixin.less';
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+@import '../deposit/ke/style/button.less';
+@import '../deposit/ke/style/input.less';
+@import '../deposit/ke/style/dialog.less';
+
+@yellowBg: #FAAE11;
+
+.m-uc-wrapper{
+	padding-top:24px!important;
+	position: relative;
+
+
+	.m-gifts-header {
+		border-bottom: 1px solid @fogGrayBorder;
+		margin:0 51px 0 47px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.m-nav{
+			border-bottom: 0;
+			margin-bottom: 0;
+
+			.m-nav-item{
+				padding:10px 30px;
+				margin: 0 0 0 10px;
+			}
+		}
+
+		.m-redeem-btn {
+			color: @green;
+			font-size: 12px;
+			line-height: 24px;
+			cursor: pointer;
+			.m-icon-add-circle();
+
+			&:before {
+				float: left;
+				margin-right: 4px;
+			}
+		}
+	}
+
+	.giftDesc{
+		margin:35px 30px 75px 50px;
+		.m-desc-tit{
+			display: block;
+			margin-bottom:8px;
+		}
+		li{
+			font-size:12px;
+		}
+	}
+
+	.m-pg-container {
+		padding:2px 0 33px 0;
+	}
+
+}
+
+
+.m-gift-list-wrap{
+	width:776px;
+	margin:0 auto;
+}
+.m-gift-num{
+	margin: 23px 0 10px 29px;
+	font-size: 14px;
+	font-weight: 700;
+	color: @dark;
+}
+.m-gift-tips-base{
+	padding-right: 24px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+}
+.m-dis-gift-tips{
+	padding-top: 18px;
+	.m-gift-tips-base;
+}
+.m-cash-gift-tips{
+	padding-top: 15px;
+	.m-gift-tips-base;
+}
+.m-gift-list{
+	.clearfix();
+	margin-top: 21px;
+	.m-glabel{
+		border-radius: 10px;
+		// width:57px;
+		padding: 0 9px;
+		font-size: 10px;
+		height: 18px;
+		line-height: 18px;
+		text-align: center;
+		background: rgba(27, 30, 37,0.12);
+		color: #f7f7f7 !important;
+		position: absolute;
+		//top: 12px;
+		top: 17px;
+		left: 13px;
+	}
+	li{
+		width:328px;
+		height:211px;
+		float: left;
+		background: @yellowBg;
+		margin: 0 30px 29px 30px;
+		border-radius: 5px;
+		color:@white;
+		position: relative;
+		h2{
+			height: 41px;
+			box-sizing:border-box;
+			text-align: right;
+			font-size: 28px;
+			font-weight: bold;
+			padding-right: 24px;
+			padding-bottom: 8px;
+			border-bottom: 1px dashed fadeout(@blueBlack, 80%);
+
+			>span{
+				font-size: 14px;
+				font-weight: bold;
+				display: block;
+			}
+		}
+		.unit{
+			font-size: 10px;
+			// vertical-align: top;
+			font-weight: bold;
+			position: relative;
+			top: -10px;
+			right: 4px;
+		}
+		.m-cash-gift-num{
+			height: 44px;
+			line-height: 1;
+			box-sizing:border-box;
+			text-align: right;
+			font-size: 28px;
+			font-weight: bold;
+			padding-right: 24px;
+			border-bottom: 1px dashed fadeout(@blueBlack, 80%);
+			>span{
+				line-height: 1;
+				height: 11px;
+				font-size: 10px;
+				display: block;
+				opacity: 0.8;
+				font-weight: normal;
+			}
+		}
+		&::before,
+		&::after{
+			content: '';
+			width: 20px;
+			height: 20px;
+			background: @white;
+			border-radius: 20px;
+			position: absolute;
+			top:66px;
+		}
+		&::before{
+			left: -10px;
+		}
+		&::after{
+			right:-10px;
+		}
+		&.yellowBg{
+			.m-glabel{
+				color: @yellowBg;
+			}
+		}
+		&.greenBg{
+			background: @green;
+			.m-glabel{
+				color: @green;
+			}
+		}
+		&.grayBg{
+			background: @darkGray;
+			.m-glabel{
+				background: fadeout(@blueBlack, 80%);
+				color: @white;
+			}
+		}
+		.m-gift-pwrap{
+			height: 43px;
+			text-align: right;
+			font-size: 12px;
+			line-height: 18px;
+			margin:0 3px;
+			padding:5px 20px 0 0;
+			// border-bottom: 1px dashed fadeout(@blueBlack, 80%);
+			&>p:last-child{
+				opacity: 0.8;
+			}
+		}
+		.m-gift-bwrap{
+			overflow: hidden;
+			background: @white;
+			height: 85px;
+			box-sizing: border-box;
+			margin: 0 3px;
+			padding:8px 10px 0;
+			border-radius: 2px;
+			color:@darkGray;
+			h3 {
+				font-size: 12px;
+			}
+			p{
+				font-size: 10px;
+				// word-break: break-all;
+				white-space:normal;
+			}
+		}
+	}
+
+}
+
+.m-redeem-dialog {
+	width: 412px!important;
+	border: 0;
+
+	.m-dialog-head {
+		.m-dialog-close {
+			top: 14px;
+			right: 14px;
+			line-height: 1;
+			text-decoration: none;
+
+			em {
+				cursor: pointer;
+			}
+		}
+	}
+
+	.m-dialog-body {
+		margin-top: -58px;
+
+		.m-dialog-main {
+			padding: 0;
+		}
+	}
+}

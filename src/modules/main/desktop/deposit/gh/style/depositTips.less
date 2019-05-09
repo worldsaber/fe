@@ -1,0 +1,41 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+.m-dp-gh-tips {
+	width: 100%;
+
+	padding: 23px 16px;
+	box-sizing: border-box;
+	border-top: 1px solid @fogGrayBorder;
+
+	.f-title {
+		line-height: 16px;
+		font-size: 14px;
+		.m-icon-light2();
+		margin-bottom: 10px;
+
+		&:before {
+			font-size: 18px;
+			line-height: 1;
+			color: @green;
+			margin-right: 6px;
+		}
+	}
+
+	.l-item {
+    	grid-template-columns: 16px 1fr;
+    	align-items: flex-start;
+
+		color: @darkGray;
+		padding-bottom: 5px;
+		box-sizing: border-box;
+
+		&::before {
+			font-size: 12px;
+			line-height: 16px;
+			display: table-cell;
+			vertical-align: top;
+			width: 16px;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="264" height="56" viewBox="0 0 264 56">
+    <defs>
+        <linearGradient id="a" x1="50%" x2="50%" y1="-41.691%" y2="100%">
+            <stop offset="0%" stop-color="#BA00FF"/>
+            <stop offset="55.374%" stop-color="#9C00FE" stop-opacity=".623"/>
+            <stop offset="100%" stop-color="#8400FE"/>
+        </linearGradient>
+        <filter id="b" width="163.6%" height="185.3%" x="-31.8%" y="-42.7%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4 0"/>
+        </filter>
+        <linearGradient id="c" x1="50%" x2="50%" y1="-41.691%" y2="100%">
+            <stop offset="0%" stop-color="#50006D"/>
+            <stop offset="55.374%" stop-color="#9C00FE" stop-opacity=".623"/>
+            <stop offset="94.768%" stop-color="#3B006F" stop-opacity=".956"/>
+            <stop offset="100%" stop-color="#8400FE"/>
+        </linearGradient>
+        <filter id="d" width="224.8%" height="153.7%" x="-62.4%" y="-26.9%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4 0"/>
+        </filter>
+        <filter id="e" width="163.6%" height="185.3%" x="-31.8%" y="-42.7%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4 0"/>
+        </filter>
+        <filter id="f" width="224.8%" height="153.7%" x="-62.4%" y="-26.9%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4 0"/>
+        </filter>
+        <filter id="g" width="111.7%" height="154.2%" x="-5.9%" y="-27.1%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" d="M204 27v28.132h37.72l-5.216-14.515L241.72 27z" filter="url(#b)" transform="translate(11)"/>
+        <path fill="url(#c)" d="M204 21.852v32.831l19.236-12.01V10z" filter="url(#d)" transform="translate(11)"/>
+        <path fill="url(#a)" d="M0 27l5.8 14.339L0 55.132h37.721V27z" filter="url(#e)" transform="translate(11)"/>
+        <path fill="url(#c)" d="M19 42.674l19.234 12.01V21.851L19 10z" filter="url(#f)" transform="translate(11)"/>
+        <path fill="url(#a)" d="M19 41.674c31.82 2 65.147 3 99.978 3 34.83 0 69.661-1 104.492-3V8C186.211 2.92 151.073.38 118.055.38 85.036.38 52.018 2.92 19 8v33.674z" filter="url(#g)" transform="translate(11)"/>
+        <text fill="#FFF" font-family="Roboto-Bold, Roboto" font-size="20" font-weight="bold" transform="translate(11)">
+            <tspan x="46.498" y="29">Congratulations!</tspan>
+        </text>
+    </g>
+</svg>

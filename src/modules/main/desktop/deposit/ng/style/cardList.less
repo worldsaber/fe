@@ -1,0 +1,184 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+@import '../style/delPopMixin.less';
+@import '../style/addCardMixin.less';
+
+.m-card-list {
+	margin-top: 26px;
+
+	.f-title {
+		height: 22px;
+		line-height: 22px;
+		font-size: 0;
+		color: @dark;
+		padding: 0 9px;
+		box-sizing: border-box;
+
+		.l-col1 {
+			padding-left: 44px;
+			box-sizing: border-box;
+		}
+
+		.l-col1,
+		.l-col2 {
+			font-size: 14px;
+			font-weight: 500;
+		}
+	}
+
+	.l-col1,
+	.l-col2,
+	.l-col3,
+	.l-col4 {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.l-col1 {
+		width: 274px;
+	}
+
+	.l-col2 {
+		width: 114px;
+	}
+
+	.l-col3 {
+		width: 122px;
+	}
+
+	.l-col4 {
+		display: none;
+	}
+
+	.l-item {
+		padding: 0 9px;
+		box-sizing: border-box;
+		font-size: 0;
+		color: @dark;
+
+		&:hover {
+			background-color: @lighterGray;
+
+			.l-col4 {
+				display: inline-block;
+			}
+		}
+
+		.l-col1,
+		.l-col2,
+		.l-col4 {
+			height: 46px;
+			padding: 13px 0;
+			box-sizing: border-box;
+		}
+
+		.m-image-wrapper {
+			display: inline-block;
+			vertical-align: top;
+			width: 30px;
+			height: 19px;
+			margin-right: 14px;
+
+			> img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.f-text {
+			line-height: 20px;
+			font-size: 14px;
+			font-weight: bold;
+
+			&:first-of-type {
+				margin-right: 5px;
+			}
+		}
+
+		.l-col3 .m-fix-input {
+			margin-top: 3px;
+			width: 80px;
+			background: @white;
+			display: inline-block;
+
+			.m-input {
+				width: 100%;
+			}
+		}
+
+		.f-tips {
+			margin-left: 10px;
+		}
+
+		.f-line {
+			margin-top: -2px;
+		}
+	}
+
+	.i-icon-check {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 2px;
+		margin-right: 20px;
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			border: 1px solid @grayBorder;
+			border-radius: 50%;
+		}
+	}
+
+	.l-item-checked {
+		background-color: @fogGray;
+
+		.m-fix-input {
+			background-color: @white;
+			vertical-align: middle;
+		}
+		.i-icon-check {
+			.m-icon-success-bg();
+			&:before {
+				border: none;
+				line-height: 1;
+				font-size: 18px;
+			}
+
+			color: @green;
+		}
+
+		&.l-item-fix {
+			padding-bottom: 28px;
+			box-sizing: border-box;
+		}
+	}
+
+	&>.f-line {
+		padding-left: 9px;
+	}
+	.f-label {
+		width: 120px;
+	}
+
+	.f-line--pos {
+		position: relative;
+
+		.f-error {
+			position: absolute;
+			top: 45px;
+			width: 170px;
+
+			p {
+				color: @red;
+				font-size: 12px;
+				line-height: 14px;
+			}
+		}
+	}
+
+	.delPop();
+	.addCard();
+}

@@ -1,0 +1,119 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+@import 'components/login/style/buttonMixin.less';
+@import 'components/login/style/inputMixin.less';
+
+.m-dp-pop {
+	color: @dark;
+	text-align: center;
+	width: 482px;
+
+	.f-title {
+		line-height: 24px;
+		font-size: 20px;
+		font-weight: bold;
+		padding-top: 9px;
+		box-sizing: border-box;
+		position: relative;
+
+		> span {
+			display: inline-block;
+			padding: 0 24px;
+			box-sizing: border-box;
+		}
+
+		.m-icon-close {
+			position: absolute;
+			right: 13px;
+			top: 0;
+
+			.m-icon-close();
+			&:before {
+				font-size: 12px;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	.f-tips {
+		margin-top: 24px;
+		line-height: 16px;
+		font-size: 14px;
+	}
+
+	.f-line {
+		.af-button {
+			.button();
+			border-radius: 2px;
+			height: 38px;
+			width: 200px;
+			font-size: 14px;
+		}
+
+		.af-button--primary {
+			.button--primary();
+		}
+
+		.af-button--text {
+			color: @green;
+			border: 1px solid @green !important;
+			font-weight: 600;
+
+			&:hover {
+				color: @midGreen;
+				border-color: @midGreen !important;
+			}
+
+			&:active {
+				color: @lightGreen;
+				border-color: @lightGreen !important;
+			}
+
+			&.is-disabled {
+				border: @midGray !important;
+			}
+		}
+
+		.is-disabled {
+			.disabled();
+		}
+
+		&.f-line--opt {
+			padding: 29px 0 25px;
+			box-sizing: border-box;
+		}
+
+		.input();
+
+		.m-input-wrapper {
+			width: 200px;
+			height: 38px;
+
+			.m-input {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.f-error {
+			p {
+				color: @red;
+				font-size: 12px;
+				line-height: 14px;
+			}
+		}
+	}
+
+	.f-line--pos {
+		position: relative;
+
+		.f-error {
+			position: absolute;
+			top: 42px;
+			width: 100%;
+		}
+	}
+}

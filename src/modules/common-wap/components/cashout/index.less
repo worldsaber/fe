@@ -1,0 +1,77 @@
+@import 'base/styles/variable.less';
+
+@import './style/title.less';
+@import './style/detail.less';
+@import './style/list.less';
+@import './style/fold.less';
+@import './style/error.less';
+@import './style/betMoney.less';
+@import './style/betTips.less';
+@import './style/pagination.less';
+@import './style/loadingMixin.less';
+
+body,html{
+	background-color: @dark;
+}
+.m-navbar{
+	background-color: @dark;
+	color: @white;
+	&-item{
+		a{
+			color: @white;
+		}
+	}
+	&-back {
+		&::before{
+			color: @white;
+		}
+	}
+	padding: 3/@rem 10/@rem 13/@rem;
+}
+.m-cashout {
+	padding: 0 10/@rem;
+	position: relative;
+	min-height: 30%;
+	.m-cashout-item {
+		background: @white;
+		padding-bottom: 13/@rem;
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	.m-cashout-list {
+		border-radius: 4/@rem;
+		margin-top: 10/@rem;
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+	.no-more-data{
+		p{
+			text-align: center;
+			color: @white;
+			padding: 10/@rem 0;
+		}
+	}
+}
+
+.m-cashout-confirm{
+	.es-dialog-btn{
+		font-size: 14/@rem;
+	}
+}
+
+.m-submit-pop{
+	.m-submit{
+		.m-loading();
+		&:before{
+			display: inline-block;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 3rem;
+			margin-right: 10/@rem;
+		}
+		font-size: 16/@rem;
+		font-weight: 700;
+	}
+}

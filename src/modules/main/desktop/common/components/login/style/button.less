@@ -1,0 +1,28 @@
+@import "./buttonMixin.less";
+
+.m-page {
+
+	.btn-wrapper,
+	.af-button {
+		width: 100%;
+		height: 38px;
+	}
+
+	.af-button {
+		.button();
+		border-radius: 2px;
+	}
+
+	.af-button--primary {
+		.button--primary();
+	}
+
+	.af-button--info {
+		.button--info();
+	}
+
+
+	.is-disabled {
+		.disabled();
+	}
+}

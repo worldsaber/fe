@@ -1,0 +1,57 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+.m-page--sms {
+	padding-top: 56px;
+	width: 100%;
+	box-sizing: border-box;
+
+	text-align: center;
+	color: @dark;
+
+	.m-text-tips {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.m-text-main {
+		margin-top: 32px;
+    	margin-bottom: 28px;
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 33px;
+	}
+
+	.m-page-opt {
+		width: 300px;
+		margin: 0 auto;
+		text-align: left;
+
+		.m-icon-check {
+			font-size: 14px;
+			line-height: 16px;
+			.m-icon-check();
+
+			&:before {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 15px;
+				font-size: 15px;
+			}
+		}
+
+		.m-icon-checked {
+			.m-icon-check--checked();
+		}
+
+		.af-button {
+			width: 300px;
+			margin-top: 29px;
+			border-radius: 2px;
+		}
+
+		.m-error-tips {
+			top: 21px !important;
+		}
+	}
+}

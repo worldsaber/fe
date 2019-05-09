@@ -1,0 +1,47 @@
+@import 'base/styles/variable';
+@import './variable.less';
+
+.m-issue {
+	.m-gifts {
+		padding: 20/@rem 32/@rem 0;
+		box-sizing: border-box;
+		color: @white;
+		font-size: 0;
+		white-space: nowrap;
+
+		.m-left {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 19/@rem;
+			font-size: 15/@rem;
+			font-weight: 900;
+
+			&:after {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 18/@rem;
+				width: 2/@rem;
+				height: 20/@rem;
+				background: fadeout(@white, 70%);
+			}
+		}
+
+		.m-right {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 24/@rem;
+			font-size: 20/@rem;
+			font-weight: 900;
+			font-style: italic;
+			padding-left: 18/@rem;
+			box-sizing: border-box;
+		}
+	}
+
+	.m-action-fixed {
+		.m-gifts {
+			padding: 46/@rem 35/@rem 0;
+		}
+	}
+}

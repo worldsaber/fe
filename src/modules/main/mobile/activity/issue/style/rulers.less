@@ -1,0 +1,133 @@
+@import 'base/styles/variable.less';
+@import 'base/styles/icon.less';
+@import './variable.less';
+
+.m-rulers {
+	ul {
+		position: relative;
+		height: 372/@rem;
+	}
+
+	.m-title {
+		padding: 141/@rem 22/@rem 62/@rem;
+		box-sizing: border-box;
+		line-height: 28/@rem;
+		font-size: 22/@rem;
+		font-weight: 900;
+		text-align: center;
+		color: @white;
+	}
+
+	.m-timer {
+		line-height: 94/@rem;
+		font-size: 80/@rem;
+		font-weight: 900;
+		text-align: center;
+		color: @white;
+	}
+
+	.m-main {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 52/@rem 0 0;
+		box-sizing: border-box;
+		width: 100%;
+		overflow: hidden;
+
+		.m-image-wrapper {
+			max-width: 360/@rem;
+			height: 188/@rem;
+			position: relative;
+			margin: 0 auto;
+
+			> img {
+				height: 100%;
+				position: absolute;
+				left: 50%;
+				top: 0;
+				transform: translate3d(-50%, 0, 0);
+			}
+		}
+
+		.m-text {
+			width: 100%;
+			line-height: 24/@rem;
+			font-size: 18/@rem;
+			font-weight: 900;
+			text-align: center;
+			color: @white;
+			padding: 12/@rem 15/@rem 0;
+			letter-spacing: -0.52/@rem;
+			box-sizing: border-box;
+		}
+	}
+
+	.m-time {
+		text-align: center;
+
+		.m-hour,
+		.m-sec {
+			display: inline-block;
+			vertical-align: middle;
+			width: 50/@rem;
+		}
+
+		.m-hour {
+			margin-right: 15/@rem;
+		}
+
+		.m-label {
+			display: block;
+			padding: 0 1/@rem 6/@rem 9/@rem;
+			box-sizing: border-box;
+			line-height: 22/@rem;
+			font-size: 16/@rem;
+			font-weight: 900;
+			color: @white;
+		}
+
+		.m-value {
+			width: 50/@rem;
+			height: 50/@rem;
+			// background: linear-gradient(to top, @purple, @lightBlue);
+			background: url(../image/timerBg.svg) no-repeat top left;
+			background-size: contain;
+			line-height: 50/@rem;
+			text-align: center;
+			font-size: 24/@rem;
+			font-weight: 900;
+			color: @white;
+		}
+	}
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+}

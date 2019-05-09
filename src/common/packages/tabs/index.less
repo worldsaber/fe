@@ -1,0 +1,127 @@
+@text-color: #495060;
+@primary-color: #2d8cf0;
+@table-thead-bg: #f8f8f9;
+@border-color-base: #dddee1;
+@line-height-base: 1.5;
+@font-size-base: 14px;
+@font-size-small: 12px;
+@link-color: #2D8cF0;
+@link-hover-color: tint(@link-color, 20%);
+@link-active-color: shade(@link-color, 5%);
+
+.m-tabs {
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	color: @text-color;
+
+	&-ink-bar {
+		height: 2px;
+		box-sizing: border-box;
+		background-color: @primary-color;
+		position: absolute;
+		left: 0;
+		bottom: 1px;
+		z-index: 1;
+		transition: transform 0.3s ease-in-out;
+		transform-origin: 0 0;
+	}
+
+	&-bar {
+		border-bottom: 1px solid @border-color-base;
+		margin-bottom: 16px;
+	}
+	&-nav {
+		white-space: nowrap;
+		margin-bottom: -1px;
+		width: 100%;
+		position: relative;
+		display: table-row;
+		table-layout: fixed;
+		transition: transform 0.5s ease-in-out;
+		@supports(display: flex) {
+			display: flex;
+		}
+
+		.m-tabs-tab-disabled {
+			pointer-events: none;
+			cursor: default;
+			color: #ccc;
+		}
+
+		.m-tabs-tab {
+			height: 100%;
+			padding: 8px 16px;
+			margin: 0 8px;
+			box-sizing: border-box;
+			cursor: pointer;
+			position: relative;
+			text-decoration: none;
+			transition: color 0.3s ease-in-out;
+			display: table-cell;
+			text-align: center;
+			@supports(flex: 1) {
+				flex: 1;
+			}
+
+			&:hover {
+				color: @link-hover-color;
+			}
+
+			&:active {
+				color: @link-active-color;
+			}
+
+			.m-icon {
+				width: 14px;
+				height: 14px;
+				margin-right: 8px;
+			}
+		}
+
+		.m-tabs-tab-active {
+			color: @primary-color;
+		}
+	}
+
+	&-mini &-nav-container {
+		font-size: @font-size-base;
+	}
+
+	&-mini &-tab {
+		margin-right: 0;
+		padding: 8px 16px;
+		font-size: @font-size-small;
+	}
+
+	& {
+		.m-tabs-content-animated {
+			display: flex;
+			flex-direction: row;
+			will-change: transform;
+			transition: transform 0.5s ease-in-out;
+		}
+
+		.m-tabs-tabpane {
+			flex-shrink: 0;
+			width: 100%;
+			transition: opacity 0.3s;
+			opacity: 1;
+		}
+
+		.m-tabs-tabpane-inactive {
+			opacity: 0;
+			height: 0;
+		}
+	}
+}
+
+.m-tabs-no-animation {
+	> .m-tabs-content {
+		transform: none!important;
+
+		> .m-tabs-tabpane-inactive {
+			display: none;
+		}
+	}
+}

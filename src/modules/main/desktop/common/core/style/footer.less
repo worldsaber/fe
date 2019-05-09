@@ -1,0 +1,540 @@
+@import 'base/style/variable.less';
+@import 'base/style/mixin.less';
+@import 'base/style/icon.less';
+
+// footer
+.s-footer {
+	.m-footer-top {
+		background: @blueBlack;
+		padding: 24px 0 18px;
+		box-sizing: border-box;
+
+		.m-col-title {
+			font-size: 12px;
+			line-height: 14px;
+			font-weight: bold;
+			margin-bottom: 13px;
+		}
+
+		.m-content {
+			position: relative;
+		}
+
+		.m-col-content a {
+			font-size: 12px;
+			line-height: 17px;
+			text-decoration: none;
+			color: fadeout(@white, 20%);
+
+			&:hover,
+			&:active {
+				color: @white;
+			}
+		}
+
+		.m-icon-more {
+			color: fadeout(@white, 20%);
+			.m-icon-arrow--right();
+			&:before {
+				margin-right: 10px;
+				font-size: 10px;
+			}
+
+			&:hover,
+			&:active {
+				color: @white;
+			}
+		}
+
+		.m-m-r {
+			margin-right: 65px;
+		}
+
+		.m-t-light {
+			color: @green;
+		}
+
+		.m-t-small {
+			line-height: 14px;
+			font-size: 12px;
+			font-weight: bold;
+		}
+
+		.m-t-mid {
+			line-height: 15px;
+			font-size: 13px;
+			font-weight: bold;
+		}
+
+		.m-t-big {
+			line-height: 28px;
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.m-row-top {
+			padding-bottom: 8px;
+			box-sizing: border-box;
+		}
+
+		.m-row-bottom {
+			padding-top: 8px;
+			box-sizing: border-box;
+			border-top: 1px dotted @green;
+
+			.m-image-wrapper {
+				display: inline-block;
+				vertical-align: middle;
+				width: 28px;
+				height: 15px;
+			}
+
+			.i-lagos {
+				width: 54px;
+				height: 58px;
+			}
+		}
+
+		.m-row-fix {
+			padding-top: 12px;
+			.m-image-wrapper {
+				width: 54px;
+				height: 58px;
+			}
+		}
+
+		.m-l-left {
+			width: 96px;
+			text-align: center;
+			margin-right: 150px;
+		}
+
+		.m-l-right {
+			position: absolute;
+			right: 0;
+			top: 0;
+			text-align: right;
+
+			>address {
+				display: inline-block;
+				vertical-align: top;
+				width: 24px;
+				height: 24px;
+				margin-right: 16px;
+				text-decoration: none;
+
+				>a {
+					display: inline-block;
+					vertical-align: top;
+				}
+			}
+		}
+
+		.m-icon {
+			display: inline-block;
+			vertical-align: top;
+			width: 24px;
+			height: 24px;
+			border-radius: 50%;
+			text-align: center;
+			cursor: pointer;
+			color: @white;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			&:hover {
+				color: @white;
+			}
+
+			&:active {
+				color: @white;
+			}
+		}
+
+		.m-icon-fb {
+			background: @fbnBlue;
+			.m-icon-facebook();
+
+			&:before {
+				line-height: 24px;
+			}
+
+			&:hover {
+				background: @fbhBlue;
+			}
+
+			&:active {
+				background: @fbhBlue;
+			}
+		}
+
+		.m-icon-twitter {
+			background: @twNBlue;
+			.m-icon-twitter();
+
+			&:before {
+				line-height: 24px;
+			}
+
+			&:hover {
+				background: @twHBlue;
+			}
+
+			&:active {
+				background: @twPBlue;
+			}
+		}
+
+		.m-icon-ins {
+			background: @insNRed;
+			.m-icon-instegrame();
+
+			&:before {
+				line-height: 24px;
+			}
+
+			&:hover {
+				background: @insHRed;
+			}
+
+			&:active {
+				background: @insPRed;
+			}
+		}
+
+		// .m-chat {
+		// 	display: inline-block;
+		// 	vertical-align: top;
+		// 	width: 24px;
+		// 	height: 24px;
+		// 	margin-left: 16px;
+        //
+		// 	.m-icon-chat-hover {
+		// 		display: none;
+		// 	}
+        //
+		// 	&:hover {
+		// 		cursor: pointer;
+        //
+		// 		.m-icon-chat-hover {
+		// 			display: inline-block;
+		// 		}
+        //
+		// 		.m-icon-chat {
+		// 			display: none;
+		// 		}
+		// 	}
+		// }
+
+		.m-pay {
+			font-size: 12px;
+			line-height: 2;
+			font-weight: 600;
+		}
+
+		.m-contact {
+			color: fadeout(@white, 14%);
+
+			.m-icon-chat {
+				width: 12px;
+				height: 11px;
+				margin-left: 5px;
+				.m-icon-chat();
+				color: @blackGray;
+				&:before {
+					font-size: 12px;
+				}
+
+				&:hover {
+					color: @white;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.m-footer-mid {
+		background: @blueBlack;
+		padding: 13px 0 19px;
+		box-sizing: border-box;
+		border-top: 1px solid @darkBorder;
+
+		.m-col-wrapper {
+			.m-left,
+			.m-right {
+				display: inline-block;
+			}
+
+			.m-left {
+				vertical-align: middle;
+				height: 32px;
+				width: 32px;
+				border-radius: 50%;
+			}
+
+			.m-forum {
+				margin-right: 28px;
+
+				+ .m-right {
+					width: 312px;
+					color: fadeout(@white, 14%);
+				}
+
+				.m-image-wrapper {
+					display: inline-block;
+					vertical-align: middle;
+					width: 42px;
+					height: 42px;
+				}
+			}
+
+			.m-right {
+				vertical-align: top;
+
+				font-size: 12px;
+				line-height: 17px;
+			}
+		}
+
+		.m-l-left {
+			width: 112px;
+			margin-right: 70px;
+
+			.m-logo-wrapper {
+				display: block;
+				text-decoration: none;
+			}
+
+			.m-image-wrapper {
+				display: inline-block;
+				margin-top: 5px;
+				height: 20px;
+				width: 100px;
+			}
+		}
+
+		.m-icon-logo {
+			.m-icon-sportbet();
+			color: @white;
+
+			&:before {
+				font-size: 20px;
+			}
+		}
+
+		.m-t-center {
+			text-align: center;
+		}
+
+		.m-licence {
+			margin: 0 20px 0 28px;
+
+			.m-iamge-wrapper {
+				width: 29px;
+				height: 33px;
+			}
+
+			+ .m-right {
+				width: 347px;
+				color: fadeout(@white, 14%);
+			}
+		}
+	}
+
+	.m-footer-bottom {
+		background: @darker;
+
+		.m-content {
+			display: table;
+			padding: 18px 0 27px;
+			box-sizing: border-box;
+		}
+
+		.m-left,
+		.m-copy {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.m-left {
+			.m-image-wrapper {
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			.m-icon {
+				display: inline-block;
+				vertical-align: middle;
+				height: 26px;
+				line-height: 26px;
+				color: @white;
+
+				&:first-of-type {
+					margin-right: 18px;
+				}
+			}
+
+			.m-icon-safari {
+				.m-icon-safaricom();
+
+				&:before {
+					font-size: 24px;
+				}
+			}
+
+			.m-icon-mpesa {
+				.m-icon-mpesa();
+
+				&:before {
+					font-size: 26px;
+				}
+			}
+		}
+
+		.m-copy {
+			max-width: 230px;
+			width: 230px;
+			color: @white;
+			font-size: 12px;
+			line-height: 16px;
+			text-align: right;
+		}
+
+		.l-item {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.i-paystake {
+			width: 90px;
+			height: 18px;
+			margin-right: 18px;
+		}
+
+		.i-verve {
+			width: 61px;
+			height: 21px;
+			margin-right: 21px;
+		}
+
+		.i-masterCard {
+			width: 31px;
+			height: 24px;
+			margin-right: 26px;
+		}
+
+		.i-visa {
+			width: 48px;
+			height: 15px;
+			margin-right: 23px;
+		}
+
+		.i-access {
+			width: 80px;
+			height: 11px;
+			margin-right: 22px;
+		}
+
+		.i-diamond {
+			width: 90px;
+			height: 25px;
+			margin-right: 25px;
+		}
+
+		.i-fidelity {
+			width: 71px;
+			height: 17px;
+			margin-right: 23px;
+		}
+
+		.i-gtbank {
+			width: 18px;
+			height: 18px;
+			margin-right: 23px;
+		}
+
+		.i-zenith {
+			width: 20px;
+			height: 18px;
+		}
+
+		.i-tiGo {
+			width: 40px;
+			height: 28px;
+			margin-right: 41px;
+		}
+
+		.i-mtn {
+			width: 60px;
+			height: 26px;
+			margin-right: 41px;
+		}
+
+		.i-airtel {
+			width: 64px;
+			height: 20px;
+			margin-right: 41px;
+		}
+
+		.i-vodafone {
+			width: 68px;
+			height: 17px;
+		}
+	}
+
+	.m-content {
+		width: 1000px;
+		min-width: 1000px;
+		margin: 0 auto;
+
+		> * {
+			display: inline-block;
+		}
+	}
+
+	.m-image-wrapper {
+		.m-image-wrapper();
+	}
+
+	.m-col-wrapper {
+		color: @white;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+.s-gh {
+	.m-footer-top {
+		.m-row-top {
+			.m-image-wrapper {
+				display: inline-block;
+				vertical-align: middle;
+				width: 24px;
+				height: 17px;
+				margin-right: 6px;
+			}
+			border-bottom: 1px dotted @green;
+		}
+		.m-row-bottom {
+			padding-top: 12px;
+			box-sizing: border-box;
+			border-top:0px;
+			.m-image-wrapper {
+				width: 60px;
+				height: 51px;
+			}
+		}
+	}
+
+	.m-footer-mid {
+
+		.m-l-left {
+			.m-t-pad {
+				padding-left: 15px;
+				box-sizing: border-box;
+			}
+		}
+	}
+}

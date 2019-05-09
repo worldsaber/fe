@@ -1,0 +1,62 @@
+@import 'base/styles/variable.less';
+@import 'base/styles/icon.less';
+
+.m-sportBets {
+	.m-bethistory {
+		.tabs-wrapper {
+			padding: 10/@rem 10/@rem 12/@rem;
+			box-sizing: border-box;
+			background: @white;
+		}
+
+		.m-order-select-nav {
+			height: auto;
+
+			.m-nav-item {
+				width: 72/@rem;
+				height: 28/@rem;
+				line-height: 28/@rem;
+				background: @lightGray;
+				border-radius: 2/@rem;
+				color: @blueBlack;
+				font-size: 12/@rem;;
+  				font-weight: 500;
+				text-align: center;
+				margin-left: 4/@rem;
+			}
+
+			.m-nav-item--active {
+				background: @dark;
+				color: @white;
+				border-bottom: none;
+			}
+		}
+	}
+
+	.m-calendar--order {
+		position: relative;
+
+		.close {
+			top: 16/@rem;
+		}
+	}
+}
+
+
+.m-con-fixed {
+	.m-sportBets {
+		.m-navbar {
+			display: none;
+		}
+
+		.m-bets--nav {
+			display: none;
+		}
+	}
+}
+
+.m-main-mid--fix.m-con-fixed {
+	.m-calendar--order {
+		top: -98/@rem;
+	}
+}

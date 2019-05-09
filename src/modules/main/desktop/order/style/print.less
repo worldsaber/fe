@@ -1,0 +1,223 @@
+@import 'base/style/variable.less';
+@grayBorder: #bfbfbf;
+
+.s-page{
+  background: #fff;
+}
+.s-header,
+.s-footer,
+.m-main-left,
+.m-main-right {
+  display: none!important;
+}
+
+.m-main-bottom{
+ width: 100%!important;
+}
+.s-header-fix+.s-page{
+  padding: 0!important;
+}
+
+.m-main-mid {
+  max-width: 100%;
+}
+
+.m-print-hide{
+  display: none!important;
+}
+
+.print-subtitle{
+  font-size: 16px;
+  padding: 6px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.m-print-pop{
+  .s-page{
+    display: none!important;
+  }
+  div.m-bet-header{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 6px 0;
+    .m-right{
+      display: none;
+    }
+  }
+  .es-dialog{
+    color:@black;
+    border:none!important;
+    position: static!important;
+    width:100%!important;
+    box-sizing: border-box;
+    margin:0 auto!important;
+    .m-dialog-main{
+      padding: 0!important;
+    }
+    .m-t-green,
+    .m-t-gray{
+      color:@black!important;
+    }
+    .m-table-row{
+      border-color:@grayBorder!important;
+      .m-table-cell{
+        color:@black;
+        text-align: right;
+        padding-right:2px;
+      }
+    }
+    div.m-bet-tips{
+      color:@black;
+    }
+  }
+  div.m-bet-dcontent{
+    margin:0!important;
+    padding:0!important;
+    background: @white!important;
+    border-top:none!important;
+  }
+  .mask{
+    display:none!important;
+  }
+  .m-bet-dcontent{
+    .m-bet-info{
+      padding:0 0 0 5px!important;
+      font-size: 14px;
+      font-weight: normal;
+      height: 26px;
+      line-height: 26px;
+      background: #d6d5d5;
+    }
+    .m-bet-list{
+      max-height: none!important;
+      overflow-y: visible;
+    }
+  }
+}
+.m-print-betList{
+  .m-t-green,
+  .m-t-gray{
+    color:@black!important;
+  }
+  #oListPTit{
+    display: block;
+  }
+  .m-order-wrapper{
+    padding:0!important;
+    margin:0!important;
+  }
+  .m-order-list:not(.m-print-betDetail),
+  .m-pg-container,
+  .m-nav-wrapper{
+    display:none!important;
+  }
+  .m-print-betDetail{
+    margin:0 0 8px!important;
+
+    .m-table-row{
+      border-color:@grayBorder!important;
+    }
+    .m-table-cell{
+      text-align: left;
+      >span{
+        padding-left:3px;
+      }
+      box-sizing: border-box;
+      &:last-child{
+        >span{
+          padding-right:3px;
+        }
+        text-align: right;
+      }
+    }
+    .m-row-self,
+    .m-bet-title{
+      .m-table-cell{
+        &:nth-last-child(2){
+          >span{
+            padding-right:3px;
+          }
+          text-align: right;
+          box-sizing: border-box;
+        }
+        &:last-child{
+          display: none;
+        }
+      }
+    }
+    .m-detail-thead{
+      .m-table-cell{
+        font-size: 11px;
+      }
+    }
+    .m-bet-title{
+      border-top:1px solid @grayBorder;
+      border-bottom: 1px solid @grayBorder;
+      position: relative;
+    }
+    .sbetTime{
+      span{
+        display: inline!important;
+      }
+    }
+    .m-order-detail{
+      padding: 10px 0;
+      .m-t-outcome{
+        max-width: 110px;
+      }
+      .m-icon-banker{
+        &:after{
+          content:'(banker)';
+          font-size: 8px;
+          color:#807f7f;
+          width: auto;
+          height: auto;
+          background: none;
+        }
+      }
+    }
+    .m-bet-list{
+      margin-top: 0;
+    }
+    .m-row-open{
+      border: none;
+      .m-row-self{
+        border-bottom:1px solid @grayBorder;
+        .m-icon-arrow--down{
+          display: none;
+        }
+      }
+      
+    }
+    .m-title-bar .m-order-info,
+    .m-title-bar i,
+    .m-print-txt,
+    .m-row-container:not(.m-row-open){
+      display:none!important;
+    }
+    .m-detail-title{
+      background: #d6d5d5;
+      margin-top:18px;
+      .m-detail-subtit{
+        font-size:13px;
+        line-height: 26px;
+        padding-left:5px;
+        &:before{
+          width:0;
+          height: 0;
+        }
+      }
+    }
+    .m-cashout-history{
+      padding:5px 0 10px;
+      .m-table-cell:not(:first-child){
+        text-align: right;
+      }
+    }
+    .m-detail-sum{
+      padding-bottom: 19px;
+      border-bottom: 1px solid @grayBorder;
+    }
+  }
+}

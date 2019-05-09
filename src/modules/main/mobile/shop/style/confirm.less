@@ -1,0 +1,55 @@
+@import 'base/styles/variable.less';
+
+.es-dialog.m-shop-popCfm {
+	padding-top: 12/@rem;
+	box-sizing: border-box;
+
+	.es-dialog-main {
+		padding: 0;
+	}
+
+	.m-shop-confirm {
+		.m-l-top {
+			text-align: center;
+			color: @dark;
+
+			h3 {
+				font-size: 12/@rem;
+				line-height: 26/@rem;
+				font-weight: 500;
+			}
+
+			div {
+				margin-bottom: -7/@rem;
+				font-size: 20/@rem;
+				line-height: 26/@rem;
+				font-weight: 500;
+			}
+		}
+
+		.m-l-bottom {
+			margin-top: 24/@rem;
+			font-size: 0;
+
+			.af-button {
+				border: none;
+				color: @white;
+				font-size: 14/@rem;
+				font-weight: bold;
+				line-height: 1;
+				border-radius: 0;
+				height: 48/@rem;
+			}
+
+			.af-button--cancel {
+				width: 30%;
+				background: @darkGreen;
+			}
+
+			.af-button--sure {
+				width: 70%;
+				background: @green;
+			}
+		}
+	}
+}

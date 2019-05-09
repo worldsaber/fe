@@ -1,0 +1,144 @@
+@import 'base/styles/mixin.less';
+@import 'base/styles/variable.less';
+@import 'base/styles/icon.less';
+
+@import './layout.less';
+@import './text.less';
+
+.m-sportsBet--bets {
+	.f-flex {
+		.m-l-left,
+		.m-l-right {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+
+	.m-tips {
+		width: 100%;
+		padding: 15/@rem 12/@rem 15/@rem 16/@rem;
+		box-sizing: border-box;
+		grid-template-columns: 1fr 120/@rem;
+		background: @white;
+		align-items: center;
+
+		.m-l-right {
+			width: 120/@rem;
+			text-align: right;
+		}
+
+		.m-i-close {
+			.m-icon-delete2();
+			color: @midGray;
+			margin-left: 18/@rem;
+			display: inline-block;
+			vertical-align: middle;
+
+			&:before {
+				font-size: 14/@rem;
+				line-height: 1;
+			}
+		}
+	}
+
+	.m-bet-list {
+		width: 100%;
+		padding: 0 10/@rem;
+		box-sizing: border-box;
+		padding-top: 10/@rem;
+
+		.m-i-live {
+			display: inline-block;
+			padding: 2/@rem 4/@rem;
+			box-sizing: border-box;
+			line-height: 14/@rem;
+			font-size: 12/@rem;
+			font-weight: 500;
+			color: @darkGreen;
+			background: @thinGreen;
+		}
+	}
+
+	.m-bet-item {
+		margin-bottom: 10/@rem;
+		background: @white;
+		width: 100%;
+		padding: 16/@rem;
+		box-sizing: border-box;
+		border-radius: 2/@rem;
+		box-shadow: 0 1px 4px 0 fadeout(@black, 70%);
+	}
+
+	.m-title {
+		padding: 0 0 8/@rem 0;
+		box-sizing: border-box;
+		border-bottom: 1px solid @fogGrayBorder;
+	}
+
+	.m-against {
+		font-size: 0;
+		padding: 10/@rem 0;
+		box-sizing: border-box;
+
+		>li {
+			margin-bottom: 4/@rem;
+		}
+	}
+
+	.m-vs {
+		margin: 0 5/@rem;
+	}
+
+	.m-more {
+		border-bottom: 1px solid @fogGrayBorder;
+		padding-bottom: 10/@rem;
+		box-sizing: border-box;
+		grid-template-columns: 1fr 130/@rem;
+		align-items: center;
+		justify-content: space-between;
+
+		.m-l-right {
+			width: 130/@rem;
+		}
+
+		.m-icon-more {
+			.m-icon-arrow-down2();
+			color: @green;
+			margin-left: 8/@rem;
+			display: inline-block;
+			transform: translateY(2/@rem);
+
+			&:before {
+				font-size: 12/@rem;
+				line-height: 1;
+			}
+		}
+	}
+
+	.m-money {
+		align-items: center;
+		grid-template-columns: repeat(2, 1fr);
+		padding-top: 8/@rem;
+		box-sizing: border-box;
+	}
+
+	.m-btn-wrapper {
+		width: 100%;
+		text-align: center;
+	}
+
+	.m-btn--cashout {
+		width: 100%;
+		margin: 18/@rem auto 0;
+		height: 44/@rem;
+		background: @green;
+		color: @white;
+		text-align: center;
+		border-radius: 2px;
+		border: none;
+		outline: none;
+		font-size: 16/@rem;
+		line-height: 19/@rem;
+		font-weight: bold;
+	}
+}

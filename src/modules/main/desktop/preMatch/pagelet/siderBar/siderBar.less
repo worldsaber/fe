@@ -1,0 +1,199 @@
+@import "base/style/variable.less";
+@import '~iconfont/iconfont-mixin.less';
+@max-width: 150px;
+@min-width: 50px;
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden
+}
+/* siderBar spread */
+#sportList {
+	position: relative;
+	width: @max-width;
+	color: @dark;
+	font-size: 12px;
+	&>div{
+		margin-top: 10px;
+		border: 1px solid @grayBorder;
+		box-shadow: 0 0 2px 0 fadeout(@black, 89%);
+	}
+	.titles {
+		margin-top: 0px;
+		background: @white;
+		.sportList-title {
+			border-bottom: 1px solid @grayBorder;
+		}
+		.sportList-title,
+		.sportList-subtitle {
+			cursor: pointer;
+			// height: 44px;
+			line-height: 16px;
+			font-size: 14px;
+			padding: 14px 10px;
+			box-sizing: border-box;
+			box-shadow: 0 1 2 0 #000000;
+			&:after{
+				content: "\e608";
+				font-family: 'iconfont';
+				display: block;
+				float: right;
+				color: #DCDEE5;
+			}
+		}
+	}
+	.time-wrap{
+		min-height: 75px;
+		padding: 10px;
+		box-sizing: border-box;
+		background: @white;
+		cursor: pointer;
+		.time-title{
+			font-weight: 700;
+			line-height: 1;
+			padding-bottom: 7px;
+		}
+	}
+	.game-list{
+		padding: 6px 0px;
+		margin-top: 10px;
+		background: @white;
+		.sport-title {
+			font-weight: 700;
+			line-height: 1;
+			padding: 12px 10px 6px;
+		}
+		.popular-list,.sport-list{
+			.category-list-item{
+				cursor: pointer;
+				position: relative;
+				box-sizing: border-box;
+				height: 24px;
+				line-height: 24px;
+				border: 1px solid rgba(255, 255, 255, 0);
+				.category-item{
+					height: 22px;
+					line-height: 22px;
+					white-space: nowrap;
+					padding: 0 10px;
+					&>span{
+						display: block;
+						float: left;
+						&:first-child{
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							width: 98px;
+						}
+						&.event-size{
+							float: right;
+							padding-left: 5px;
+						}
+					}
+				}
+				&.hover{
+					border: 1px solid @grayBorder;
+					box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+					border-left-color: #ffffff;
+				}
+			}
+			.tournament-list{
+				cursor: pointer;
+				display: none;
+				background-color: #ffffff;
+				border: 1px solid @grayBorder;
+				position: absolute;
+				left: 100%;
+				margin-left: -2px;
+				top: -1px;
+				z-index: 888;
+				width: 412px;
+				box-sizing: border-box;
+				padding: 2px 0px 2px 3px;
+				height: auto;
+				box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+				&--one{
+					width: auto;
+				}
+				.tournament-err{
+					color: @red;
+					font-size: 12px;
+					padding-top: 6px;
+					padding-bottom: 10px;
+					line-height: 1;
+					clear: both;
+					padding-left: 10px;
+				}
+				&::before{
+					position: absolute;
+					display: block;
+					top: 0px;
+					left: -4px;
+					height: 22px;
+					width: 5px;
+					background-color: #ffffff;
+					content: ' ';
+				}
+				&>ul{
+					width: 100%;
+				}
+				.tournament-list-item{
+					cursor: pointer;
+					width: 200px;
+					height: 25px;
+					float: left;
+					line-height: 1;
+					box-sizing: border-box;
+					padding-top: 5px;
+					white-space: nowrap;
+					padding-left: 10px;
+					padding-right: 10px;
+					.checkbox{
+						width: 15px;
+						height: 15px;
+						border: 1px solid @midGray;
+						display: inline-block;
+						border-radius: 2px;
+						vertical-align: top;
+						margin-top: -2px;
+						&.active{
+							background-color: @green;
+							border: 1px solid @green;
+							color: #ffffff;
+							&:after{
+								content: ' ';
+								width: 9px;
+								height: 4px;
+								margin-left: 2px;
+								margin-top: -2px;
+								display: inline-block;
+								border: 2px solid #fcfff4;
+								border-top: none;
+								border-right: none;
+								background: transparent;
+								transform: rotate(-45deg);
+							}
+						}
+					}
+					.tournament-name{
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						width: 120px;
+						padding-left: 6px;
+						display: inline-block;
+						vertical-align: middle;
+					}
+					.event-size{
+						width: 30px;
+						display: inline-block;
+						text-align: right;
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	}
+}

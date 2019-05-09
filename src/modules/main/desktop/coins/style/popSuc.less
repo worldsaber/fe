@@ -1,0 +1,80 @@
+@import 'base/style/variable.less';
+.m-coins--suc {
+	width: 280px;
+	height: 235px;
+	background: @white url(../img/sucBg.png) no-repeat;
+	background-position: top left;
+	background-size: contain;
+	text-align: center;
+	padding-top: 16px;
+	box-sizing: border-box;
+	border-radius: 5px;
+
+	.m-title {
+		line-height: 16px;
+		font-size: 14px;
+		font-weight: bold;
+		color: @white;
+		text-shadow: 0 2px 4px fadeout(@black, 50%);
+	}
+
+	.m-main {
+		margin-top: 63px;
+		line-height: 14px;
+		font-size: 12px;
+	}
+
+	.m-money {
+		line-height: 23px;
+		font-size: 19px;
+		font-weight: bold;
+		color: @darkYellow;
+	}
+
+	.m-desc {
+		margin-top: 1px;
+		color: @darkGray;
+	}
+
+	.m-infos {
+		margin-top: 11px;
+		color: @blueBlack;
+	}
+
+	.m-icon-close {
+		margin-top: 23px;
+		width: 80px;
+		height: 34px;
+		border-radius: 2px;
+		border: solid 1px @green;
+		color: @green;
+		font-weight: bold;
+		cursor: pointer;
+		outline: none;
+
+		&:hover {
+			color: @midGreen;
+			border-color: @midGreen;
+		}
+
+		&:active {
+			color: @lightGreen;
+			border-color: @midGreen;
+		}
+	}
+}
+
+.m-coins-popSuc.es-dialog {
+	border: none;
+	background: transparent;
+
+	.es-dialog-body {
+		background: transparent;
+	}
+
+	.es-dialog-main {
+		padding: 0;
+		box-sizing: border-box;
+		background: transparent;
+	}
+}

@@ -1,0 +1,56 @@
+@import 'base/style/variable.less';
+
+.m-betslips {
+
+	.m-list-nav {
+		.m-table-cell {
+			font-size: 12px;
+			height: 36px;
+			line-height: 36px;
+			text-align: center;
+			text-transform: capitalize;
+			margin-right: 3px;
+			background: @green;
+			color: @white;
+			border-radius: 2px 2px 0 0;
+			max-width: 33%;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		.m-table-cell--active {
+			background: @white;
+			color: @dark;
+		}
+
+		.m-table-cell-disabled {
+			color: fadeout(@white, 50%);
+			background: fadeout(@green, 50%);
+			text-decoration: line-through;
+		}
+
+		&:last-of-type {
+			text-align: right;
+		}
+
+		.m-label--flex {
+			// line-height: 1;
+			// font-family: Hermes;
+			// font-size: 14px;
+			font-weight: bold;
+			// color: @white;
+			// text-shadow: 0 1px 0 fadeout(@black, 50%);
+			// margin-top: 8px;
+			// transform: scaleX(0.75);
+
+			.m-icon-flexi();
+			color: @lightGreen;
+		}
+	}
+}

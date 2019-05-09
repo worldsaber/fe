@@ -1,0 +1,21 @@
+.m-icon-flexi(@bgcolor) {
+	display: inline-block;
+	vertical-align: top;
+	background: @bgcolor;
+	position: relative;
+	padding: 0 1px 0 2px;
+	box-sizing: border-box;
+
+	&:after {
+		position: absolute;
+		top: 0;
+		right: -4px;
+		content: '';
+		width: 0;
+		height: 0;
+		border-top: 7px solid @bgcolor;
+		border-left: 2px solid @bgcolor;
+		border-right: 2px solid transparent;
+		border-bottom: 7px solid transparent;
+	}
+}

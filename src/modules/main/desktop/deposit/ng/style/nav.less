@@ -1,0 +1,26 @@
+@import 'base/style/variable.less';
+
+.m-dp-nav {
+	border-bottom: 1px solid @fogGrayBorder;
+	margin-bottom: -3px;
+
+	.f-item {
+		display: inline-block;
+		padding: 20px 10px;
+		box-sizing: border-box;
+		font-size: 20px;
+		margin-right:30px;
+		cursor: pointer;
+
+		&.f-item--active {
+			font-weight: bold;
+			border-bottom: 3px solid @green;
+			// cursor: default;
+		}
+
+		&:hover,
+		&:active {
+			border-bottom: 3px solid fadeout(@green, 50);
+		}
+	}
+}

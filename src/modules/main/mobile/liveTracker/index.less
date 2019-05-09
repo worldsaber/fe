@@ -1,0 +1,54 @@
+@import 'packages/liveMatchTracker/rewrite-tracker.less';
+@import 'base/styles/variable.less';
+
+body {
+    background-color: #1B1E25;
+
+    &.has-tabs {
+    	padding-top: 38/@rem;
+    }
+
+    .sr-widget {
+
+        .sr-widgets-matchhead2head{
+            position: fixed;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.m-type-list {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 4/@rem;
+	border-bottom: 1px solid @lightGray;
+	margin-bottom: 8/@rem;
+	background: #fff;
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		width: 100%;
+		background-color: #fff;
+	}
+
+	.m-type-item {
+		cursor: pointer;
+		height: 30/@rem;
+		line-height: 30/@rem;
+		padding: 0 11/@rem;
+		box-sizing: border-box;
+		font-weight: 700;
+		.text {
+			font-size: 12/@rem;
+			color: @dark;
+		}
+		&.active {
+			border-bottom: 4px solid @green;
+		}
+	}
+}

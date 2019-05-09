@@ -1,0 +1,51 @@
+@import 'base/style/variable.less';
+@import 'components/cashout/style/loadingMixin.less';
+
+.m-coupon-wrapper {
+
+	.m-error-wrapper {
+		display: table;
+		display: flex;
+		width: 100%;
+		background: @white;
+
+		height: 153px;
+
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		> div {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.m-text-msg {
+			color: @darkGray;
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+		.m-icon-load {
+			.m-loading(30px, 30px);
+		}
+
+		.af-button--text {
+			margin-top: 8px;
+			border: 1px solid @darkGray;
+			color: @lightGray;
+			font-size: 10px;
+			line-height: 14px;
+			border-radius: 2px;
+			height: 20px;
+			width: 63px;
+			padding: 0;
+		}
+
+		.m-text-highlight {
+			color: @linkBlue;
+			cursor: pointer;
+		}
+	}
+}

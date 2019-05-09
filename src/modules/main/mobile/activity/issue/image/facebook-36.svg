@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>CBF352E1-22D0-482F-9C4D-90DBB88E3891</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#7CADF7" offset="0%"></stop>
+            <stop stop-color="#296EFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="百万Extra-Lives" transform="translate(-112.000000, -529.000000)" fill-rule="nonzero">
+            <g id="Icon/Facebook-36" transform="translate(112.000000, 529.000000)">
+                <path d="M18.0025462,0.018936212 C27.8884715,0.018936212 36,8.10441609 36,17.9987282 C36,27.8930402 27.9065776,35.9785201 18.0025462,35.9785201 C8.09851473,35.9785201 0.00509233792,27.8930402 0.00509233792,17.9987282 C0.00509233792,8.10441609 8.11662083,0.018936212 18.0025462,0.018936212 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+                <path d="M20.2114892,12.3913484 L22.5109627,12.3913484 L22.5109627,9.00883219 L19.8131552,9.00883219 C16.5178468,9.11736212 15.8117092,10.9985476 15.8117092,12.8978214 L15.8117092,14.5981237 L13.6208723,14.5981237 L13.6208723,17.9987282 L15.8117092,17.9987282 L15.8117092,26.9886241 L19.2156542,26.9886241 L19.2156542,17.9987282 L22.0220982,17.9987282 L22.5290688,14.5981237 L19.2337603,14.5981237 L19.2337603,13.6032659 C19.1070177,12.8978214 19.6139882,12.3913484 20.2114892,12.3913484 Z" id="Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

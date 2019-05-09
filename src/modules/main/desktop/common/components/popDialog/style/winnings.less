@@ -1,0 +1,118 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+.m-winning-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+
+	width: 432px;
+	height: 550px;
+	background: url(../image/winningImg.png) @dark no-repeat;
+	background-size: 360px 427px;
+	background-position: center 33px;
+	border-radius: 2px;
+
+	.m-pop-header {
+		position: relative;
+		padding: 0 40px;
+		box-sizing: border-box;
+		width: 100%;
+
+		.m-icon-close {
+			color: @white;
+		    position: absolute;
+		    right: 12px;
+		    top: 12px;
+			.m-icon-close();
+		}
+
+		> span {
+			margin-top: 51px;
+			display: inline-block;
+			width: 100%;
+			font-size: 24px;
+			font-weight: 900;
+			text-align: center;
+			color: @golden;
+		}
+	}
+
+	.m-pop-main {
+		margin-top: 33px;
+
+		// .m-text-main {
+		// 	font-size: 56px;
+		//     font-weight: 900;
+		//     text-align: center;
+		//     color: @white;
+		//     line-height: 76px;
+		// }
+
+		.m-money-wrapper {
+			margin-top: 69px;
+			display: inline-block;
+			text-align: center;
+			width: 100%;
+
+			color: @white;
+			font-weight: bold;
+			// font-size: 0;
+		}
+
+		.m-money {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 35px;
+			line-height: 41px;
+			font-weight: bold;
+		}
+
+		.m-currency {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 35px;
+			line-height: 41px;
+			font-weight: bold;
+		}
+	}
+
+	.m-pop-bottom {
+		position: absolute;
+		bottom: 44px;
+		text-align: center;
+		width: 100%;
+
+		.m-desc-wrapper {
+			margin-top: 23px;
+			font-size: 12px;
+			line-height: 17px;
+			text-align: center;
+			color: @midGray;
+			text-transform: capitalize;
+		}
+
+		.m-btn-wrapper {
+			margin-top: 13px;
+			text-align: center;
+		}
+
+		.af-button--text {
+			border: 1px solid @midGreen;
+			border-radius: 2px;
+			width: 123px;
+			height: 42px;
+			font-size: 16px;
+			line-height: 19px;
+			font-weight: bold;
+			color: @midGreen;
+
+			&:hover,
+			&:active {
+				color: @lightGreen;
+				border-color: @lightGreen;
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+@rem: 28.125rem;
+.m-snap-nav-wrap {
+	overflow: hidden;
+	.m-snap-nav{
+		white-space: nowrap;
+		position: relative;
+		overflow: hidden;
+		min-width: 100%;
+		font-size: 0;
+		li {
+			text-align: center;
+			padding: 0 10/@rem;
+			display: inline-block;
+			font-size: 1rem;
+		}
+		&.flex {
+			display: flex;
+			flex-wrap: nowrap;
+			// flex 为1的情况下会自动缩放，这个时候总宽度计算会有问题，因为一放大，
+			// 所有子元素都会自动放大- 如果要用flex为1，确保没有滚动条，即所有项目撑满，这样比较合理
+			li {
+				flex: 0 1 auto;
+			}
+		}
+	}
+}

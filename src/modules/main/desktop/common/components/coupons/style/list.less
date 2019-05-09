@@ -1,0 +1,70 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+.m-coupon-wrapper {
+	.m-coupon-list {
+		background: @white;
+		padding: 0 0 5px 10px;
+		box-sizing: border-box;
+		max-height: 285px;
+		overflow-y: auto;
+		&::-webkit-scrollbar-track{
+			border-radius: 10px;
+			background-color:inherit;
+		}
+		&::-webkit-scrollbar
+		{
+			width: 4px;
+			background-color: inherit;
+		}
+		&::-webkit-scrollbar-thumb
+		{
+			border-radius: 10px;
+			background-color: @darkGray;
+		}
+		.m-select-ban,
+		.m-info-ban {
+			display: inline-block;
+			vertical-align: top;
+			height: 100%;
+		}
+
+		.m-select-ban {
+			width: 33px;
+			position: relative;
+		}
+
+		.m-info-ban {
+			width: 170px;
+		}
+
+		.m-icon-check {
+
+			&:before {
+				content: '';
+				width: 14px;
+				height: 14px;
+				border: 1px solid @fogGrayBorder;
+				border-radius: 50%;
+				display: inline-block;
+
+				position: absolute;
+				top: 50%;
+				transform: translate3d(0,-50%,0);
+			}
+		}
+
+		.m-icon-checked {
+
+			.m-icon-success-bg();
+			border: none;
+			color: @green;
+
+			&:before {
+				position: absolute;
+				top: 50%;
+				transform: translate3d(0,-50%,0);
+			}
+		}
+	}
+}

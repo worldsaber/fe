@@ -1,0 +1,278 @@
+@import "iconfont/iconfont-mixin.less";
+@import "base/styles/variable.less";
+@import "base/styles/icon.less";
+@import "./layout.less";
+@import "./text.less";
+
+body {
+	width: 100%;
+}
+.m-cashout-pop {
+
+	.m-t-mt10 {
+		margin-top: 10/@rem;
+	}
+
+	.m-mask {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: fadeout(@black, 40%);
+		overflow: hidden;
+		z-index: 1000;
+	}
+	.m-container {
+		z-index: 1001;
+		position: fixed;
+		width: 100%;
+		height: 265/@rem;
+		bottom: 0;
+		left: 0;
+		background-color: @white;
+		padding: 12/@rem 16/@rem 0;
+		box-sizing: border-box;
+
+		.m-close {
+			position: absolute;
+			width: 40/@rem;
+			height: 40/@rem;
+			background: fadeout(@white, 90%);
+			top: -56/@rem;
+			left: 50%;
+			margin-left: -20/@rem;
+			text-align: center;
+			border-radius: 50%;
+
+			.m-icon-close();
+			&:before {
+				font-size: 16/@rem;
+				line-height: 40/@rem;
+				color: @midGray;
+			}
+		}
+		.m-main{
+			height: 100%;
+			overflow-y: auto;
+		}
+
+		.m-body {
+			.m-l-top {
+				height: 95/@rem;
+				margin-top: 34/@rem;
+
+				.m-t-gray {
+					margin-top: 12/@rem;
+				}
+
+				.m-t-red {
+					margin-top: 12/@rem;
+				}
+			}
+
+			.m-l-mid {
+				height: 37/@rem;
+			}
+		}
+	}
+
+	.m-container-fix {
+		.m-body {
+			.m-l-top {
+				height: 56/@rem;
+				margin-top: 30/@rem;
+
+				.m-t-red {
+					margin-top: 6/@rem;
+				}
+			}
+		}
+
+		.m-btn-wrapper {
+			margin-top: 26/@rem;
+		}
+	}
+
+	.m-btn-wrapper {
+		align-items: center;
+		justify-content: space-between;
+
+		grid-template-columns: 68/@rem 1fr;
+
+		.m-btn-item,
+		.af-button {
+			display: table-cell;
+			vertical-align: middle;
+			border-radius: 2/@rem;
+			height: 48/@rem;
+		}
+
+		.m-btn-item {
+			width: 48/@rem;
+			border: 1px solid @fogGrayBorder;
+
+			&:hover,
+			&:active {
+				border-color: @darkGray;
+			}
+		}
+
+		.af-button {
+			flex: 1;
+			min-width: 1%;
+			border: none !important;
+			font-size: 16/@rem;
+			font-weight: bold;
+		}
+
+		.af-button--primary {
+			background: @green !important;
+			color: @white !important;
+
+			&:hover {
+				background: @midGreen !important;
+			}
+
+			&:active {
+				background: @lightGreen !important;
+			}
+		}
+
+		.is-disabled {
+			background: @midGray !important;
+			color: @darkGray !important;
+
+			&:hover,
+			&:active {
+				background: @midGray !important;
+				color: @darkGray !important;
+			}
+		}
+	}
+
+	.m-icon-refresh {
+		display: inline-block;
+		height: 48/@rem;
+		width: 48/@rem;
+		line-height: 48/@rem;
+		text-align: center;
+		.m-icon-refresh();
+
+		&:before {
+			font-size: 20/@rem;
+		}
+	}
+
+	.m-icon-loading {
+		display: inline-block;
+		height: 48/@rem;
+		width: 48/@rem;
+		line-height: 48/@rem;
+		text-align: center;
+
+		.m-icon-loading();
+
+		&:before {
+			display: inline-block;
+			font-size: 20/@rem;
+			animation: loading 1.5s infinite linear;
+		}
+	}
+
+	.m-slider-bar {
+		width: 100%;
+		padding: 0 5/@rem;
+		box-sizing: border-box;
+
+		.m-slider-process {
+			background-color: @green;
+		}
+
+		.m-slider-dot {
+			background-color: @midGreen;
+		}
+
+		.m-slider-disabled {
+			.m-slider-process {
+				background-color: @midGray;
+			}
+
+			.m-slider-dot {
+				background-color: @lightGray;
+			}
+		}
+	}
+
+	.m-slide-range-label {
+		overflow: hidden;
+		font-size: 14/@rem;
+		line-height: 16/@rem;
+		color: @black;
+		margin-top: 3/@rem;
+
+		span {
+			&:first-of-type {
+				float: left;
+			}
+
+			&:last-of-type {
+				float: right;
+			}
+		}
+	}
+
+	.m-cashout-tips {
+		margin-top: 14/@rem;
+
+		.m-i-tips {
+			margin-right: 4/@rem;
+			.m-icon-tips();
+
+			&:before {
+				font-size: 12/@rem;
+				line-height: 14/@rem;
+			}
+		}
+	}
+
+	.fade-enter-active, .fade-leave-active {
+		transition: opacity .3s;
+	}
+	.fade-enter, .fade-leave-to {
+		opacity: 0;
+	}
+	.slide-enter-active, .slide-leave-active {
+		transition: all .3s ease;
+	}
+	.slide-enter, .slide-leave-to {
+		transform: translateY(100%);
+	}
+
+	.number-grow-warp {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.number-grow {
+		color: @dark;
+	}
+}
+
+.es-dialog-toast {
+	.m-icon--loading:before{
+		content: "\e648";
+		.iconfont();
+	}
+	.m-icon--loading{
+		display: inline-block;
+		margin-right:5/@rem;
+		animation: loading 2s linear infinite;
+	}
+}
+
+@keyframes loading {
+	100% {
+		transform: rotate(360deg);
+	}
+}

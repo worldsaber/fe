@@ -1,0 +1,32 @@
+@import "base/styles/variable.less";
+@import "base/styles/icon.less";
+.flexibet() {
+	color: @darkGray;
+	font-size: 10/@rem;
+	margin-top: 5/@rem;
+	margin-bottom: 8/@rem;
+	i{
+		background-color: @midGreen;
+		color: @white;
+		padding-right: 5/@rem;
+		display: inline-block;
+		vertical-align:middle;
+		padding: 1px 0 1px 3px;
+		font-weight: 700;
+		font-size: 14/@rem;
+		line-height: 1;
+		position: relative;
+		margin-right: 7/@rem;
+		&:after{
+			position: absolute;
+			top: 0;
+			right: -2px;
+			height: 100%;
+			width: 4px;
+			content: ' ';
+			display: block;
+			background: @midGreen;
+			transform: skew(-12deg);
+		}
+	}
+}

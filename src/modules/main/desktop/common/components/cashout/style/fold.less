@@ -1,0 +1,59 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+@import './loadingMixin.less';
+
+.m-cashout {
+
+	.m-operation {
+		display: block;
+		background: @white;
+		padding: 0 10px;
+		text-align: center;
+		height: 16px;
+
+		.m-icon-loading {
+			.m-loading(16px, 16px);
+		}
+
+		.m-load-error {
+			height: 16px;
+			line-height: 16px;
+			font-size: 10px;
+			background: @fogGray;
+		}
+
+		.m-fold {
+			display: inline-block;
+			vertical-align: middle;
+			height: 16px;
+			background: @fogGray;
+			width: 100%;
+			border-radius: 2px;
+			color: @green;
+			cursor: pointer;
+
+			&:before {
+				display: inline-block;
+			}
+		}
+
+		.m-icon-unfold {
+			.m-icon-arrow-down2();
+
+			&:before {
+				font-size: 12px;
+				// transform: translate3d(0,3px,0);
+			}
+		}
+
+		.m-icon-fold {
+			.m-icon-arrow-up2();
+
+			&:before {
+				font-size: 12px;
+				// transform: translate3d(0,-3px,0);
+			}
+		}
+	}
+}

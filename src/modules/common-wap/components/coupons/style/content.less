@@ -1,0 +1,80 @@
+@import 'base/styles/variable.less';
+@import 'base/styles/icon.less';
+
+.m-coupon-wrapper {
+	.m-coupon-content{
+		display: block;
+        position: fixed;
+        box-sizing: border-box;
+		width: 100%;
+		height: 100%;
+		z-index: 889;
+		top: 0;
+		right: 0;
+        background-color: @white;
+        padding: 40/@rem 0;
+		overflow-y: auto;
+        .m-navbar{
+			width: 100%;
+			// ios下fixed，在jackpot下不知道为啥不显示，这里换成absolute就好了
+			position: absolute;
+            z-index: 500;
+			top: 0px;
+			background-color: @lightGray;
+			color: @blueBlack;
+			.m-navbar-item {
+				a{
+					color: @blueBlack;
+				}
+				.m-refresh{
+					color: @dark;
+					font-size: 14/@rem;
+				}
+			}
+			.m-navbar-back::before{color: @blueBlack;}
+        }
+
+        .m-refresh {
+        	height: 18/@rem;
+            line-height: 18/@rem;
+            width: 63/@rem;
+            text-align: center;
+            float: right;
+            border: 1px solid @fogGrayBorder;
+            border-radius: 4/@rem;
+        	color: @linkBlue;
+
+        	&.is-disabled {
+        		background: @midGray;
+        		border-color: @midGray;
+        	}
+        }
+    }
+
+	.m-coupons-skip {
+		text-align: center;
+		margin: 20/@rem 0 14/@rem;
+		background-color: @white;
+		.btn {
+			display: block;
+			border: 1px solid @midGray;
+			font-size: 12/@rem;
+			font-weight: bold;
+			color: @green;
+			height: 42/@rem;
+			line-height: 40/@rem;
+			border-radius: 2/@rem;
+			&.active{
+				color: @white;
+                background-color: @midGreen;
+                border-color: @midGreen;
+			}
+		}
+	}
+	.slide-enter-active, .slide-leave-active {
+		transition: right .5s ease;
+	  }
+	  .slide-enter, .slide-leave-to /* .slide-leave-active in below version 2.1.8 */ {
+		right: -100%;
+	  }
+}

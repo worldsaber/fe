@@ -1,0 +1,281 @@
+@import 'base/styles/variable.less';
+@import 'base/styles/icon.less';
+
+.m-dp-gh-online {
+	width: 100%;
+	padding: 23/@rem 16/@rem 7/@rem;
+	box-sizing: border-box;
+
+	.m-icon-tips {
+		.m-icon-light2();
+		color: @green;
+
+		&::before {
+			font-size: 16/@rem;
+			line-height: 1;
+		}
+	}
+
+	.m-icon-code {
+		.m-icon-card();
+		color: fadeout(@green, 40%);
+
+		&:before {
+			font-size: 24/@rem;
+		}
+	}
+
+	.m-icon-phone {
+		.m-icon-phone();
+		color: fadeout(@green, 40%);
+
+		&:before {
+			font-size: 24/@rem;
+		}
+	}
+
+	.m-input-wap-wrapper {
+		margin-top: 10/@rem;
+		border-color: @darkGray;
+		border-radius: 2/@rem;
+		padding: 6/@rem 0;
+		box-sizing: border-box;
+		font-size: 14/@rem;
+		&.m-input-wap-wrapper--disabled {
+			.m-input-wap, .m-input-wap-prepend{
+				background-color: initial;
+				color: #9CA0AB;
+			}
+			.m-input-transform{
+				.m-cCode,.m-input-wap{
+					color: @dark;
+					opacity: 0.4;
+				}
+			}
+		}
+		.m-cCode {
+			display: none;
+		}
+
+		.m-input-wap-prepend {
+			padding: 0 0 0 12/@rem;
+			box-sizing: border-box;
+		}
+
+		.m-input-wap {
+			height: 36/@rem;
+			padding: 0;
+			line-height: 36/@rem;
+		}
+
+		.m-input-wap.on {
+			height: 20/@rem;
+			line-height: 20/@rem;
+		}
+
+		.m-input-transform {
+			position: relative;
+			padding: 0 0 0 12/@rem;
+			box-sizing: border-box;
+
+			.m-input-transform-text {
+				height: 16/@rem;
+				line-height: 12/@rem;
+				font-size: 10/@rem;
+				padding-bottom: 4/@rem;
+				box-sizing: border-box;
+				margin-bottom: 0;
+			}
+		}
+
+		.m-input-wap-icon {
+			z-index: 22;
+		}
+
+		.m-input-wap-icon {
+			width: 35/@rem;
+
+			&::before {
+				font-size: 16/@rem;
+			}
+		}
+	}
+
+	.m-input-wap-wrapper--active {
+		border-color: @green !important;
+	}
+
+	.m-input-transform.on{
+		.m-cCode {
+			display: inline-block;
+			position: absolute;
+			left: 12/@rem;
+			font-size: 14/@rem;
+			height: 20/@rem;
+			line-height: 20/@rem;
+			color: @darkGray;
+			font-weight: 500;
+			padding-right: 6/@rem;
+			box-sizing: border-box;
+
+			& + .m-input-wap {
+				padding-left: 38/@rem;
+			}
+		}
+
+		.m-input-transform {
+			padding-bottom: 2/@rem;
+			box-sizing: border-box;
+
+			.m-input-wap,
+			.m-input-wap {
+				height: 18/@rem;
+				line-height: 18/@rem;
+			}
+		}
+	}
+
+	.deposit-bank {
+		.m-desc {
+			line-height: 11/@rem;
+			font-size: 10/@rem;
+			color: @darkGray;
+			margin: 10/@rem 0 7/@rem;
+		}
+
+		.m-t-light {
+			color: @linkBlue;
+		}
+	}
+
+	.deposit-bank-static {
+		padding: 16/@rem 12/@rem;
+		box-sizing: border-box;
+		border-radius: 2/@rem;
+
+		grid-template-columns: 24/@rem 1fr 68/@rem;
+		align-items: center;
+		border: 1px solid @darkGray;
+
+		.bank-static-prepend,
+		.bank-static-name,
+		.bank-switch {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.bank-static-name,
+		.bank-switch {
+			font-size: 14/@rem;
+			line-height: 1;
+		}
+
+
+		.bank-static-prepend {
+			width: 24/@rem;
+			height: 16/@rem;
+
+			>img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.bank-static-name {
+			color: @dark;
+			padding-left: 12/@rem;
+			box-sizing: border-box;
+		}
+
+		.bank-switch {
+			width: 68/@rem;
+
+			>span {
+				color: @linkBlue;
+				margin-right: 10/@rem;
+			}
+		}
+
+		.bank-static-arrow {
+			color: @darkGray;
+			.m-icon-arrow--right();
+
+			&::before {
+				font-size: 10/@rem;
+				line-height: 1;
+			}
+		}
+	}
+
+	.refresh-container {
+		text-align: center;
+
+		.error-text {
+			margin-top: 50/@rem;
+			text-align: center;
+			color: @dark;
+			font-size: 14/@rem;
+		}
+
+		.refresh-banks {
+			margin-top: 40/@rem;
+			width: 120/@rem;
+			border: none;
+			background-color: @green;
+		}
+	}
+
+	.deposit-footer {
+		margin-top: 25/@rem;
+
+		.balance-container {
+			margin-right: 2/@rem;
+			line-height: 18/@rem;
+			text-align: right;
+			margin-bottom: 5/@rem;
+
+			.balance-text {
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 8/@rem;
+				font-size: 12/@rem;
+				color: @dark;
+			}
+		}
+
+		.deposit-amount {
+			box-sizing: border-box;
+			padding: 8/@rem 0;
+
+			.amount-prepend {
+				font-weight: 500;
+				font-size: 14/@rem;
+				line-height: 14/@rem;
+			}
+
+			.m-input-wap-icon+.m-input-wap {
+				text-align: right;
+				height: 32/@rem;
+				padding-right: 35/@rem;
+			}
+		}
+
+		.deposit-submit {
+			width: 100%;
+			background-color: @green;
+			border: none;
+			height: 48/@rem;
+			margin-top: 18/@rem;
+			margin-bottom: 8/@rem;
+		}
+	}
+
+	.error-msg {
+		min-height: 12px;
+		line-height: 12px;
+		font-size: 10px;
+		text-align: left;
+		color: @red;
+		margin-top: 2px;
+	}
+}

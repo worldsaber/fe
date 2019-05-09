@@ -1,0 +1,3 @@
+<div class="help-content-wrap"><h3 id="protection-of-information">Protection of Information</h3>
+<p>SportyBet safeguards the security of the data you provide us with physical, electronic, and managerial procedures. Please note that we cannot guarantee that any data transmitted over the Internet is completely secure. Accordingly, we encourage you to take every precaution to protect your personal data when you are on the Internet.</p>
+</div>

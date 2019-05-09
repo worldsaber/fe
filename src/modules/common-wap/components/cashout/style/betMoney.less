@@ -1,0 +1,41 @@
+@import 'base/styles/variable.less';
+
+.m-cashout {
+    .m-bet-money {
+		border-top: 5/@rem solid @fogGrayBorder;
+		margin: 0 16/@rem;
+        > div {
+			padding: 14/@rem 0 18/@rem;
+            box-sizing: border-box;
+            display: flex;
+            width: 100%;
+        }
+
+        .m-col {
+            display: block;
+            flex: 1 1 auto;
+            min-width: 33.333%; // FF-fix what the hell?!
+
+			&:last-of-type {
+				text-align: right;
+
+				.m-col-text {
+					color: @green;
+				}
+			}
+        }
+
+        .m-col-title {
+			font-size: 14/@rem;
+			line-height: 1.3;
+            color: @dark;
+        }
+
+        .m-col-text {
+            font-size: 19/@rem;
+			color: @dark;
+			line-height: 1.3;
+            font-weight: bold;
+        }
+    }
+}

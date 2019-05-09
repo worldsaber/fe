@@ -1,0 +1,10 @@
+
+<svg width="53px" height="16px" viewBox="0 0 53 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle-2">
+            <path d="M0,0 L53,0 L48.8771563,13.1931 L48.8771563,13.1931 C48.3553123,14.8630008 46.8087762,16 45.0592363,16 L7.94076365,16 L7.94076365,16 C6.19122377,16 4.64468774,14.8630008 4.12284374,13.1931 L0,0 Z" fill="#353A45"></path>
+            <polygon id="Triangle" fill="#DCDEE5" transform="translate(42.500000, 7.500000) scale(1, -1) translate(-42.500000, -7.500000) " points="42.5 9 40 6 45 6"></polygon>
+        </g>
+    </g>
+</svg>

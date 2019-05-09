@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="11" viewBox="0 0 21 11">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="20" height="9.061" x=".5" y=".5" stroke="#0D9737" rx="1"/>
+        <text fill="#0D9737" font-family="Roboto-Bold, Roboto" font-size="8" font-weight="bold">
+            <tspan x="4" y="7.53">live</tspan>
+        </text>
+    </g>
+</svg>

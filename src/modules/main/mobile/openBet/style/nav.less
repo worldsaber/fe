@@ -1,0 +1,24 @@
+@import 'base/styles/variable.less';
+
+.m-sportBets {
+	.m-snap-nav-wrap {
+		padding: 0 52/@rem;
+		box-sizing: border-box;
+		background: @dark;
+
+		.m-tab-item {
+			line-height: 16/@rem;
+			font-size: 14/@rem;
+			text-align: center;
+			font-weight: 500;
+			width: 50%;
+			padding: 16/@rem 0 13/@rem;
+			box-sizing: border-box;
+			color: @white;
+
+			&.active {
+				border-bottom: 3px solid @midGreen;
+			}
+		}
+	}
+}

@@ -1,0 +1,349 @@
+@import '~base/style/variable.less';
+@import 'base/style/icon.less';
+@import '~base/style/mixin.less';
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden
+}
+.m-overview {
+	width: 745px;
+	margin-right: 15px;
+	background-color: @dark;
+	color:@white;
+	.sport-name {
+		cursor: pointer;
+		.clearfix();
+		margin: 0 10px;
+		padding-left: 3px;
+		border-bottom: 1px solid fade(@lightGray, 15%);
+		display: flex;
+		// text-align: center;
+		justify-content: space-between;
+		.sport-name-item{
+			// float: left;
+			height: 48px;
+			line-height: 48px;
+			padding: 0 15px;
+			margin-bottom: -1px;
+			.text {
+				font-size: 14px;
+				color: @white;
+			}
+			&:hover{
+				border-bottom: 4px solid fadeout(@green, 30%);
+			}
+			&.active {
+				font-weight: 700;
+				border-bottom: 4px solid @green
+			}
+		}
+		.sport-simple-select{
+			height: 48px;
+			line-height: 48px;
+			color: #FFF;
+			width: 130px;
+			font-size: 14px;
+			margin-bottom: -1px;
+			background-color: #353a45;
+			&:hover{
+				border-bottom: 4px solid rgba(13, 151, 55, 0.7);
+			}
+		}
+		.sport-simple-select-active{
+			border-bottom: 4px solid #0D9737;
+		}
+	}
+	.match{
+		position: relative;
+		text-align: center;
+		padding: 0 10px 10px 10px;
+
+		.m-market>div {
+			box-shadow: -1px 0px 0px 0px @blueBlack inset;
+		}
+
+		.af-select-title {
+			box-shadow: -1px 0px 0px 0px @blueBlack inset !important;
+		}
+
+		.af-select-item{
+			color: @dark;
+			&.active{
+				color: @white;
+				background: @lightGreen;
+			}
+			&:hover{
+				color: @white;
+				background: @midGreen;
+			}
+		}
+		.match-table {
+			.m-table-cell{
+				font-size: 12px;
+			}
+			border-bottom: 1px solid fade(@lightGray, 15%);
+			.league-row {
+				text-align: left;
+				border-top: 1px solid fade(@lightGray, 15%);
+				height: 36px;
+				line-height: 36px;
+				table-layout: fixed;
+				align-content: center;
+				align-items: center;
+				vertical-align: middle;
+				&:first-child {
+					border-top: 0px;
+				}
+				.league {
+					text-align: left;
+					width: 295px;
+					flex: 0 1 auto;
+					font-size: 16px;
+					font-weight: bold;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+				.each-module-wrap{
+					text-align: left;
+					width: 370px;
+					flex: 0 1 auto;
+					white-space: nowrap;
+					color: @darkGray;
+					.each-module-table{
+						display: inline-table;
+						display: inline-flex;
+						table-layout: fixed;
+						width: 100%;
+						&.two-markets{
+							width: 50%;
+							box-sizing: border-box;
+							&:first-child{
+								padding-right: 2px;
+							}
+							&:last-child{
+								padding-left: 2px;
+							}
+						}
+						.each-module{
+							flex: 1;
+							min-width: 1%;
+							display: table-cell;
+							text-align: center;
+							font-size: 12px;
+							&:last-child{
+								margin-right: 0px;
+							}
+						}
+					}
+					// 有marketdesc 那一列的情况
+					&.each-module-two-line{
+						line-height: 1;
+						.market-desc-wrap{
+							.clearfix();
+							.market-desc {
+								display: block;
+								float: left;
+								width: 50%;
+								text-align: center;
+								line-height: 1px;
+								padding: 3px 0;
+								font-size: 12px;
+								line-height: 1;
+								line-height: 12px;
+								font-weight: 700;
+								box-sizing: border-box;
+								&:first-child{
+									padding-right: 2px;
+								}
+								&:last-child{
+									padding-left: 2px;
+								}
+							}
+						}
+						.each-module-table{
+							height: 14px;
+							line-height: 14px;
+							.each-module{
+								background-color:rgba(234, 236, 239, .15);
+							}
+						}
+					}
+				}
+			}
+			.match-row {
+				cursor: pointer;
+				text-align: left;
+				position: relative;
+				&:before, &:after{
+					width: 78px;
+					height: 1px;
+					display: block;
+					content: ' ';
+					background-color:  #353A45;
+					left:0;
+					top: -1px;
+					position: absolute;
+				}
+				&:after {
+					top: auto;
+					bottom: -1px;
+				}
+				border-top: 1px solid fade(@lightGray, 15%);
+				height: 50px;
+				font-size: 12px;
+				align-content: center;
+				align-items: center;
+				table-layout: fixed;
+				.left-team-cell {
+					width: 295px;
+					position: relative;
+					.left-arrow{
+						position: absolute;
+						left: -10px;
+						top: 0px;
+						height: 50px;
+						overflow: hidden;
+						fill: @green;
+					}
+					.left-team-table{
+						display: inline-table;
+						width: 100%;
+						table-layout: fixed;
+						height: 50px;
+						&>div{
+							display: table-cell;
+							vertical-align: middle;
+						}
+						.time {
+							width: 78px;
+							flex: 0 1 auto;
+							line-height: 1;
+							font-weight: 700;
+							padding-left: 10px;
+							box-sizing: border-box;
+							text-align: left;
+							.clock-time {
+								padding-bottom: 4px;
+							}
+							.game-id {
+								font-weight: 500;
+								color: #d8d8d8;
+							}
+						}
+						.teams {
+							box-sizing: border-box;
+							color: @midGreen;
+							&>div{
+								overflow: hidden;
+								text-overflow: ellipsis;
+								font-weight: 500;
+								line-height: 1;
+								white-space: nowrap;
+								display: block;
+								&:first-child{
+									padding-bottom: 4px;
+								}
+							}
+						}
+						.score {
+							width: 30px;
+							flex: 0 1 auto;
+							padding-left: 10px;
+						}
+						.game-score, .point{
+							color: @midGray;
+							opacity: .5;
+							width: 30px;
+						}
+					}
+				}
+				.m-table-cell{
+					vertical-align: middle;
+				}
+				.market-cell {
+					width: 370px;
+					flex: 0 1 auto;
+					&.two-markets{
+						.market{
+							width: 50%;
+							box-sizing: border-box;
+							&:first-child{
+								padding-right: 2px;
+							}
+							&:last-child{
+								padding-left: 2px;
+							}
+						}
+					}
+				}
+				.market-size{
+					font-weight: 500;
+					text-align: center;
+					line-height: 50px;
+					width: 60px;
+					flex: 0 1 auto;
+					text-align: right;
+					&:after{
+						content: "\e608";
+						font-family: 'iconfont';
+						font-weight: 700;
+						display: inline-block;
+						text-indent: 10px;
+						color:@green;
+					}
+				}
+			}
+			.tennis-row{
+				.score,.game-score,.point{
+					width: 30px;
+				}
+				.score {
+					padding-left: 10px;
+				}
+				.game-score {
+					flex: 0 1 auto;
+				}
+				.point {
+					text-align: left;
+					flex: 0 1 auto;
+				}
+			}
+			.cricket-row {
+				.teams {
+					padding-left: 15px;
+				}
+			}
+		}
+	}
+	.m-sport-bet-no-data, .m-sport-bet-err{
+		text-align: left;
+		color: @midGray;
+		font-size: 14px;
+		margin: 0 auto;
+		display: inline-block;
+		padding: 75px 0;
+		p{
+			word-break: keep-all;
+			white-space: nowrap;
+		}
+	}
+}
+.af-select-list{
+	border: 1px solid @lightGray;
+	.af-select-item{
+		color: @dark;
+		cursor: pointer;
+		&.active{
+			color: @white;
+			background: @lightGreen;
+		}
+		&:hover{
+			color: @white;
+			background: @midGreen;
+		}
+	}
+}

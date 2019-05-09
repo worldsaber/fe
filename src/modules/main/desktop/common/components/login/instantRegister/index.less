@@ -1,0 +1,150 @@
+@import 'base/style/mixin.less';
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+@import '../style/buttonMixin.less';
+@import '../style/inputMixin.less';
+
+.m-instant-reg {
+	border-radius: 2px;
+
+	width: 100%;
+	overflow: hidden;
+
+	padding: 7px 19px;
+	box-sizing: border-box;
+
+	.m-title {
+		padding: 12px 0 10px;
+		box-sizing: border-box;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.m-pro-tips {
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 1.17;
+		color: @green;
+		// color: @lightGreen;
+		margin-bottom: 10px;
+	}
+
+	.input();
+
+	.m-input-wrapper {
+		height: 38px;
+		margin: 6px 0;
+		overflow: hidden;
+
+		.m-input {
+			height: 38px;
+			padding: 10px;
+			box-sizing: border-box;
+			font-size: 12px;
+		}
+	}
+
+	.m-btn-wrapper {
+		padding: 6px 0;
+		box-sizing: border-box;
+
+		.af-button {
+			width: 100%;
+			height: 38px;
+			border-radius: 2px;
+		}
+
+		.af-button {
+			.button();
+		}
+
+		.af-button--primary {
+			.button--primary();
+		}
+
+		.af-button--info {
+			.button--info();
+		}
+
+
+		.is-disabled {
+			.disabled();
+		}
+	}
+
+	.m-third-party {
+		font-size: 12px;
+		margin-top: 10px;
+		margin-bottom: 13px;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		.m-icon-fb,
+		span {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.m-icon-fb {
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background: @linkBlue;
+			color: @white;
+			vertical-align: middle;
+			.m-icon-facebook();
+
+			&:before {
+				font-size: 14px;
+				display: inline-block;
+    			transform: translate3d(2px,-2px,0);
+			}
+		}
+	}
+}
+
+.m-instant-dark,
+.m-instant-black {
+
+	.m-title {
+		color: @white;
+	}
+
+	.m-third-party {
+		color: @white;
+	}
+
+	.m-input-wrapper {
+		.m-input {
+			border: none !important;
+		}
+
+		.m-input-prepend {
+			border: none !important;
+		}
+	}
+}
+
+.m-instant-dark {
+	background: @dark;
+}
+
+.m-instant-black {
+	background: @blueBlack;
+}
+
+.m-instant-white {
+	background: @white;
+	border: 1px solid @fogGrayBorder;
+
+	.m-title {
+		color: @dark;
+	}
+
+	.m-third-party {
+		color: @linkBlue;
+	}
+}

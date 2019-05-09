@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="60px" viewBox="0 0 88 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>BF259E0B-6306-4589-BC15-55856C31E38E</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="NG-首次充值弹窗-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-136.000000, -230.000000)">
+        <g id="Group" transform="translate(136.000000, 230.000000)">
+            <rect id="Rectangle-2" fill="#353A45" x="0" y="11" width="88" height="14"></rect>
+            <g id="银行卡-(1)" fill="#30BB5B" fill-rule="nonzero">
+                <path d="M2.84217094e-14,51.72 C2.84217094e-14,56.293125 4.03243871,60 9.0034623,60 L78.9965377,60 C83.9614267,60 88,56.293125 88,51.72 L88,23.334375 L0.00204484722,23.334375 L0.00204484722,51.72 L2.84217094e-14,51.72 Z M9.0034623,0 C4.03857325,0 0,3.706875 0,8.28 L0,13.335 L87.9979552,13.335 L87.9979552,8.28 C87.9979552,3.706875 83.9655164,0 78.9944929,0 L9.0034623,0 Z" id="Shape"></path>
+            </g>
+            <text id="XXXX" opacity="0.5" font-family="Roboto-Regular, Roboto" font-size="9.6" font-weight="normal" fill="#353A45">
+                <tspan x="25.359375" y="43">XXXX</tspan>
+            </text>
+            <text id="123" font-family="Roboto-Bold, Roboto" font-size="11" font-weight="bold" fill="#353A45">
+                <tspan x="60.0334473" y="43">123</tspan>
+            </text>
+            <circle id="Oval-2" stroke="#FFFFFF" stroke-width="1.6" cx="69.2" cy="39.2" r="13.2"></circle>
+        </g>
+    </g>
+</svg>

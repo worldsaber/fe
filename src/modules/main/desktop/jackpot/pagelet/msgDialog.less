@@ -1,0 +1,55 @@
+.dialog(){
+    .es-dialog-head {
+        padding: 14px;
+        font-size: 16px;
+        line-height: 22/16;
+        height: auto;
+        h1 {
+            font-size: inherit;
+            line-height: inherit;
+            padding: 0;
+        }
+        .es-dialog-close {
+            height: 24px;
+            width: 24px;
+            right: 10px;
+            top: 10px;
+            text-align: center;
+            overflow: hidden;
+            &:hover {
+                text-decoration: none;
+            }
+            em {
+                font-size: 12px;
+                line-height: 24px;
+                vertical-align: top;
+            }
+        }
+    }
+    .es-dialog-body {
+        padding-bottom: 18px;
+        .es-dialog-main {
+            padding:14px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .es-dialog-footer{
+        padding: 15px;
+        text-align: right;
+        .es-dialog-btn,.es-dialog-focus-btn{
+            font-size: 12px;
+            line-height: 32px;
+           height: 32px;
+           width: 85px;
+           background-color: transparent;
+           color: @green;
+           border: 0;
+           margin: 0 0 0 8px;
+        }
+        .es-dialog-focus-btn{
+            background-color: @green;
+            color: @white;
+        }
+    }
+}

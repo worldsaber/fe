@@ -1,0 +1,262 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+/* 优惠券图形变量 */
+@giftValHeight: 73px;
+@giftDescHeight: 41px;
+
+.es-dialog.m-gift-con-dialog {
+	padding-top: 0;
+	width: auto!important;
+	margin: 0!important;
+	transform: translate(-50%, -50%);
+	background-color: transparent !important;
+	top: 50%;
+	left: 50%;
+	box-shadow: none;
+	border: none;
+	.es-dialog-body {
+		background-color: transparent !important;
+		.es-dialog-main {
+			padding: 0;
+			background-color: transparent !important;
+			overflow: unset !important;
+		}
+	}
+}
+
+.m-gift-pop{
+	overflow: visible;
+}
+
+.m-gift-wrapper {
+	width: 280px;
+	border-radius: 10px;
+	background: url(../image/dis-top-bg.svg) no-repeat;
+	background-size: 100%;
+	box-shadow: 0 0 24px 0 rgba(0,0,0,0.25), 0 0 24px 0 rgba(112,76,76,0.25);
+	position: relative;
+
+	.m-pop-bg {
+		position: absolute;
+		top: -3px;
+		left: 67px;
+		width: 59px;
+		height: 41px;
+
+		>img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.m-pop-header {
+		width: 100%;
+		position: absolute;
+		top: 105%;
+		right: 37%;
+		.m-icon-close {
+		    position: absolute;
+		    right: 14px;
+			top: 14px;
+			color: @white;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 40px;
+			background: @dark;
+			display: block;
+			.m-icon-close();
+			z-index: 222;
+
+			&:before {
+				font-size: 10px;
+			}
+		}
+	}
+	
+	.m-pop-main {
+		padding-top: 40px;
+		box-sizing: border-box;
+		text-align: center;
+		position: relative;
+		.m-coupon-type{
+			font-size: 14px;
+			line-height: 1.13;
+			text-align: center;
+			color: @darkGreen;
+			margin-top: -20px;
+			padding-bottom: 10px;
+		}
+		.m-coupons-info {
+			width: 93%;
+			position: relative;
+			display: inline-block;
+			border-radius: 5px;
+			top: -15px;
+		}
+
+		.m-icon-left,
+		.m-icon-right {
+			position: absolute;
+			z-index: 222;
+			top: @giftValHeight;
+			transform: translate3d(0, -50%, 0);
+			> div {
+				background: @midGreen;
+				width: 5px;
+				height: 10px;
+			}
+		}
+
+		.m-icon-left {
+			left: 0;
+
+			> div {
+				border-radius: 0 5px 5px 0;
+			}
+		}
+
+		.m-icon-right {
+			right: -1px;
+
+			> div {
+				border-radius: 5px 0 0 5px;
+			}
+		}
+
+		.m-coupon--green {
+			background: url(../image/cash-card-bg.svg) no-repeat;
+			background-size: 108%;
+			background-position: bottom;
+		}
+
+		.m-coupon--yellow {
+			background: url(../image/dis-card-bg.svg) no-repeat;
+			background-size: 108%;
+			background-position: bottom;
+		}
+
+		.m-coupon--mix {
+			background: url(../image/pac-card-bg.svg) no-repeat;
+			background-size: 108%;
+			background-position: bottom;
+		}
+
+		.m-coupons-title {
+			width: 93%;
+			overflow: hidden;
+			height: @giftValHeight;
+			padding: 34px 10px 6px;
+			box-sizing: border-box;
+			text-align: right;
+			color: @white;
+
+			.m-value {
+				font-size: 28px;
+				line-height: 38px;
+				font-weight: bold;
+			}
+
+			.m-lable {
+				margin-top: 5px;
+				font-size: 12px;
+				line-height: 16px;
+				margin-right: 2px;
+				font-weight: 500;
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			.m-desc {
+				display: block;
+				width: 100%;
+				font-size: 14px;
+				line-height: 19px;
+				font-weight: bold;
+				float: right;
+			}
+		}
+
+		.m-coupons-detail {
+			width: 93%;
+			height: @giftDescHeight;
+			font-size: 14px;
+			line-height: 100px;
+			text-align: right;
+			color: fadeout(@white, 20%);
+			padding-right: 10px;
+			box-sizing: border-box;
+
+		}
+
+		.m-coupons-use {
+			color: @white;
+			opacity: 0.6;
+			text-align: right;
+			padding-right: 30px;
+			position: relative;
+		}
+	}
+	.m-gifts-desc-wrapper {
+		width: 280px;
+		position: relative;
+		margin-top: -15px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		background-image: linear-gradient(to bottom, #38e080, #32ce62);
+		box-shadow: 0 -3px 12px 0 rgba(9, 107, 39, 0.3);
+		color: @darkGreen;
+		.m-gifts-desc{
+			padding: 20px;
+			.title {
+				font-size: 16px;
+				font-weight: bold;
+				line-height: 1;
+				text-align: center;
+				margin-bottom: 14px;
+			}
+		}
+		.m-btn-wrapper {
+			text-align: center;
+			padding-bottom: 30px;
+		}
+
+		.af-button--text {
+			border: 1px solid @dark;
+			height: 42px;
+			border-radius: 2px;
+			font-size: 16px;
+			line-height: 19px;
+			font-weight: bold;
+			color: @dark;
+
+			&:hover,
+			&:active {
+				background: @lightGreen;
+				border-color: @lightGreen;
+				color: @dark;
+			}
+		}
+		.m-btn-gift{
+			width: 90px;
+			margin-right: 14px;
+			color: #096b27;
+		}
+		.m-btn-bet{
+			width: 120px;
+			background-color: #096b27;
+			border-color: #096b27;
+			color: #FFF;
+			&:hover{
+				color: #FFF;
+			}
+		}
+
+	}
+}
+.m-cash-wrapper {
+	background: url(../image/cash-top-bg.svg) no-repeat;
+	background-size: 100%;
+}

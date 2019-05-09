@@ -1,0 +1,63 @@
+[{
+    "script": "./modules/main/desktop/activity/firstDeposit/index.js",
+    "template": "./modules/main/desktop/activity/firstDeposit/index.ftl"
+}, {
+    "script": "./modules/main/desktop/activity/bonus/index.js",
+    "template": "./modules/main/desktop/activity/bonus/index.ftl"
+}, {
+    "script": "./modules/main/desktop/downloadApp/index.js",
+    "template": "./modules/main/desktop/downloadApp/index.ftl"
+},{
+    "script": "./modules/main/desktop/activity/superBonus/index.js",
+    "template": "./modules/main/desktop/activity/superBonus/index.ftl"
+},{
+    "script": "./modules/main/desktop/activity/activityRegister/index.js",
+    "template": "./modules/main/desktop/activity/activityRegister/index.ftl"
+},{
+    "script": "./modules/main/desktop/activity/gift/index.js",
+    "template": "./modules/main/desktop/activity/gift/index.ftl"
+},{
+	"script": "./modules/main/desktop/activity/fastBet/index.js",
+    "template": "./modules/main/desktop/activity/fastBet/index.ftl"
+},{
+	"script": "./modules/main/desktop/activity/referral/index.js",
+    "template": "./modules/main/desktop/activity/referral/index.ftl"
+},{
+	"script": "./modules/main/desktop/activity/accumulativeBet/index.js",
+    "template": "./modules/main/desktop/activity/accumulativeBet/index.ftl"
+},{
+	"script": "./modules/main/desktop/activity/proDiff/index.js",
+    "template": "./modules/main/desktop/activity/proDiff/index.ftl"
+},{
+	"script": "./modules/main/desktop/activity/ng/proDiff/index.js",
+	"template": "./modules/main/desktop/activity/ng/proDiff/index.ftl"
+},{
+	"script": "./modules/main/desktop/activity/ng/firstDeposit/index.js",
+	"template": "./modules/main/desktop/activity/ng/firstDeposit/index.ftl"
+},{
+	"script": "./modules/main/desktop/activity/gh/firstDeposit/index.js",
+	"template": "./modules/main/desktop/activity/gh/firstDeposit/index.ftl"
+},{
+	"script": "./modules/main/desktop/activity/ng/superBonus/index.js",
+	"template": "./modules/main/desktop/activity/ng/superBonus/index.ftl"
+},{
+	"script": "./modules/main/desktop/activity/gh/superBonus/index.js",
+	"template": "./modules/main/desktop/activity/gh/superBonus/index.ftl"
+},{
+	"script": "./modules/main/desktop/activity/ng/referral/index.js",
+	"template": "./modules/main/desktop/activity/ng/referral/index.ftl"
+}, {
+	"script": "./modules/main/desktop/activity/cashBack/index.js",
+    "template": "./modules/main/desktop/activity/cashBack/index.ftl"
+}, {
+	"script": "./modules/main/desktop/activity/thursdayDeposit/index.js",
+	"template": "./modules/main/desktop/activity/thursdayDeposit/index.ftl"
+}, {
+	"script": "./modules/main/desktop/activity/ng/thursdayDeposit/index.js",
+	"template": "./modules/main/desktop/activity/ng/thursdayDeposit/index.ftl"
+}, {
+	"script": "./modules/main/desktop/activity/depositUpgrade/index.js",
+	"template": "./modules/main/desktop/activity/depositUpgrade/index.ftl"
+}]
+
+

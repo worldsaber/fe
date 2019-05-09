@@ -1,0 +1,70 @@
+@import 'base/style/variable.less';
+
+.f-pop-over-bottom(@bgColor:@white, @tColor:@dark) {
+	position: absolute;
+	top: 34px;
+	right: 0;
+	background: @bgColor;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 2px;
+	line-height: 16px;
+	font-size: 14px;
+	font-weight: 500;
+	color: @tColor;
+	box-shadow: 0 0 5px 0 fadeout(@black, 80%);
+
+	&:before {
+		content: '';
+		display: block;
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		background: @bgColor;
+		box-shadow: 0 3px 5px -1px fadeout(@black, 92%), 3px 0 5px -1px fadeout(@black, 92%);
+		border-top-color: transparent;
+		border-left-color: transparent;
+		right: 5px;
+		top: -5px;
+		transform: translate3d(-50%,0,0) rotate(-135deg);
+	}
+
+	&:not(.on) {
+		display: none;
+	}
+}
+
+.f-pop-over-top(@bgColor:@white, @tColor:@dark) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: @bgColor;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 2px;
+	line-height: 16px;
+	font-size: 14px;
+	font-weight: 500;
+	color: @tColor;
+	box-shadow: 0 0 5px 0 fadeout(@black, 80%);
+	transform: translate3d(0, -100%, 0);
+
+	&:before {
+		content: '';
+		display: block;
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		background: @bgColor;
+		box-shadow: 0 3px 5px -1px fadeout(@black, 92%), 3px 0 5px -1px fadeout(@black, 92%);
+		border-top-color: transparent;
+		border-left-color: transparent;
+		right: 5px;
+		bottom: -5px;
+		transform: translate3d(-50%,0,0) rotate(45deg);
+	}
+
+	&:not(.on) {
+		display: none;
+	}
+}

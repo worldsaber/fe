@@ -1,0 +1,3 @@
+# SpecialList -- 特殊比赛列表数据
+目前包括：
+1. 推荐比赛列表 -- best odds / hot ...

@@ -1,0 +1,64 @@
+@import 'base/styles/variable.less';
+
+.input() {
+	.m-input-wap-wrapper {
+		width: 100%;
+		background: @white;
+		border-radius: 2/@rem;
+
+		.m-input-wap-icon {
+			text-align: center;
+			text-indent: 2/@rem;
+
+			&+.m-input-wap {
+				padding-right: 40/@rem;
+				border-radius: 0 2/@rem 2/@rem 0;
+			}
+		}
+
+		.m-input-wap {
+			height: 100%;
+			padding-left: 2/@rem;
+
+		}
+
+		.m-input-wap-icon:before {
+			line-height: 1;
+			font-size: 12/@rem;
+		}
+
+		&.m-input-wap-wrapper--active {
+			box-shadow: 0 0 0 1px @green;
+
+			.m-input-wap-icon--clickable {
+				&:hover {
+					color: @green !important;
+				}
+			}
+		}
+
+		&.m-input-wap-wrapper--error {
+			border: none !important;
+			box-shadow: 0 0 0 1px @red;
+
+			.m-input-wap-icon--clickable {
+				&:hover {
+					color: @red !important;
+				}
+			}
+		}
+
+		.m-input-wap-icon--clickable {
+			&:hover {
+				color: @darkGray !important;
+			}
+		}
+	}
+
+	.m-input-wap-group--prepend {
+		.m-input-wap,
+		.m-input-wap-prepend {
+			border: none !important;
+		}
+	}
+}

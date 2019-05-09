@@ -1,0 +1,6 @@
+<div class="help-content-wrap"><h3 id="privacy-policy">Privacy Policy</h3>
+<p>This Privacy Policy is agreed between you and SportyBet’s corporate entities (‘SportyBet’, ‘We’, ‘Us’ or ‘Our’ as appropriate). SportyBet will only process your personal data for the purposes for which it collected it, namely to provide you with an online betting service.</p>
+<p>SportyBet does not normally share your data with any other third parties; however, at times we may be required by law or legal process to disclose your personal information. We may also disclose information about you if we believe that disclosure is necessary for the public interest.</p>
+<p>You have a right to access your data and request it to be changed or deleted at no cost to yourself. You also have a right to stop receiving marketing information. You may do this by just removing the tick mark in the My Account page when you login.</p>
+<p>By submitting your information to us and using the Website you confirm your consent to the use of your personal information as set out in this Privacy Policy. If you do not agree with the terms of this Privacy Policy please do not use the Website or otherwise provide us with your personal information.</p>
+</div>

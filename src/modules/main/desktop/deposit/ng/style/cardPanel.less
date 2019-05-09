@@ -1,0 +1,45 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+@import 'components/login/style/buttonMixin.less';
+
+.m-dp-ng {
+	.f-tips {
+		display: inline-block;
+		vertical-align: middle;
+		cursor: pointer;
+
+		.m-popOver-wrapper {
+			padding: 10px 15px;
+			box-sizing: border-box;
+			width: 226px;
+			right: -10px;
+			margin-top: 16px;
+		}
+
+		.m-popOver-content {
+			white-space: normal;
+			color: @dark;
+		}
+
+		.m-popOver-arrow.m-popOver-arrow--top {
+			right: 5% !important;
+			left: auto;
+		}
+
+		.m-icon-tips {
+			.m-icon-tips();
+
+			&:before {
+				color: @darkGray;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+.m-dp-card {
+	.f-line {
+		margin-top: 27px;
+		height: 40px;
+	}
+}

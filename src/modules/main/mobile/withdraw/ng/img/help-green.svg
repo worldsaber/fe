@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>3260F511-E969-4633-8A38-28F76C257340</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="框错误提示3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-137.000000, -15.000000)">
+        <g id="Group-2">
+            <g id="密码">
+                <g id="Group" transform="translate(137.000000, 15.000000)">
+                    <path d="M9,1 C4.584,1 1,4.584 1,9 C1,13.416 4.584,17 9,17 C13.416,17 17,13.416 17,9 C17,4.584 13.416,1 9,1 Z" id="Shape" stroke="#0D9737" stroke-width="1.4" fill-rule="nonzero"></path>
+                    <polygon id="Path" fill="#0D9737" points="9.8 14.6 8.2 14.6 8.2 13 9.8 13"></polygon>
+                    <path d="M11.456,8.4 L10.736,9.136 C10.16,9.72 9.8,10.2 9.8,11.4 L8.2,11.4 L8.2,11 C8.2,10.12 8.56,9.32 9.136,8.736 L10.128,7.728 C10.424,7.44 10.6,7.04 10.6,6.6 C10.6,5.72 9.88,5 9,5 C8.12,5 7.4,5.72 7.4,6.6 L5.8,6.6 C5.8,4.832 7.232,3.4 9,3.4 C10.768,3.4 12.2,4.832 12.2,6.6 C12.2,7.304 11.912,7.944 11.456,8.4 Z" id="Path" fill="#0D9737"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

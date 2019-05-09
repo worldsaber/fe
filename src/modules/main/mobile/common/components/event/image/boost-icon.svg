@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="14px" viewBox="0 0 77 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ListCell/_tag/OddsBoost-Pre Copy@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ListCell/_tag/OddsBoost-Pre-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,2 L77,2 L76.1943485,6.43108351 C75.5027256,10.2350091 72.1896783,13 68.3233892,13 L0,13 L0,2 Z" id="Rectangle-Copy" fill="#40208C" transform="translate(38.500000, 7.500000) scale(1, -1) translate(-38.500000, -7.500000) "></path>
+        <g id="Ic_Boost" transform="translate(59.000000, 0.000000)">
+            <g id="Group">
+                <path d="M11.262247,3.28681092 C14.054406,4.508171 16,7.24920722 16,10.4347826 L13.8614308,10.4347826 C13.7751602,8.28937987 12.6294867,6.41025249 10.9219621,5.28413569 L11.262247,3.28681092 Z M8.57758745,2.62878011 L7.65433579,4.18881996 C7.50419838,4.17893523 7.35269872,4.17391304 7.2,4.17391304 C3.60741162,4.17391304 0.678543544,6.95386089 0.538569196,10.4347826 L6.66133815e-16,10.4347826 C6.42988061e-16,6.11255413 3.581722,2.60869565 8,2.60869565 C8.19422344,2.60869565 8.38683032,2.61546651 8.57758745,2.62878011 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <path d="M10.7103663,1.04347826 L9.26266634,10.0761844 C9.08803301,11.1617365 8.08776638,11.7422191 6.99656641,11.3611844 L6.64833309,11.2391342 C5.57159979,10.8620686 5.18099981,9.79536977 5.77309979,8.85667483 L10.7103663,1.04347826 Z" id="Path" fill="#F2AF00"></path>
+            </g>
+        </g>
+        <text id="Live-Boost" font-family="Roboto-BlackItalic, Roboto" font-size="10" font-style="italic" font-weight="700" letter-spacing="-0.2" fill="#FFFFFF">
+            <tspan x="10.2431641" y="11">Live Boost</tspan>
+        </text>
+    </g>
+</svg>

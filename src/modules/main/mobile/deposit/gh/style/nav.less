@@ -1,0 +1,23 @@
+@import 'base/styles/variable.less';
+
+.m-dp-gh {
+	.m-snap-nav-wrap {
+		padding: 0 60/@rem;
+		box-sizing: border-box;
+		border-bottom: 1px solid @fogGrayBorder;
+
+		.m-tab-item {
+			line-height: 16/@rem;
+			font-size: 14/@rem;
+			text-align: center;
+			font-weight: bold;
+			width: 50%;
+			padding: 16/@rem 0 18/@rem;
+			box-sizing: border-box;
+
+			&.active {
+				border-bottom: 3px solid @green;
+			}
+		}
+	}
+}

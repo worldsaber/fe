@@ -1,0 +1,269 @@
+@import 'base/styles/mixin.less';
+@import 'base/styles/variable.less';
+@import 'base/styles/icon.less';
+@import './layout.less';
+@import './text.less';
+
+.m-bet-sel {
+	.f-flex {
+		align-items: flex-start;
+		grid-template-columns: 58/@rem 1fr;
+		border-bottom: 1px solid @fogGrayBorder;
+		padding: 14/@rem 0;
+		box-sizing: border-box;
+
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+
+	.m-l-left,
+	.m-l-right {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	.m-l-left {
+		width: 58/@rem;
+
+		&.m-i-suc {
+			.m-icon-success-bg();
+			color: @green;
+
+			&:before {
+				font-size: 20/@rem;
+				line-height: 1;
+			}
+		}
+	}
+
+	.m-market {
+		margin-top: 6/@rem;
+	}
+
+	.m-aginst {
+		margin-top: 8/@rem;
+	}
+
+	.m-icon-banker {
+		width: 11/@rem;
+		height: 11/@rem;
+		border-radius: 50%;
+		background: @dark;
+		text-align: center;
+		display: inline-block;
+		line-height: 11/@rem;
+		margin-left: 5/@rem;
+
+		&:before {
+			content: 'B';
+			color: @white;
+			font-size: 10/@rem;
+			line-height: 1;
+		}
+	}
+
+	.m-live-odds {
+		margin-top: 6/@rem;
+
+		.m-icon-live {
+			display: inline-block;
+			vertical-align: top;
+			height: 14/@rem;
+			line-height: 14/@rem;
+			text-align: center;
+			color: @blueBlack;
+			background-color: @lightGreen;
+			font-size: 12/@rem;
+			padding: 0 3/@rem;
+			box-sizing: border-box;
+		}
+
+		.m-odds {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 14/@rem;
+			line-height: 14/@rem;
+			font-weight: bold;
+			color: @dark;
+			margin-left: 6/@rem;
+		}
+
+		.m-odds-desc {
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 4/@rem;
+			color: @darkGray;
+			font-size: 10/@rem;
+			line-height: 14/@rem;
+			font-weight: bold;
+			background: @fogGrayBorder;
+			text-transform: capitalize;
+		}
+
+		.m-odds--up {
+			margin-left: 4/@rem;
+			.m-icon-up2();
+			color: @green;
+			transform-origin: top left;
+			transform: scale(0.8) translateZ(0);
+
+			&:before {
+				font-size: 10/@rem;
+				line-height: 1;
+			}
+		}
+
+		.m-odds--down {
+			margin-left: 4/@rem;
+			.m-icon-down2();
+			color: @red;
+			transform-origin: top left;
+			transform: scale(0.8) translateZ(0);
+
+			&:before {
+				font-size: 10/@rem;
+				line-height: 1;
+			}
+		}
+	}
+
+	.m-score {
+		margin-top: 5/@rem;
+	}
+
+	.m-comment {
+		margin-top: 12/@rem;
+		display: table;
+		display: flex;
+		display: grid;
+		align-items: center;
+		grid-template-columns: 1fr 20/@rem;
+		color: @green;
+		border: 1px solid @green;
+		border-radius: 2/@rem;
+		height: 34/@rem;
+		width: 100%;
+		padding: 0 12/@rem;
+		box-sizing: border-box;
+		font-size: 12/@rem;
+		text-align: center;
+		cursor: pointer;
+
+		.m-icon-more,
+		> span {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		> span {
+			flex: 1;
+			min-width: 1%;
+			text-align: center;
+		}
+
+		.m-icon-more {
+			display: inline-block;
+			width: 20/@rem;
+			text-align: right;
+			.m-icon-arrow--right();
+
+			&:before {
+				font-size: 14/@rem;
+				line-height: 1;
+			}
+		}
+	}
+}
+
+.m-opt {
+	align-items: center;
+	justify-content: space-between;
+	grid-template-columns: 72/@rem 1fr;
+
+	border-bottom: 1px solid @fogGrayBorder;
+	padding: 10/@rem 0 14/@rem 0;
+	box-sizing: border-box;
+
+	.m-l-right,
+	.m-btn--text {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.m-l-right {
+		text-align: right;
+		flex: 1;
+		min-width: 1%;
+	}
+
+	.m-btn--text {
+		width: 72/@rem;
+		height: 24/@rem;
+		color: @green;
+		font-size: 12/@rem;
+		font-weight: 500;
+		border: 1px solid @green;
+		background: @white;
+		outline: none;
+		border-radius: 2/@rem;
+
+		&:hover {
+			color: @midGreen;
+		}
+
+		&:active {
+			color: @lightGreen;
+		}
+	}
+
+	.m-icon-refresh {
+		.m-icon-refresh();
+		&:before {
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 2/@rem;
+			height: 16/@rem;
+			width: 16/@rem;
+			text-align: center;
+			line-height: 16/@rem;
+			font-size: 12/@rem;
+		}
+
+		&.on:before {
+			animation: rotating 1s infinite;
+		}
+	}
+
+	.m-icon-pack {
+		.m-icon-arrow-up2();
+		color: @green;
+		margin-left: 8/@rem;
+		display: inline-block;
+		transform: translateY(1/@rem);
+
+		&:before {
+			font-size: 12/@rem;
+			line-height: 1;
+		}
+	}
+}
+.m-sportsBet--detail {
+	.m-error-wrapper {
+		padding-bottom: 10%;
+
+		.m-btn {
+			height: 30/@rem;
+	    	line-height: 30/@rem;
+		}
+	}
+}
+
+@keyframes rotating {
+	0% {
+		transform: rotate(0deg) translateZ(0);
+	}
+	100% {
+		transform: rotate(360deg) translateZ(0);
+	}
+}

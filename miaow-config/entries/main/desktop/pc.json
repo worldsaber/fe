@@ -1,0 +1,83 @@
+[ {
+    "script": "./modules/main/desktop/iconDemo/index.js",
+    "template": "./modules/main/desktop/iconDemo/index.ftl"
+}, {
+    "script": "./modules/main/desktop/demo/index.js",
+    "template": "./modules/main/desktop/demo/index.ftl"
+}, {
+    "script": "./modules/main/desktop/changePassword/index.js",
+    "template": "./modules/main/desktop/changePassword/index.ftl"
+}, {
+    "script": "./modules/main/desktop/login/index.js",
+    "template": "./modules/main/desktop/login/index.ftl"
+}, {
+    "script": "./modules/main/desktop/preMatch/index.js",
+    "template": "./modules/main/desktop/preMatch/index.ftl"
+}, {
+    "script": "./modules/main/desktop/liveBetting/index.js",
+    "template": "./modules/main/desktop/liveBetting/index.ftl"
+}, {
+	"script": "./modules/main/desktop/home/index.js",
+    "template": "./modules/main/desktop/home/index.ftl"
+}, {
+	"script": "./modules/main/desktop/order/index.js",
+    "template": "./modules/main/desktop/order/index.ftl"
+}, {
+	"script": "./modules/main/desktop/deposit/ng/index.js",
+    "template": "./modules/main/desktop/deposit/ng/index.ftl"
+}, {
+	"script": "./modules/main/desktop/deposit/ke/index.js",
+    "template": "./modules/main/desktop/deposit/ke/index.ftl"
+}, {
+	"script": "./modules/main/desktop/deposit/gh/index.js",
+    "template": "./modules/main/desktop/deposit/gh/index.ftl"
+}, {
+	"script": "./modules/main/desktop/withdraw/ng/index.js",
+    "template": "./modules/main/desktop/withdraw/ng/index.ftl"
+}, {
+	"script": "./modules/main/desktop/withdraw/ke/index.js",
+    "template": "./modules/main/desktop/withdraw/ke/index.ftl"
+}, {
+	"script": "./modules/main/desktop/withdraw/gh/index.js",
+    "template": "./modules/main/desktop/withdraw/gh/index.ftl"
+}, {
+	"script": "./modules/main/desktop/transaction/index.js",
+    "template": "./modules/main/desktop/transaction/index.ftl"
+
+}, {
+	"script": "./modules/main/desktop/jackpot/index.js",
+    "template": "./modules/main/desktop/jackpot/index.ftl"
+}, {
+	"script": "./modules/main/desktop/myAccount/index.js",
+    "template": "./modules/main/desktop/myAccount/index.ftl"
+}, {
+	"script": "./modules/main/desktop/gifts/index.js",
+    "template": "./modules/main/desktop/gifts/index.ftl"
+}, {
+	"script": "./modules/main/desktop/fbLogin/index.js",
+    "template": "./modules/main/desktop/fbLogin/index.ftl"
+}, {
+	"script": "./modules/main/desktop/virtual/index.js",
+    "template": "./modules/main/desktop/virtual/index.ftl"
+}, {
+	"script": "./modules/main/desktop/page40x/index.js",
+    "template": "./modules/main/desktop/page40x/index.ftl"
+}, {
+	"script": "./modules/main/desktop/page50x/index.js",
+    "template": "./modules/main/desktop/page50x/index.ftl"
+}, {
+	"script": "./modules/main/desktop/promotions/index.js",
+    "template": "./modules/main/desktop/promotions/index.ftl"
+}, {
+	"script": "./modules/main/desktop/liveResult/index.js",
+    "template": "./modules/main/desktop/liveResult/index.ftl"
+}, {
+    "script": "./modules/main/desktop/help/index.js",
+    "template": "./modules/main/desktop/help/index.ftl"
+}, {
+    "script": "./modules/main/desktop/coins/index.js",
+    "template": "./modules/main/desktop/coins/index.ftl"
+}, {
+	"script": "./modules/main/desktop/grayListUpload/index.js",
+    "template": "./modules/main/desktop/grayListUpload/index.ftl"
+}]

@@ -1,0 +1,35 @@
+@import 'base/styles/mixin.less';
+@import 'base/styles/variable.less';
+@import 'base/styles/icon.less';
+
+.m-cashout {
+	.m-cashout-bet {
+		.m-sel-item {
+			padding: 10/@rem 16/@rem 12/@rem;
+			box-sizing: border-box;
+		}
+		.m-text-min,
+		.m-text-mini {
+			font-size: 16/@rem;
+			line-height: 23/@rem;
+		}
+
+		.m-text-min{
+			color: @dark;
+			font-weight: bold;
+		}
+
+		.m-text-mini {
+			font-size: 12/@rem;
+			padding-top: 12/@rem;
+			color: @darkGray;
+		}
+		.m-bet-money{
+			border-top: 1px solid @lightGray;
+		}
+		.m-vs{
+			color: @darkGray;
+			font-weight: normal;
+		}
+	}
+}

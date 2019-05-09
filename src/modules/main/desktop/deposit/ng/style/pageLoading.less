@@ -1,0 +1,81 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+@import 'base/style/logoLoading.less';
+@import 'components/login/style/buttonMixin.less';
+
+.m-dp-ng {
+	.m-error-wrapper {
+		height: 400px;
+		box-sizing: border-box;
+		background: @white;
+
+		display: table;
+		display: flex;
+
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		> div {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.m-icon-loading {
+			.m-icon-logo();
+			display: block;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			color: @white;
+			background: @lightGray;
+			border-radius: 50%;
+			margin-bottom: 10px;
+			animation: logoLoading 1s infinite cubic-bezier(0.4, 0, 1, 1) alternate;
+
+			&:before {
+				font-size: 28px;
+			}
+		}
+
+		.m-text-msg {
+			color: @dark;
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+		.m-error-title {
+			font-size: 64px;
+			color: @darkGray;
+			line-height: 87px;
+		}
+
+		.af-button {
+			.button--primary();
+			width: 65px;
+			height: 32px;
+			font-size: 12px;
+			border: none;
+			padding: 0 !important
+		}
+	}
+
+	.m-error-wrapper-fix {
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		> div {
+			text-align: left;
+			vertical-align: top;
+
+			padding: 30px 40px;
+			box-sizing: border-box;
+		}
+
+		.af-button {
+			display: block;
+			margin-top: 18px;
+		}
+	}
+}

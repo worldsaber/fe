@@ -1,0 +1,20 @@
+
+@import '~base/styles/variable.less';
+@import '~base/styles/mixin.less';
+@import 'base/styles/icon.less';
+
+// 注意这里用 m-event-market-default 作默认样式， m-market 可用于外部覆盖
+.m-detail-market-default {
+	box-sizing: border-box;
+	.market-content{
+		padding: 0 10/@rem;
+		box-sizing: border-box;
+		.m-table-row{
+			margin-bottom: 10/@rem;
+			align-items: stretch;
+			&:first-child{
+				margin-top: 4/@rem;
+			}
+		}
+	}
+}

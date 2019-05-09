@@ -1,0 +1,102 @@
+@import 'base/style/variable.less';
+
+.m-betslips {
+	.m-comfirm-wrapper {
+		position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    // top: 0;
+		z-index: 23;
+	    background: fadeout(@dark, 10%);
+
+		> div {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			border-top: 1px solid @fogGrayBorder;
+			background: @white;
+		}
+
+		.m-content-wrapper {
+			padding: 5px 10px 0;
+			box-sizing: border-box;
+			overflow: hidden;
+			color: @dark;
+
+			.m-label,
+			.m-value {
+				font-size: 12px;
+				line-height: 26px;
+				text-align: center;
+				font-weight: 500;
+			}
+
+			// .m-money {
+			// 	margin-left: 5px;
+			// }
+
+			.m-value {
+				font-size: 16px;
+				margin-top: -5px;
+			}
+		}
+
+		.m-btn-wrapper {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		.af-button {
+			border-radius: 2px;
+		}
+
+		.af-button--text {
+			width: 60px;
+			height: 36px;
+			border: 1px solid @darkGray !important;
+			color: @darkGray;
+			margin-right: 5px;
+		}
+
+		.af-button--primary {
+			width: 135px;
+		}
+
+		.m-line {
+			margin-top: 6px;
+			height: 14px;
+			font-size: 0;
+			width: 100%;
+			padding: 0 10px;
+			box-sizing: border-box;
+			overflow: hidden;
+		}
+
+		.m-line-label,
+		.m-line-value {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 12px;
+			line-height: 14px;
+		}
+
+		.m-line-label {
+			color: @darkGray;
+			max-width: 75px;
+			margin-right: 8px;
+		}
+
+		.m-line-value {
+			text-align: right;
+			color: @dark;
+			float: right;
+			max-width: ~'calc(100% - 75px)';
+		}
+
+		.m-line-label-fix {
+			max-width: 138px;
+		}
+	}
+}

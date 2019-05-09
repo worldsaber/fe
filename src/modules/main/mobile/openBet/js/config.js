@@ -1,0 +1,1 @@
+export const partialCashoutRule = 'A Partial Cashout is allowed when an unsettled bet is a Single or Multiple with one combination. A Single Bet has 10 possible times to use Partial Cashout and a Multiple Bet has 5 possible times to use Partial Cashout.'; // eslint-disable-line

@@ -1,0 +1,102 @@
+@rem: 12rem;
+
+// 以下是修改live tracker的默认样式
+.sr-widget {
+	.sr-team-header-home,
+	.sr-team-header-away,
+	.sr-subheader-1,
+	.sr-form-away .sr-form-inner,
+	.sr-last-next-away:before {
+		background-color: #096B27;
+	}
+	.sr-form-home .sr-form-inner,
+	.sr-last-next-home:before,
+	.sr-header-3,
+	.sr-pills .sr-pill.sr-active,
+	.sr-pills .sr-pill.sr-active:hover,
+	.sr-lmts.sr-lmts-pitch-crowd .sr-scoreboard-head,
+	.sr-matchinfo-header,
+	.sr-header-2,
+	.sr-lmts-pitch-branding {
+		background-color: #0D9737!important;
+	}
+
+	.sr-lmts-pitch-bg-clip {
+		.sr-lmts-pitch-ratio-extended-direct {
+			// 该元素目前是absolute定位，不需指定position
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				bottom: 25px;
+				left: 12px;
+				transform: rotateX(37.35deg);
+				background: url(../../../logo/logo_round.png) no-repeat center;
+				background-size: 100%;
+				opacity: 0.2;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:750px) {
+	.sr-widget {
+		.sr-lmts-pitch-bg-clip {
+			.sr-lmts-pitch-ratio-extended-direct {
+				&:after {
+					width: 30/@rem;
+					height: 30/@rem;
+					bottom: 12/@rem;
+					left: 6/@rem;
+				}
+			}
+		}
+	}
+}
+
+// matchlineups
+.sr-widgets-matchlineups {
+	.sr-matclineups-teams {
+		.sr-tabs-header.sr-home:after,
+		.sr-tab.sr-active:first-child,
+		.sr-tab.sr-active .sr-lineups-header-home {
+				background-color: #096B27;
+		}
+
+		.sr-matchlineups-home .sr-matchlineups-shirtnumber,
+		.sr-tab .sr-lineups-header-away {
+			background-color: #0D9737!important;
+		}
+	}
+}
+
+// tennisranking
+.sr-widgets-tennisranking {
+	.sr-highlight-solid {
+		background-color: #0D9737;
+	}
+	.sr-highlight {
+		background: linear-gradient(to right,fade(#0D9737, 70%),transparent);
+	}
+}
+
+// livetable
+.sr-widgets-livetable {
+	.sr-tabs .sr-tab.sr-active {
+		background-color: #0D9737;
+	}
+
+	.sr-tabs .sr-tab,
+	.sr-tabs .sr-tabs-header:after {
+		background-color: #096B27;
+	}
+}
+
+// news
+.sr-widgets-news {
+	.sr-header-6 {
+		color: #32CE62;
+	}
+}

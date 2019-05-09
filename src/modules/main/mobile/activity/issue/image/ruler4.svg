@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="188" viewBox="0 0 360 188">
+    <defs>
+        <linearGradient id="b" x1="90.195%" x2="13.593%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#21FF00"/>
+            <stop offset="100%" stop-color="#3700FF" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="c" r="102.387%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#F0E"/>
+            <stop offset="40.661%" stop-color="#3800FF" stop-opacity="0"/>
+            <stop offset="63.126%" stop-color="#7B7B7B" stop-opacity="0"/>
+            <stop offset="100%" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="d" r="102.387%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#B200FF" stop-opacity=".347"/>
+            <stop offset="35.269%" stop-color="#5F00FF" stop-opacity="0"/>
+            <stop offset="63.126%" stop-color="#7B7B7B" stop-opacity="0"/>
+            <stop offset="100%" stop-opacity="0"/>
+        </radialGradient>
+        <text id="f" fill="#21FF00" font-family="Roboto-Black, Roboto" font-size="13.68" font-weight="700">
+            <tspan x="239.346" y="42.52">+</tspan>
+        </text>
+        <filter id="e" width="387.5%" height="243.8%" x="-143.8%" y="-59.4%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 0.20533288 0 0 0 1 0"/>
+        </filter>
+        <linearGradient id="g" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#00FFE6"/>
+            <stop offset="100%" stop-color="#0092FF"/>
+        </linearGradient>
+        <linearGradient id="j" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FD15A0"/>
+            <stop offset="100%" stop-color="#A709FA"/>
+        </linearGradient>
+        <rect id="i" width="57.6" height="9.36" x="20.88" y="77.04" rx="4.68"/>
+        <filter id="h" width="146.9%" height="388.5%" x="-23.4%" y="-144.2%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.988998724 0 0 0 0 0 0 0 0 0 0.83715517 0 0 0 1 0"/>
+        </filter>
+        <rect id="l" width="71.28" height="5.76" x="7.2" y="86.4" rx="2.88"/>
+        <filter id="k" width="137.9%" height="568.8%" x="-18.9%" y="-234.4%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0.644105304 0 0 0 0 0.682716837 0 0 0 1 0"/>
+        </filter>
+        <linearGradient id="m" x1="100%" x2="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#FD15E7"/>
+            <stop offset="100%" stop-color="#09F3FA" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="p" x1="100%" x2="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#FD15E2"/>
+            <stop offset="100%" stop-color="#09F3FA" stop-opacity="0"/>
+        </linearGradient>
+        <rect id="o" width="201.6" height="9.36" x="51.12" y="99.36" rx="4.68"/>
+        <filter id="n" width="113.4%" height="388.5%" x="-6.7%" y="-144.2%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.988998724 0 0 0 0 0 0 0 0 0 0.83715517 0 0 0 1 0"/>
+        </filter>
+        <radialGradient id="s" cx="6.6%" r="706.934%" fx="6.6%" fy="50%" gradientTransform="matrix(.15714 0 0 .23422 .056 .383)">
+            <stop offset="0%" stop-color="#FD15F9"/>
+            <stop offset="29.003%" stop-color="#F9E313"/>
+            <stop offset="57.819%" stop-color="#FF00C0"/>
+            <stop offset="83.123%" stop-color="#80F"/>
+            <stop offset="100%" stop-color="#1909FA" stop-opacity=".029"/>
+            <stop offset="100%" stop-color="#1309FA" stop-opacity="0"/>
+        </radialGradient>
+        <rect id="r" width="201.6" height="31.68" x="35.28" y="77.04" rx="15.84"/>
+        <filter id="q" width="113.4%" height="185.2%" x="-6.7%" y="-42.6%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.431372549 0 0 0 0 0 0 0 0 0 0.647058824 0 0 0 0 0"/>
+        </filter>
+        <linearGradient id="t" x1="0%" x2="76.134%" y1="70.302%" y2="5.663%">
+            <stop offset="0%" stop-color="#00FFFB" stop-opacity=".584"/>
+            <stop offset="100%" stop-color="#00FF3B"/>
+        </linearGradient>
+        <linearGradient id="u" x1="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#00FFCF"/>
+            <stop offset="100%" stop-color="#00FF7B" stop-opacity=".381"/>
+        </linearGradient>
+        <linearGradient id="v" x1="100%" x2="-21.997%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#00FF9D"/>
+            <stop offset="100%" stop-color="#006CFF" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(43 21)">
+            <rect width="36" height="4.32" x="238.32" y="44.64" fill="url(#b)" opacity=".56" rx="2.16"/>
+            <rect width="21.6" height="2.88" x="236.88" y="51.12" fill="url(#b)" opacity=".2" rx="1.44"/>
+            <circle cx="45" cy="94.68" r="34.2" fill="url(#c)" opacity=".4"/>
+            <circle cx="57.798" cy="57.798" r="57.798" fill="url(#d)"/>
+            <g fill="#21FF00">
+                <use filter="url(#e)" xlink:href="#f"/>
+                <use xlink:href="#f"/>
+            </g>
+            <rect width="201.6" height="31.68" x="35.28" y="36.72" fill="url(#g)" opacity=".4" rx="15.84"/>
+            <g opacity=".8">
+                <use fill="#000" filter="url(#h)" xlink:href="#i"/>
+                <use fill="url(#j)" xlink:href="#i"/>
+            </g>
+            <g opacity=".3">
+                <use fill="#000" filter="url(#k)" xlink:href="#l"/>
+                <use fill="url(#j)" xlink:href="#l"/>
+            </g>
+            <rect width="109.44" height="23.04" x="160.56" y="77.04" fill="url(#m)" opacity=".3" rx="11.52"/>
+            <g opacity=".6">
+                <use fill="#000" filter="url(#n)" xlink:href="#o"/>
+                <use fill="url(#p)" xlink:href="#o"/>
+            </g>
+            <use fill="#000" filter="url(#q)" xlink:href="#r"/>
+            <use fill="url(#s)" xlink:href="#r"/>
+            <text fill="#FFF" font-family="Roboto-Black, Roboto" font-size="15.84" font-weight="700" opacity=".4">
+                <tspan x="51.12" y="57.48">unselected</tspan>
+            </text>
+            <text fill="#FFF" font-family="Roboto-Bold, Roboto" font-size="15.84" font-weight="bold">
+                <tspan x="51.12" y="97.8">select</tspan>
+            </text>
+        </g>
+        <path fill="url(#t)" d="M8.506 1.134v.002a7.157 7.157 0 0 0-.16-.002c-3.401 0-6.449 2.713-6.806 6.06-.358 3.346 2.11 6.058 5.512 6.058l.16-.002-.001.005h1.845c.744.04 1.272.65 1.192 1.395-.08.748-.742 1.36-1.496 1.397h-1.84l1.042 4.661h.382v-.002c.053.002.106.002.16.002 3.4 0 6.447-2.712 6.805-6.057.357-3.345-2.11-6.057-5.51-6.057-.063 0-.125.001-.187.003v-.003H7.792V8.59c-.747-.039-1.278-.65-1.198-1.397.08-.748.742-1.36 1.496-1.398h1.84L8.89 1.134h-.383z" transform="translate(249 63)"/>
+        <path fill="url(#u)" d="M11.178 3.502c0 1.482 1.217 2.683 2.718 2.683s2.718-1.201 2.718-2.683c0-1.483-1.217-2.684-2.718-2.684s-2.718 1.201-2.718 2.684z" transform="translate(249 63)"/>
+        <path fill="url(#v)" d="M.146 18.498c0 1.482 1.217 2.684 2.718 2.684s2.718-1.202 2.718-2.684c0-1.482-1.217-2.683-2.718-2.683S.146 17.016.146 18.498z" transform="translate(249 63)"/>
+    </g>
+</svg>

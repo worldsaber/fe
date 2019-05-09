@@ -1,0 +1,5 @@
+# 工具依赖
+./node_modules
+
+# 缓存目录
+./cache

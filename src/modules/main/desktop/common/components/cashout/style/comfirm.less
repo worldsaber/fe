@@ -1,0 +1,75 @@
+@import 'base/style/variable.less';
+
+.m-cashout {
+	.m-comfirm-wrapper {
+		margin: 0 10px;
+		padding: 10px;
+		box-sizing: border-box;
+		border: 1px solid @fogGrayBorder;
+
+		.m-text-wrapper {
+			margin-bottom: 14px;
+
+			p {
+				overflow: hidden;
+				width: 100%;
+			}
+
+			.m-label,
+			.m-value {
+				display: inline-block;
+				font-size: 10px;
+				line-height: 14px;
+				color: @black;
+				vertical-align: top;
+			}
+
+			.m-value {
+				float: right;
+				text-align: right;
+				padding: 0 2px;
+			}
+		}
+
+		.m-text-wrapper-fix {
+			p:nth-of-type(1) {
+				margin-bottom: 3px;
+			}
+
+			p:nth-of-type(2) {
+				line-height: 17px;
+			}
+		}
+
+		.m-btn-wrapper {
+			padding: 0 !important;
+			margin-bottom: 0 !important;
+
+			.af-button--text {
+				margin-right: 5px;
+			}
+		}
+
+		.m-btn--submit {
+			width: 100%;
+			background: @white;
+			color: @midGreen;
+			border: 1px solid @midGreen !important;
+			font-size: 14px;
+			line-height: 16px;
+
+			.af-icon-loading {
+				&:before {
+					font-size: 14px;
+				}
+			}
+
+			&:hover,
+			&:focus {
+				background: @white;
+				color: @midGreen;
+				border: 1px solid @midGreen !important;
+			}
+		}
+	}
+}

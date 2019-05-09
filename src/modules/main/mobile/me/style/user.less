@@ -1,0 +1,16 @@
+@import "base/styles/variable.less";
+@import "base/styles/icon.less";
+
+.m-icon--user{
+  .m-icon-user-dft();
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: .5rem;
+  &:before{
+	font-size: 24/@rem;
+	color: @white;
+  }
+}

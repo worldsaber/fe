@@ -1,0 +1,64 @@
+@import "base/style/variable.less";
+
+.m-main-mid,
+.m-fm-dialog{
+
+	.btn-wrapper,
+	.af-button {
+		width: 100%;
+		height: 38px;
+	}
+
+	.af-button {
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+		border: none !important;
+		font-size: 16px;
+		border-radius: 2px;
+	}
+
+	.af-button--primary {
+		background: @green !important;
+		color: @white !important;
+
+		&:hover {
+			background: @midGreen !important;
+		}
+
+		&:active {
+			background: @lightGreen !important;
+		}
+	}
+
+	.af-button--info {
+		background: @drakBlue !important;
+		color: @white !important;
+
+		&:hover {
+			background: @midBlue !important;
+		}
+
+		&:active {
+			background: @lightBlue !important;
+		}
+	}
+
+	.af-button.is-disabled,
+	.is-disabled:hover,
+	.is-disabled:active {
+		background: @midGray !important;
+		color: @darkGray !important;
+	}
+
+	.af-button--text{
+		color:@green;
+
+		&:hover, 
+		&:active,
+		&:visited {
+			color:@green;
+		}
+
+	}
+}

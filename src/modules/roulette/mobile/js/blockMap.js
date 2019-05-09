@@ -1,0 +1,133 @@
+export default [{
+	label: '0',
+	odd: '1:12',
+	color: 'green',
+	value: '[0]',
+	id: '5'
+}, {
+	label: '3',
+	odd: '1:12',
+	color: 'red',
+	value: '[3]',
+	id: '5'
+}, {
+	label: '6',
+	odd: '1:12',
+	color: 'black',
+	value: '[6]',
+	id: '5'
+}, {
+	label: '9',
+	odd: '1:12',
+	color: 'black',
+	value: '[9]',
+	id: '5'
+}, {
+	label: '12',
+	odd: '1:12',
+	color: 'red',
+	value: '[12]',
+	id: '5'
+}, {
+	label: 'C3',
+	odd: '1:3',
+	color: 'yellow',
+	value: '[3,6,9,12]',
+	id: '4'
+}, {
+	label: '2',
+	odd: '1:12',
+	color: 'black',
+	value: '[2]',
+	id: '5'
+}, {
+	label: '5',
+	odd: '1:12',
+	color: 'red',
+	value: '[5]',
+	id: '5'
+}, {
+	label: '8',
+	odd: '1:12',
+	color: 'red',
+	value: '[8]',
+	id: '5'
+}, {
+	label: '11',
+	odd: '1:12',
+	color: 'black',
+	value: '[11]',
+	id: '5'
+}, {
+	label: 'C2',
+	odd: '1:3',
+	color: 'yellow',
+	value: '[2,5,8,11]',
+	id: '4'
+}, {
+	label: '1',
+	odd: '1:12',
+	color: 'red',
+	value: '[1]',
+	id: '5'
+}, {
+	label: '4',
+	odd: '1:12',
+	color: 'black',
+	value: '[4]',
+	id: '5'
+}, {
+	label: '7',
+	odd: '1:12',
+	color: 'black',
+	value: '[7]',
+	id: '5'
+}, {
+	label: '10',
+	odd: '1:12',
+	color: 'red',
+	value: '[10]',
+	id: '5'
+}, {
+	label: 'C1',
+	odd: '1:3',
+	color: 'yellow',
+	value: '[1,4,7,10]',
+	id: '4'
+}, {
+	label: 'RED',
+	odd: '1:2',
+	color: '',
+	value: '[1,3,5,8,10,12]',
+	id: '1'
+}, {
+	label: 'BLACK',
+	odd: '1:2',
+	color: '',
+	value: '[2,4,6,7,9,11]',
+	id: '1'
+}, {
+	label: '1-6',
+	odd: '1:2',
+	color: '',
+	value: '[1,2,3,4,5,6]',
+	id: '2'
+}, {
+	label: 'ODD',
+	odd: '1:2',
+	color: '',
+	value: '[1,3,5,7,9,11]',
+	id: '3'
+}, {
+	label: 'EVEN',
+	odd: '1:2',
+	color: '',
+	value: '[2,4,6,8,10,12]',
+	id: '3'
+}, {
+	label: '7-12',
+	odd: '1:2',
+	color: '',
+	value: '[7,8,9,10,11,12]',
+	id: '2'
+}];

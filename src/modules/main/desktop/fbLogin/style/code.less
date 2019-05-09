@@ -1,0 +1,80 @@
+@import 'base/style/variable.less';
+
+.m-page--code {
+	padding: 57px;
+	box-sizing: border-box;
+	color: @dark;
+
+	.m-text-tips {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.m-page-opt {
+		padding-top: 33px;
+		box-sizing: border-box;
+		font-size: 0;
+
+		.m-left, .m-mid, .m-right {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.m-left {
+			margin-right: 18px;
+			font-size: 20px;
+			line-height: 40px;
+		}
+
+		.m-mid {
+			margin-right: 30px;
+			width: 300px;
+
+			.af-button {
+				margin-top: 44px;
+			}
+		}
+
+		.m-input-wrapper {
+			width: 100%;
+		}
+
+		.m-input, .af-button {
+			height: 40px;
+			width: 100%;
+		}
+
+		.af-button {
+			border-radius: 2px;
+		}
+
+		.m-input {
+			border: 1px solid @fogGrayBorder;
+			border-radius: 2px;
+		}
+
+		.m-right {
+			max-width: 320px;
+			word-wrap: break-word;
+			text-align: left;
+
+			.m-text {
+				font-size: 14px;
+				line-height: 24px;
+				color: @darkGray;
+			}
+
+			.af-button {
+				width: 130px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.m-text-highlight {
+		color: @linkBlue;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

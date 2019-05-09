@@ -1,0 +1,3 @@
+<div class="help-content-wrap"><h3 id="commitment-to-privacy">Commitment to privacy</h3>
+<p>To make sure your personal information remains confidential; we communicate these privacy guidelines to every SportyBet employee. SportyBet’s Website may, from time to time, contain links to other sites. SportyBet does not share your personal information with those websites and is not responsible for their privacy practices. We encourage you to learn about the privacy policies of any such company. If we are going to use your personal information differently from that stated at the time of collection, we will inform you accordingly. SportyBet’s Privacy Policy is subject to change at any time. It is in your interest to review the privacy policy regularly for any changes.</p>
+</div>

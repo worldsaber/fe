@@ -1,0 +1,54 @@
+@import '~base/styles/mixin.less';
+@import '~base/styles/variable.less';
+@import '~base/styles/icon.less';
+.result-list{
+	.title{
+		display: table;
+        width: 100%;
+        padding:0 10/@rem;
+        box-sizing: border-box;
+		height: 35/@rem;
+		li{
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 10/@rem;
+			color:#5f5f5f;
+			padding-left: 2/@rem;
+			&.time{
+				width: 70/@rem;
+			}
+			&.match{
+				text-align: center;
+			}
+		}
+	}
+	.list{
+		margin:0 10/@rem 10/@rem;
+		dt{
+			.ellipsis();
+			height: 32/@rem;
+			background-color: @dark;
+			line-height: 30/@rem;
+			font-size: 12/@rem;
+			padding-left: 14/@rem;
+			color: @white;
+			text-overflow: ellipsis;
+		}
+		dd{
+			min-height: 59/@rem;
+			border-bottom: solid 1px @dimBlack;
+		}
+    }
+    .isEmpty {
+        color: @darkGray;
+        font-size: 14/@rem;
+        text-align: center;
+        padding-top: 30%;
+        .m-icon-pageques();
+        &:before{
+            display: block;
+            font-size:50/@rem;
+            color: @midGray
+        }
+    }
+}

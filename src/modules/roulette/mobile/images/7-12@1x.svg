@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg preserveAspectRatio="none" width="68px" height="36px" viewBox="0 0 68 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>7-12@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M245,449 L313,449 L313,485 L281,485 C274.60678,483.306215 267.60678,478.972881 260,472 C252.39322,465.027119 247.39322,458.360452 245,452 L245,449 Z" id="path-1"></path>
+        <filter x="-8.8%" y="-16.7%" width="117.6%" height="133.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="4" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.50317029 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-245.000000, -449.000000)">
+            <g id="7-12" transform="translate(279.000000, 467.000000) scale(-1, 1) translate(-279.000000, -467.000000) ">
+                <use fill-opacity="0" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <path stroke="#FFFFFF" stroke-width="1" d="M245.5,449.5 L245.5,451.908648 C247.874685,458.16108 252.818339,464.738527 260.337862,471.631423 C267.864922,478.531228 274.777646,482.817949 281.065415,484.5 L312.5,484.5 L312.5,449.5 L245.5,449.5 Z" stroke-linejoin="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

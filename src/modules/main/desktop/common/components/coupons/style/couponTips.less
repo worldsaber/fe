@@ -1,0 +1,51 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+.m-coupon-wrapper {
+
+	.m-coupon-opt {
+		background: @white;
+	    overflow: hidden;
+		padding: 4px 0 10px;
+	    box-sizing: border-box;
+		font-size: 10px;
+
+		.m-coupon-tips {
+			line-height: 14px;
+			color: @darkGray;
+
+			.m-icon-tips();
+
+			&:before {
+				font-size: 10px;
+				display: inline-block;
+				margin-right: 4px;
+			}
+		}
+
+		.m-refresh {
+			cursor: pointer;
+			height: 18px;
+		    line-height: 18px;
+		    width: 63px;
+		    text-align: center;
+		    float: right;
+		    border: 1px solid @fogGrayBorder;
+		    border-radius: 2px;
+			color: @linkBlue;
+
+			&:hover {
+
+			}
+
+			&:active {
+
+			}
+
+			&.is-disabled {
+				background: @midGray;
+				border-color: @midGray;
+			}
+		}
+	}
+}

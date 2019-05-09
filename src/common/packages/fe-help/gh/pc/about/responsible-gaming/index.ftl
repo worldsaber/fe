@@ -1,0 +1,1 @@
+<#include './responsible-gaming.ftl'><#include './stay-in-control-its-only-a-game.ftl'><#include './getting-help.ftl'><#include './restrictions-of-minors.ftl'><#include './problem-recognition.ftl'><#include './self-exclusion.ftl'><#include './friends-and-family.ftl'>

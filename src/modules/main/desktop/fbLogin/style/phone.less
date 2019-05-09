@@ -1,0 +1,83 @@
+@import 'base/style/variable.less';
+@import 'base/style/icon.less';
+
+.m-page--phone {
+    padding: 54px 149px 67px 155px;
+    box-sizing: border-box;
+
+	.m-icon-tips {
+		.m-icon-tips();
+
+		&:before {
+			font-size: 22px;
+			margin-right: 10px;
+			color: @darkGray;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	.m-text-tips {
+		font-size: 16px;
+		color: @dark;
+		line-height: 19px;
+		padding-bottom: 38px;
+		box-sizing: border-box;
+	}
+
+	.m-page-opt {
+		.m-label {
+			display: inline-block;
+			margin-right: 15px;
+			height: 40px;
+			line-height: 40px;
+			vertical-align: top;
+		}
+
+		.m-text-label {
+			font-size: 20px;
+			color: @dark;
+			display: inline-block;
+			line-height: 24px;
+			vertical-align: middle;
+		}
+
+		.m-opt-wrapper {
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+		}
+
+		.m-input-wrapper, .m-btn-wrap {
+			width: 300px;
+		}
+
+		.m-input-wrapper {
+			height: 40px;
+			font-size: 14px;
+		}
+
+		.m-input-prepend {
+			border-color: @grayBorder !important;
+		}
+
+		.m-input {
+			height: 40px;
+			border-color: @grayBorder !important;
+		}
+
+		.m-btn-wrap {
+			margin-top: 40px;
+		}
+	}
+
+	.m-error-wrap {
+		position: absolute;
+		top: 25px;
+
+		.m-error {
+			margin: 0;
+			min-width: 475px;
+		}
+	}
+}

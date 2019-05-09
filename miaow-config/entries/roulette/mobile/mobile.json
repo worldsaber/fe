@@ -1,0 +1,4 @@
+[{
+	"script": "./modules/roulette/mobile/index.js",
+	"template": "./modules/roulette/mobile/index.ftl"
+}]

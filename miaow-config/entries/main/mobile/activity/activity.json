@@ -1,0 +1,118 @@
+[{
+    "script": "./modules/main/mobile/activity/firstDeposit/index.js",
+    "template": "./modules/main/mobile/activity/firstDeposit/index.ftl"
+}, {
+    "script": "./modules/main/mobile/activity/bonus/index.js",
+    "template": "./modules/main/mobile/activity/bonus/index.ftl"
+}, {
+    "script": "./modules/main/mobile/activity/superBonus/index.js",
+    "template": "./modules/main/mobile/activity/superBonus/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/activityRegister/registerA.js",
+	"template": "./modules/main/mobile/activity/activityRegister/registerA.ftl"
+}, {
+    "script": "./modules/main/mobile/activity/activityRegister/registerB.js",
+    "template": "./modules/main/mobile/activity/activityRegister/registerB.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/activityRegister/index.js",
+	"template": "./modules/main/mobile/activity/activityRegister/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/ng/activityRegister/index.js",
+    "template": "./modules/main/mobile/activity/ng/activityRegister/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/gh/activityRegister/index.js",
+    "template": "./modules/main/mobile/activity/gh/activityRegister/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/gh/activityRegister/dl/index.js",
+	"template": "./modules/main/mobile/activity/gh/activityRegister/dl/index.ftl"
+}, {
+    "script": "./modules/main/mobile/activity/gift/index.js",
+    "template": "./modules/main/mobile/activity/gift/index.ftl"
+},{
+	"script": "./modules/main/mobile/activity/referral/index.js",
+    "template": "./modules/main/mobile/activity/referral/index.ftl"
+},{
+	"script": "./modules/main/mobile/activity/accumulativeBet/index.js",
+    "template": "./modules/main/mobile/activity/accumulativeBet/index.ftl"
+},{
+	"script": "./modules/main/mobile/activity/proDiff/index.js",
+    "template": "./modules/main/mobile/activity/proDiff/index.ftl"
+},{
+	"script": "./modules/main/mobile/activity/ng/proDiff/index.js",
+	"template": "./modules/main/mobile/activity/ng/proDiff/index.ftl"
+},{
+	"script": "./modules/main/mobile/activity/ng/firstDeposit/index.js",
+	"template": "./modules/main/mobile/activity/ng/firstDeposit/index.ftl"
+},{
+	"script": "./modules/main/mobile/activity/gh/firstDeposit/index.js",
+	"template": "./modules/main/mobile/activity/gh/firstDeposit/index.ftl"
+},{
+	"script": "./modules/main/mobile/activity/ng/superBonus/index.js",
+	"template": "./modules/main/mobile/activity/ng/superBonus/index.ftl"
+},{
+	"script": "./modules/main/mobile/activity/gh/superBonus/index.js",
+	"template": "./modules/main/mobile/activity/gh/superBonus/index.ftl"
+},{
+	"script": "./modules/main/mobile/activity/ng/referral/index.js",
+	"template": "./modules/main/mobile/activity/ng/referral/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/cashBack/index.js",
+    "template": "./modules/main/mobile/activity/cashBack/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/thursdayDeposit/index.js",
+	"template": "./modules/main/mobile/activity/thursdayDeposit/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/ng/thursdayDeposit/index.js",
+	"template": "./modules/main/mobile/activity/ng/thursdayDeposit/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/issue/index.js",
+    "template": "./modules/main/mobile/activity/issue/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/worldCup/index.js",
+    "template": "./modules/main/mobile/activity/worldCup/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/depositReg/index.js",
+	"template": "./modules/main/mobile/activity/depositReg/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/depositReg/deposit.js",
+	"template": "./modules/main/mobile/activity/depositReg/deposit.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/depositReg/deposit2.js",
+	"template": "./modules/main/mobile/activity/depositReg/deposit2.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/ng/depositReg/index.js",
+    "template": "./modules/main/mobile/activity/ng/depositReg/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/ng/depositReg/deposit.js",
+	"template": "./modules/main/mobile/activity/ng/depositReg/deposit.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/ng/depositReg/deposit2.js",
+	"template": "./modules/main/mobile/activity/ng/depositReg/deposit2.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/gh/depositReg/index.js",
+	"template": "./modules/main/mobile/activity/gh/depositReg/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/gh/depositReg/deposit.js",
+	"template": "./modules/main/mobile/activity/gh/depositReg/deposit.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/gh/depositReg/deposit2.js",
+	"template": "./modules/main/mobile/activity/gh/depositReg/deposit2.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/oddsBoost/index.js",
+	"template": "./modules/main/mobile/activity/oddsBoost/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/sportyTest/index.js",
+	"template": "./modules/main/mobile/activity/sportyTest/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/getEmail/index.js",
+	"template": "./modules/main/mobile/activity/getEmail/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/getEmailExpire/index.js",
+	"template": "./modules/main/mobile/activity/getEmailExpire/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/christmas/index.js",
+	"template": "./modules/main/mobile/activity/christmas/index.ftl"
+}, {
+	"script": "./modules/main/mobile/activity/annualSummary/index.js",
+	"template": "./modules/main/mobile/activity/annualSummary/index.ftl"
+}]

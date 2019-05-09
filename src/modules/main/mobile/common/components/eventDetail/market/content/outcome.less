@@ -1,0 +1,136 @@
+@import '~base/styles/variable.less';
+@import '~base/styles/mixin.less';
+@import 'base/styles/icon.less';
+.market-content{
+	.m-outcome{
+		background-color: @thinGreen;
+		// border-radius: 4/@rem;
+		color:@darkGreen;
+		font-size: 14/@rem;
+		text-align: center;
+		margin-right: 5/@rem;
+		flex: 1 1 auto;
+		position: relative;
+		&:last-child{
+			margin-right: 0;
+		}
+		// 箭头控制代码暂时没有加
+		&.m-outcome--up{
+			.m-icon-up2();
+		}
+		&.m-outcome--down{
+			.m-icon-down2();
+		}
+		&.m-outcome--up,&.m-outcome--down{
+			&:before{
+				color: @darkGreen;
+				display: block;
+				position: absolute;
+				top: 2px;
+				right: 2px;
+				line-height: 1;
+				font-size: 12px;
+				transform: scale(0.83);
+			}
+		}
+		&.m-outcome--checked {
+			background: @green;
+			color: @white;
+			&:before{
+				color: @white;
+			}
+		}
+		&.m-outcome--disabled{
+			background: @whiteGray;
+			color: @darkGray;
+			&:before{
+				font-size: 0;
+			}
+			.m-icon-lock{
+				.m-icon-locked();
+				&:before{
+					font-size: 16/@rem;
+				}
+				vertical-align: middle;
+			}
+		}
+	}
+	.m-outcome-two {
+		width: 50%;
+	}
+	.m-outcome-three {
+		width: 33.333%;
+	}
+	// 只显示odds
+	.m-outcome-only-odds {
+		padding: 7/@rem 10/@rem;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	// 显示odss和描述
+	.m-outcome-odds-des {
+		padding: 7/@rem 10/@rem;
+		box-sizing: border-box;
+		display: flex !important;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		&>em {
+			flex: 1;
+			font-size: 12/@rem;
+			display: block;
+			&:first-of-type{
+				text-align: left;
+				word-break: break-word;
+			}
+			&:last-of-type{
+				text-align: right;
+				font-weight: bold;
+			}
+		}
+	}
+	
+	// 组合类型的横向和纵向标题
+	.m-outcome-combo-title {
+		background-color: @lightGray;
+		color: @dark;
+		font-size: 12/@rem;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	
+	// specifier&组合的情况
+	.m-outcome-combo{
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	// 组合market列的title
+	.m-outcome-combo-column-title{
+		text-align: left;
+		word-break: break-word;
+		flex: 0 0 auto;
+		margin-right: 5/@rem;
+		&.m-table-cell>em{
+			font-weight: normal;
+		}
+	}
+	// 组合market行的title
+	.m-outcome-row-combo-title{
+		text-align: center;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		height: 25/@rem;
+		line-height: 25/@rem;
+		padding: 0 5/@rem;
+		flex: 0 1 auto;
+		&:first-child{
+			flex: 0 0 auto;
+		}
+		&.m-table-cell>em{
+			font-weight: normal;
+		}
+	}
+}

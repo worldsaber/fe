@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="340px" height="46px" viewBox="0 0 340 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>14D9F59A-4102-4CA5-91B9-EF2505AEF7AF</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="9" width="320" height="22" rx="11"></rect>
+        <filter x="-5.0%" y="-63.6%" width="110.0%" height="245.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.2   0 0 0 0 0   0 0 0 0 0.411764706  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="97.8843027%" id="linearGradient-3">
+            <stop stop-color="#FF7B00" offset="0%"></stop>
+            <stop stop-color="#FF0000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="百万对抗" transform="translate(-10.000000, -438.000000)">
+            <g id="Group-3" transform="translate(20.000000, 438.000000)">
+                <g id="Rectangle-10">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#2E6DFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M11,9 L160,9 L160,31 L11,31 C4.92486775,31 7.43989126e-16,26.0751322 0,20 L0,20 C-7.43989126e-16,13.9248678 4.92486775,9 11,9 Z" id="Rectangle-10" fill="#FFA600"></path>
+                <path d="M155.550719,0 L172.629603,0.00727123863 L164.807474,17.2764925 L164.814665,17.2801281 C164.691002,17.5369649 164.629388,17.8198111 164.634888,18.1054151 C164.670843,19.0852162 165.467259,19.8396085 166.423676,19.8505154 L166.434463,19.8505154 C166.463227,19.8505154 166.486598,19.8668757 166.513565,19.8650579 C166.529745,19.8650579 166.544127,19.854151 166.560307,19.854151 L177,19.9632198 L155.485999,45.8525091 L159.2056,29.5012834 L159.185825,29.4958299 C159.219983,29.3413158 159.266725,29.1868017 159.261331,29.0213808 C159.222371,28.0115178 158.381405,27.2246507 157.382654,27.2635559 C157.364676,27.2635559 157.350294,27.2744627 157.332316,27.2744627 L144,27.2744627 L155.550719,0 Z" id="Shape" fill="url(#linearGradient-3)" fill-rule="nonzero"></path>
+                <text id="V" font-family="Roboto-BlackItalic, Roboto" font-size="20" font-style="italic" font-weight="700" fill="#FFFFFF">
+                    <tspan x="151" y="25">V</tspan>
+                </text>
+                <text id="S" font-family="Roboto-BlackItalic, Roboto" font-size="16" font-style="italic" font-weight="700" fill="#FFFFFF">
+                    <tspan x="160" y="32">S</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

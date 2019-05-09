@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="23" viewBox="0 0 17 23">
+    <defs>
+        <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="97.884%">
+            <stop offset="0%" stop-color="#FF7B00"/>
+            <stop offset="100%" stop-color="#F00"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" fill-rule="nonzero" d="M5.775 0l8.54.004-3.911 8.634.003.002a.911.911 0 0 0-.09.413c.018.49.417.867.895.872h.005c.015 0 .026.008.04.008.008 0 .015-.006.023-.006l5.22.055L5.743 22.926l1.86-8.175-.01-.003c.017-.077.04-.155.038-.237a.91.91 0 0 0-.94-.88c-.009 0-.016.006-.025.006H0L5.775 0z"/>
+        <text fill="#FFF" font-family="Roboto-BlackItalic, Roboto" font-size="10" font-style="italic" font-weight="700">
+            <tspan x="3.5" y="12">V</tspan>
+        </text>
+        <text fill="#FFF" font-family="Roboto-BlackItalic, Roboto" font-size="7" font-style="italic" font-weight="700">
+            <tspan x="8" y="15.5">S</tspan>
+        </text>
+    </g>
+</svg>

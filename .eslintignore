@@ -1,0 +1,30 @@
+# 第三方库
+third-lib/
+
+# service worker
+sw-toolbox.js
+
+# 统计
+tj.js
+
+# common第三方工具库
+src/common/crypto/
+src/common/base64/
+src/common/packages/lib
+src/common/packages/es.appcore
+src/common/packages/es.dialog
+src/common/packages/fe-help
+src/common/packages/fe.url
+
+src/common/kernel/js/animateFrame.js
+src/common/kernel/js/detectNetType.js
+src/common/kernel/js/mobile-os.js
+src/common/kernel/js/facebookShare.js
+
+src/common/utils/debounce.js
+src/common/utils/toFixed4Number.js
+
+# mock -- 暂时忽略，之后再处理
+mockData/
+demo/
+demo.*
